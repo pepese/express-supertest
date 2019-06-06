@@ -4,22 +4,25 @@ const app = require("../app");
 const request = require("supertest");
 
 describe("result.ts", () => {
-  test("get /", () => {
+  test("GET /", () => {
     return request(app)
       .get("/")
-      .then(response => {
-        expect(response.statusCode).toBe(200);
-      });
+      .set("Accept", "application/json")
+      .set("Content-Type", "application/json")
+      .expect(200)
+      .expect("Content-Type", 'application/json; charset=utf-8')
+      .expect({ "message": "GET called !" });
   });
-  test("post /", () => {
+  test("POST /", () => {
     return request(app)
       .post("/")
-      .set('Accept', 'application/json')
-      .set('Content-Type', 'application/json')
+      .set("Accept", "application/json")
+      .set("Content-Type", "application/json")
       .send({ hoge: "hoge" })
+      .expect(200)
+      .expect("Content-Type", 'application/json; charset=utf-8')
       .then(response => {
-        expect(response.statusCode).toBe(200);
-        expect(response.body).toEqual({ "message": "POST!" });
+        expect(response.body).toEqual({ "message": "POST called !" });
       });
   });
 });

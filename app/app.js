@@ -1,34 +1,32 @@
 "use strict";
 
 const express = require("express");
+const app = express();
+const router = express.Router();
 const http = require("http");
 const bodyParser = require("body-parser");
+const helmet = require("helmet");
 
-const app = express();
+router.get("/", async (req, res) => {
+  await new Promise(resolve => setTimeout(resolve, 1000)); // something to process
+  res.json({
+    message: "GET called !"
+  });
+});
+router.post("/", async (req, res) => {
+  console.log("body: %s", req.body);
+  await new Promise(resolve => setTimeout(resolve, 1000)); // something to process
+  res.json({
+    message: "POST called !"
+  });
+});
 
 app.use(bodyParser.json());
-// ボディのURLエンコード
-//app.use(bodyParser.urlencoded({ extended: false }));
-
-const router = express.Router();
-router.get("/", (req, res) => {
-  res.json({
-    message: "Hello, World !"
-  });
-});
-router.post("/", (req, res) => {
-  console.log("body: %s", req.body);
-  res.json({
-    message: "POST!"
-  });
-});
+app.use(helmet());
 app.use("/", router);
 app.set("port", "3000");
 module.exports = app;
 
-/**
- * HTTP server作成
- */
 if (!module.parent) {
   const server = http.createServer(app);
   // listenポートを指定してHTTP serverを起動
