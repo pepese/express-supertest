@@ -2,46 +2,43 @@
 
 const app = require("../express");
 const request = require("supertest");
-//const UserRepository = require("../../datastore/dynamodb/user");
-//const repository = new UserRepository();
+let auth_token = null;
 
 describe("express.js", () => {
-  /*
-  beforeAll(async () => {
-    try {
-      const result = await repository.createTable();
-      expect(result.TableDescription.TableStatus).toEqual("ACTIVE");
-    } catch (e) {
-      console.log("error: %s", e);
-    }
+  test("POST /auth", () => {
+    return request(app)
+      .post("/auth")
+      .set("Accept", "application/json")
+      .set("Content-Type", "application/json")
+      .send({ id: "id", password: "password" })
+      .expect(200)
+      .then(res => {
+        auth_token = res.body.token;
+      });
   });
-  afterAll(async () => {
-    try {
-      const result = await repository.deleteTable();
-      expect(result.TableDescription.TableStatus).toEqual("ACTIVE");
-    } catch (e) {
-      console.log("error: %s", e);
-    }
-  });*/
   test("PUT /user", () => {
     return request(app)
       .put("/user")
+      .set("Authorization", `Bearer ${auth_token}`)
       .set("Accept", "application/json")
       .set("Content-Type", "application/json")
       .send({ id: "2", name: "Jiro" })
       .expect(200);
-    //.expect("Content-Type", "application/json; charset=utf-8")
-    //.then(response => {
-    //  expect(response.body).toEqual({ message: "POST called !" });
-    //});
+      /* res.locals.id に "id" が入ってるか確認したい！！！
+        .end((err, res) => {
+          if (err) {
+            return done(err);
+          }
+          expect(res.locals.id).to.be.equal("id");
+          return done();
+        });*/
   });
   test("GET /user", () => {
     return request(app)
       .get("/user")
-      .query({id: "2"})
+      .set("Authorization", `Bearer ${auth_token}`)
       .set("Accept", "application/json")
+      .query({ id: "2" })
       .expect(200);
-    //.expect("Content-Type", "application/json; charset=utf-8")
-    //.expect({ message: "GET called !" });
   });
 });

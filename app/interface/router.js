@@ -3,7 +3,14 @@
 const express = require("express");
 const router = express.Router();
 const user = require("../usecase/user");
+const token = require("../usecase/token");
 
+router.post("/auth", (req, res) => {
+  const id = req.body.id;
+  const password = req.body.password;
+  res.json({ token: token.auth(id, password) });
+});
+router.use("/user", token.verifyToken);
 router.get("/user", async (req, res) => {
   const id = req.query.id;
   const result = await user.getUser(id);
