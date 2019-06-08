@@ -15,3 +15,9 @@ Payload で予約されたパラメータは以下。
 |nbf|JWTが有効になる日時|notBefore|
 
 - [参考](https://qiita.com/keitatata/items/fa89f007de21e286df17)
+
+# JSON Schema
+
+- [json-schema.org](https://json-schema.org/)
+- [Ajv: Another JSON Schema Validator](https://github.com/epoberezkin/ajv)
+    - Ajv version 6.0.0 that supports JSON Schema draft-07 is released.

@@ -24,7 +24,7 @@ describe("express.js", () => {
       .set("Content-Type", "application/json")
       .send({ id: "2", name: "Jiro" })
       .expect(200);
-      /* res.locals.id に "id" が入ってるか確認したい！！！
+    /* res.locals.id に "id" が入ってるか確認したい！！！
         .end((err, res) => {
           if (err) {
             return done(err);
