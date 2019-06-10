@@ -66,7 +66,12 @@ class UserRepositoryImpl extends UserRepository {
         id: { S: id },
         name: { S: name }
       },
-      TableName: this.tableName
+      TableName: this.tableName,
+      Expected: {
+          "primary_key": {
+              "Exists": true
+          }
+      }
     };
     try {
       const result = await this.dynamodb.putItem(params).promise();
