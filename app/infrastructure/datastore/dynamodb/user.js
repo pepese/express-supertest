@@ -52,8 +52,10 @@ class UserRepositoryImpl extends UserRepository {
     try {
       const result = await this.dynamodb.getItem(params).promise();
       const data = {};
-      data.id = id;
-      data.name = result.Item.name.S;
+      if (result && result.Item && result.Item.name) {
+        data.id = id;
+        data.name = result.Item.name.S;
+      }
       return data;
     } catch (e) {
       throw e;
@@ -66,12 +68,7 @@ class UserRepositoryImpl extends UserRepository {
         id: { S: id },
         name: { S: name }
       },
-      TableName: this.tableName,
-      Expected: {
-          "primary_key": {
-              "Exists": true
-          }
-      }
+      TableName: this.tableName
     };
     try {
       const result = await this.dynamodb.putItem(params).promise();

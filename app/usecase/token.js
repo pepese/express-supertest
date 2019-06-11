@@ -15,7 +15,7 @@ const verifyToken = (req, res, next) => {
       req.headers.authorization.split(" ")[0] === "Bearer"
     ) {
       const result = token.verify(req.headers.authorization.split(" ")[1]);
-      if (result != null) {
+      if (result && result.id) {
         res.locals.id = result.id;
         next();
       }
