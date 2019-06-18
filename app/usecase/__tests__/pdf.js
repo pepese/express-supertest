@@ -3,7 +3,7 @@
 const pdf = require("../pdf");
 
 describe("token.js", () => {
-  test("create token", () => {
-    return expect(pdf.getPdf()).toEqual("xxx");
+  test("create token", async () => {
+    return expect(await pdf.getPdf()).not.toEqual(null);
   });
 });
