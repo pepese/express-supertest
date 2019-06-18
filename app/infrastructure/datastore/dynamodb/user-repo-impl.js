@@ -8,7 +8,7 @@ AWS.config.update({
   secretAccessKey: "fakeSecretAccessKey"
 });
 const dynamodb = new AWS.DynamoDB();
-const UserRepository = require("../../../usecase/repository/user");
+const UserRepository = require("../../../usecase/repository/user-repo");
 
 class UserRepositoryImpl extends UserRepository {
   constructor() {

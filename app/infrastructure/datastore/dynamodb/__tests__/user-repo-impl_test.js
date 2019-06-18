@@ -1,6 +1,6 @@
 "use strict";
 
-const UserRepository = require("../user");
+const UserRepository = require("../user-repo-impl");
 const repository = new UserRepository();
 
 describe("user.js", () => {

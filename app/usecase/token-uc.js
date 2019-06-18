@@ -1,10 +1,10 @@
 "use strict";
 
-const Token = require("../domain/token");
-const token = new Token();
+const TokenDomain = require("../domain/token-domain");
+const token = new TokenDomain();
 
 const auth = (id, password) => {
-  // MUST check id and password.
+  // TODO: MUST check id and password.
   return token.create({ id: id, password: password });
 };
 

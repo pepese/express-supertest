@@ -1,7 +1,7 @@
 "use strict";
 
-const Token = require("../token");
-const token = new Token();
+const TokenDomain = require("../token-domain");
+const token = new TokenDomain();
 let temp = null;
 
 describe("token.js", () => {

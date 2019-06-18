@@ -2,31 +2,57 @@
 
 const express = require("express");
 const router = express.Router();
-const user = require("../usecase/user");
-const token = require("../usecase/token");
-const pdf= require("../usecase/pdf");
+const userUC = require("../usecase/user-uc");
+const tokenUC = require("../usecase/token-uc");
+const pdfUC= require("../usecase/pdf-uc");
 
 router.post("/auth", (req, res) => {
   const id = req.body.id;
   const password = req.body.password;
-  res.json({ token: token.auth(id, password) });
+  // コンテンツネゴシエーション（アクセプトヘッダを見て分岐）
+  res.format({
+    "application/json": () => {
+      res.json({ token: tokenUC.auth(id, password) });
+    },
+    "default": () => {
+      res.status(406).send(body406);
+    }
+  });
 });
-router.get("/user", token.verifyToken);
+router.get("/user", tokenUC.verifyToken);
 router.get("/user", async (req, res) => {
   const id = req.query.id;
-  const result = await user.getUser(id);
-  res.json(result);
+  const result = await userUC.getUser(id);
+  res.format({
+    "application/json": () => {
+      res.json(result);
+    },
+    "default": () => {
+      res.status(406).send(body406);
+    }
+  });
 });
-router.put("/user", token.verifyToken);
+router.put("/user", tokenUC.verifyToken);
 router.put("/user", async (req, res) => {
   const id = req.body.id;
   const name = req.body.name;
-  const result = await user.putUser(id, name);
-  res.json(result);
+  const result = await userUC.putUser(id, name);
+  res.format({
+    "application/json": () => {
+      res.json(result);
+    },
+    "default": () => {
+      res.status(406).send(body406);
+    }
+  });
 });
 router.get("pdf", async (req, rest) => {
-  const result = await pdf.getPdf();
+  const result = await pdfUC.getPdf();
   res.send(result);
 });
+
+const body406 = {
+  message: "Not Acceptable"
+}
 
 module.exports = router;

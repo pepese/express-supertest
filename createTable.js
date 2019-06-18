@@ -1,6 +1,6 @@
 "use strict";
 
-const UserRepository = require("./app/infrastructure/datastore/dynamodb/user");
+const UserRepository = require("./app/infrastructure/datastore/dynamodb/user-repo-impl");
 const repository = new UserRepository();
 
 (async function() {

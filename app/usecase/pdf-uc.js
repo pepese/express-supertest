@@ -1,12 +1,9 @@
 "use strict";
 
 const PDFDocument = require("pdfkit");
-const fs = require("fs");
-const fr = new FileReader();
 
 const getPdf = async () => {
   const doc = new PDFDocument();
-  //doc.pipe(fs.createWriteStream('output.pdf'));
   const makePdf = () => {
     return new Promise((resolve, reject) => {
       try {
