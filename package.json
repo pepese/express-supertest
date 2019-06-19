@@ -9,7 +9,7 @@
     "test:docker-pull": "docker pull amazon/dynamodb-local",
     "test:docker-run": "docker run -d --name dynamodb -p 8000:8000 amazon/dynamodb-local",
     "test:env": "node createTable.js",
-    "test:exec": "jest",
+    "test:exec": "jest app/domain/__tests__/token-domain_test.js",
     "test:docker-stop": "docker container stop `docker container ls -q`",
     "test:docker-rm": "docker container rm `docker container ls -a -q`"
   },
@@ -23,6 +23,7 @@
     "helmet": "^3.18.0",
     "jsonwebtoken": "^8.5.1",
     "pdfkit": "^0.10.0",
+    "speakeasy": "^2.0.0",
     "winston": "^3.2.1"
   },
   "devDependencies": {

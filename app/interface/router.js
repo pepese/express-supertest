@@ -19,7 +19,7 @@ router.post("/auth", (req, res) => {
     }
   });
 });
-router.get("/user", tokenUC.verifyToken);
+router.get("/user", tokenUC.verifyJWT);
 router.get("/user", async (req, res) => {
   const id = req.query.id;
   const result = await userUC.getUser(id);
@@ -32,7 +32,7 @@ router.get("/user", async (req, res) => {
     }
   });
 });
-router.put("/user", tokenUC.verifyToken);
+router.put("/user", tokenUC.verifyJWT);
 router.put("/user", async (req, res) => {
   const id = req.body.id;
   const name = req.body.name;
