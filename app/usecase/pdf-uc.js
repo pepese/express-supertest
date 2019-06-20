@@ -1,6 +1,7 @@
 "use strict";
 
 const PDFDocument = require("pdfkit");
+const htmlPdf = require("html-pdf");
 
 const getPdf = async () => {
   const doc = new PDFDocument();
@@ -21,14 +22,59 @@ const getPdf = async () => {
       } catch (e) {
         reject(e);
       }
-    })
+    });
   };
   const buffer = await makePdf();
   const base64Str = buffer.toString("base64");
-  const pdfBase64 = "" + base64Str;
+  const pdfBase64 = "data:application/pdf;base64," + base64Str;
+  return pdfBase64;
+}
+
+const getPdfFromHtml = async () => {
+  const lines = [
+    "TEST TEXT",
+    "TEST TEXT",
+    "TEST TEXT",
+  ];
+  let pdfBody = "";
+  for (let i in lines) {
+    pdfBody += "<tr><td>" + lines[i] + "</td></tr>";
+  }
+  const html = `
+  <!doctype html>
+  <html lang="ja>
+  <head></head>
+  <body>
+  <div style= "font-family: monospace; ">
+  <table>
+  ${pdfBody}
+  </table>
+  </div>
+  </body>
+  </html>
+  `;
+
+  const makePdf = () => {
+    return new Promise((resolve, reject) => {
+      try {
+        htmlPdf.create(html, {}).toBuffer((err, buffer) => {
+          if (err) {
+            throw err;
+          }
+          resolve(buffer);
+        });
+      } catch (e) {
+        reject(e);
+      }
+    });
+  };
+  const buffer = await makePdf();
+  const base64Str = buffer.toString("base64");
+  const pdfBase64 = "data:application/pdf;base64," + base64Str;
   return pdfBase64;
 }
 
 module.exports = {
-  getPdf: getPdf
+  getPdf: getPdf,
+  getPdfFromHtml: getPdfFromHtml
 }

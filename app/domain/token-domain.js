@@ -1,36 +1,31 @@
 "use strict";
 
 const jwt = require("jsonwebtoken");
-const speakeasy = require("speakeasy");
-const secret = "secret";
+const notp = require("notp");
+const config = require("../config");
 
 class Token {
   constructor() {}
   static createJWT(payload) {
     payload.exp = Math.floor(Date.now() / 1000) + 24 * 60 * 60;
-    return jwt.sign(payload, secret);
+    return jwt.sign(payload, config.SECRET);
   }
   static verifyJWT(token) {
     try {
-      return jwt.verify(token, secret);
+      return jwt.verify(token, config.SECRET);
     } catch (e) {
       throw e;
     }
   }
   static createTOTP() {
-    return speakeasy.totp({
-      secret: secret,
-      //encoding: "base32",
-      time: 3
-    });
+    return notp.totp.gen(config.SECRET, { time: config.TOTP_TTL });
   }
   static verifyTOTP(token) {
-    return speakeasy.totp.verify({
-      secret: secret,
-      //encoding: "base32",
-      time: 3,
-      token: token
-    });
+    try {
+      return notp.totp.verify(token, config.SECRET);
+    } catch (e) {
+      throw e;
+    }
   }
 }
 

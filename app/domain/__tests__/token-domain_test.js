@@ -16,12 +16,10 @@ describe("token-domain.js", () => {
     expect(payload.password).toEqual("password");
   });
   test("createTOTP", () => {
-    totpTmp = TokenDomain.verifyTOTP();
-    console.log('!!!!!!! totp: %s', totpTmp);
+    expect(TokenDomain.createTOTP().length).toEqual(6);
   });
   test("verifyTOTP OK", () => {
-    const check = TokenDomain.verifyTOTP(totpTmp);
-    expect(check).toEqual(true);
+    expect(TokenDomain.verifyTOTP(totpTmp)).toEqual(null);
   });
   test("verifyTOTP NG", () => {
     const sleep = (waitSeconds, someFunction) => {
@@ -33,7 +31,7 @@ describe("token-domain.js", () => {
     };
     const verify = () => {
       const check = TokenDomain.verifyTOTP(totpTmp);
-      expect(check).toEqual(false);
+      expect(check).toEqual(null);
     };
     return sleep(3, verify)
   });
