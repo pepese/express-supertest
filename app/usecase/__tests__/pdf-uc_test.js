@@ -10,4 +10,7 @@ describe("app/usecase/pdf-uc.js", () => {
     const result = await pdfUC.getPdfFromHtml();
     expect(result).not.toEqual(null);
   });
+  test("makePdf", async () => {
+    pdfUC.makePdf();
+  });
 });

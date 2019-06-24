@@ -22,9 +22,11 @@
     "express-winston": "^3.2.0",
     "helmet": "^3.18.0",
     "html-pdf": "^2.2.0",
+    "html-to-pdfmake": "^1.0.3",
     "jsonwebtoken": "^8.5.1",
     "notp": "^2.0.3",
     "pdfkit": "^0.10.0",
+    "pdfmake": "^0.1.57",
     "winston": "^3.2.1"
   },
   "devDependencies": {
