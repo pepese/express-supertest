@@ -21,3 +21,11 @@ Payload で予約されたパラメータは以下。
 - [json-schema.org](https://json-schema.org/)
 - [Ajv: Another JSON Schema Validator](https://github.com/epoberezkin/ajv)
     - Ajv version 6.0.0 that supports JSON Schema draft-07 is released.
+
+# MongoDB
+
+```bash
+$ docker pull mongo:3.6.13-xenial
+$ docker run -d --name mongo -p 27017:27017 mongo:3.6.13-xenial
+$ docker exec -it mongo bash
+```
