@@ -6,10 +6,12 @@
   "scripts": {
     "lint": "eslint --ext .js --ignore-path .gitignore . -f codeframe --fix",
     "test": "npm-run-all test:*",
-    "test:docker-pull": "docker pull amazon/dynamodb-local",
-    "test:docker-run": "docker run -d --name dynamodb -p 8000:8000 amazon/dynamodb-local",
+    "test:pull-dynamo": "docker pull amazon/dynamodb-local",
+    "test:run-dynamo": "docker run -d --name dynamodb -p 8000:8000 amazon/dynamodb-local",
+    "test:pull-mongo": "docker pull mongo:3.6.13-xenial",
+    "test:run-mongo": "docker run -d --name mongo -p 27017:27017 mongo:3.6.13-xenial",
     "test:env": "node createTable.js",
-    "test:exec": "jest",
+    "test:exec": "jest --coverage",
     "test:docker-stop": "docker container stop `docker container ls -q`",
     "test:docker-rm": "docker container rm `docker container ls -a -q`"
   },
@@ -24,6 +26,7 @@
     "html-pdf": "^2.2.0",
     "html-to-pdfmake": "^1.0.3",
     "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.2",
     "notp": "^2.0.3",
     "pdfkit": "^0.10.0",
     "pdfmake": "^0.1.57",

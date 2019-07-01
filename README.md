@@ -83,6 +83,7 @@ BSON（ Binary JSON ）のデータ型。（ [参考](https://docs.mongodb.com/m
     - `findAndModify()` : 検索と修正を一括で行う。
     - `remove()` : ドキュメントの削除。
 
+```
 {item1:{item2:{item3:"2014-10-10T13:50:40+09:00"}}}
 db.sample.insert({item1:{item2:{item3:"2014-10-10T13:50:40+09:00"}}})
 db.sampple.find()
@@ -110,5 +111,7 @@ db.sample4.find({item1: {"$gte":"2014-10-10T13:50:40+09:00"}})
 
 db.sample5.insert({item1:{item2:{item3:"2014-10-10T13:50:40+09:00"}}})
 db.sample5.find({"item1.item2.item3": {"$gte":"2014-10-10T13:50:40+09:00"}}) : OK
+```
 
-ISODate は必要？ -> 日付を文字列として格納するとaggregateで日付として扱えない -> ISODate を適用して挿入するしかない模様、、、
+- ISODate は必要？ -> 日付を文字列として格納するとaggregateで日付として扱えない -> ISODate を適用して挿入するしかない模様、、、
+- ISODate は Date型へ変換してるだけ
