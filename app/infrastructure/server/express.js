@@ -1,11 +1,13 @@
 "use strict";
 
 const express = require("express");
-const app = express();
+const httpContext = require("express-http-context");
 const router = require("../../interface/router");
 const helmet = require("helmet");
 const logger = require("../../logger");
 
+const app = express();
+app.use(httpContext.middleware);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(helmet());

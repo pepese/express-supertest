@@ -1,3 +1,11 @@
+# requestId の設定
+
+`express-http-context` を利用して 1 リクエスト中に利用できる key-value に requestId を設定する。  
+その値を logger が取得してログ出力時に requestId を付与する。  
+requestId には uuidv4 を利用する。  
+なお、`express-http-context` では スレッドローカルのように動作する **Continuation-local storage** が利用される。  
+詳しくは [ここ](https://github.com/jeff-lewis/cls-hooked#readme) 。
+
 # JWT
 
 ## 予約済みクレーム名
