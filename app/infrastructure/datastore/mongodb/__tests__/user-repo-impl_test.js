@@ -30,7 +30,9 @@ describe("app/infrastructure/datastore/mongodb/user-repo-impl.js", () => {
   test("getUser match", async () => {
     try {
       const result = await repository.getUser(tmpID);
-      expect(result).toEqual({ _id: tmpID, name: "Ichiro" });
+      expect(result).toEqual({__v: 0, _id: tmpID, name: "Ichiro" });
+      // expect(result["_id"]).toEqual(tmpID);
+      // expect(result.name).toEqual("Ichiro");
     } catch (e) {
       console.log("error.name: %s", e.name);
       console.log("error.message: %s", e.message);
