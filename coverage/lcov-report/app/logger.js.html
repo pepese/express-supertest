@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">70.59% </span>
+        <span class="strong">64.71% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>12/17</span>
+        <span class='fraction'>11/17</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,14 +30,14 @@
         <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">37.5% </span>
+        <span class="strong">25% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/8</span>
+        <span class='fraction'>2/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">70.59% </span>
+        <span class="strong">64.71% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>12/17</span>
+        <span class='fraction'>11/17</span>
       </div>
     </div>
     <p class="quiet">
@@ -90,9 +90,7 @@
 <a name='L42'></a><a href='#L42'>42</a>
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
-<a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
@@ -103,14 +101,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
@@ -118,7 +114,7 @@
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -138,49 +134,47 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-const winston = require("winston");
-const httpContext = require("express-http-context");
+const winston = require('winston');
+const httpContext = require('express-http-context');
 &nbsp;
 const winstonLogger = winston.createLogger({
   format: winston.format.json(),
-  transports: [
-    new winston.transports.Console()
-  ]
+  transports: [new winston.transports.Console()],
 });
 &nbsp;
 // Wrap Winston logger to print reqId in each log
 var formatMessage = function(message) {
-    var requestId = httpContext.get("requestId");
-    if (requestId) {
-      message.requestId = requestId;
-    }
-    return message;
+  var requestId = httpContext.get('requestId');
+  if (requestId) {
+    message.requestId = requestId;
+  }
+  return message;
 };
 &nbsp;
 var logger = {
-    log: function(level, message, meta = null) {
-        winstonLogger.log(level, formatMessage(message), meta);
-    },
-    error: function(message) {
-        winstonLogger.error(formatMessage(message));
-    },
-    warn: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
-<span class="cstat-no" title="statement not covered" >        winstonLogger.warn(formatMessage(message));</span>
-    },
-    verbose: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
-<span class="cstat-no" title="statement not covered" >        winstonLogger.verbose(formatMessage(message));</span>
-    },
-    info: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
-<span class="cstat-no" title="statement not covered" >        winstonLogger.info(formatMessage(message));</span>
-    },
-    debug: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
-<span class="cstat-no" title="statement not covered" >        winstonLogger.debug(formatMessage(message));</span>
-    },
-    silly: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
-<span class="cstat-no" title="statement not covered" >        winstonLogger.silly(formatMessage(message));</span>
-    }
+  log: function(level, message, meta = null) {
+    winstonLogger.log(level, formatMessage(message), meta);
+  },
+  error: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
+<span class="cstat-no" title="statement not covered" >    winstonLogger.error(formatMessage(message));</span>
+  },
+  warn: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
+<span class="cstat-no" title="statement not covered" >    winstonLogger.warn(formatMessage(message));</span>
+  },
+  verbose: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
+<span class="cstat-no" title="statement not covered" >    winstonLogger.verbose(formatMessage(message));</span>
+  },
+  info: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
+<span class="cstat-no" title="statement not covered" >    winstonLogger.info(formatMessage(message));</span>
+  },
+  debug: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
+<span class="cstat-no" title="statement not covered" >    winstonLogger.debug(formatMessage(message));</span>
+  },
+  silly: <span class="fstat-no" title="function not covered" >fu</span>nction(message) {
+<span class="cstat-no" title="statement not covered" >    winstonLogger.silly(formatMessage(message));</span>
+  },
 };
 &nbsp;
 module.exports = logger;
@@ -190,7 +184,7 @@ module.exports = logger;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Jul 08 2019 08:17:06 GMT+0900 (GMT+09:00)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Jul 11 2019 08:07:04 GMT+0900 (GMT+09:00)
 </div>
 </div>
 <script src="../prettify.js"></script>

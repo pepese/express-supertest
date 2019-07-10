@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 class AppError extends Error {
   constructor(e, errorCode = null) {
@@ -11,11 +11,11 @@ class AppError extends Error {
 }
 
 const codes = {
-  "xxxxx": 400,
-  "yyyyy": 500
+  xxxxx: 400,
+  yyyyy: 500,
 };
 
 module.exports = {
   AppError: AppError,
-  codes: codes
+  codes: codes,
 };

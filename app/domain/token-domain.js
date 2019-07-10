@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
-const jwt = require("jsonwebtoken");
-const notp = require("notp");
-const config = require("../config");
+const jwt = require('jsonwebtoken');
+const notp = require('notp');
+const config = require('../config');
 
 class Token {
   constructor() {}
@@ -18,7 +18,7 @@ class Token {
     }
   }
   static createTOTP() {
-    return notp.totp.gen(config.SECRET, { time: config.TOTP_TTL });
+    return notp.totp.gen(config.SECRET, {time: config.TOTP_TTL});
   }
   static verifyTOTP(token) {
     try {

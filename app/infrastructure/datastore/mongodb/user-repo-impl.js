@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
-const logger = require("../../../logger");
-const UserRepository = require("../../../usecase/repository/user-repo");
-const UserModel = require("./mongodb").User;
+const logger = require('../../../logger');
+const UserRepository = require('../../../usecase/repository/user-repo');
+const UserModel = require('./mongodb').User;
 const userDoc = new UserModel();
 
 class UserRepositoryImpl extends UserRepository {
@@ -14,7 +14,7 @@ class UserRepositoryImpl extends UserRepository {
   // override
   async getUser(id) {
     const params = {
-      _id: id
+      _id: id,
     };
     return new Promise(async (resolve, reject) => {
       try {
@@ -30,7 +30,7 @@ class UserRepositoryImpl extends UserRepository {
   // override
   async createUser(name) {
     const params = {
-      name: name
+      name: name,
     };
     return new Promise(async (resolve, reject) => {
       try {

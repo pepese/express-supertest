@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-const UserRepository = require("../infrastructure/datastore/dynamodb/user-repo-impl");
+const UserRepository = require('../infrastructure/datastore/dynamodb/user-repo-impl');
 const repository = new UserRepository();
 
 const getUser = async id => {
@@ -10,10 +10,10 @@ const getUser = async id => {
 
 const putUser = async (id, name) => {
   await repository.createUser(id, name);
-  return { message: "SUCCESS" };
+  return {message: 'SUCCESS'};
 };
 
 module.exports = {
   getUser: getUser,
-  putUser: putUser
+  putUser: putUser,
 };

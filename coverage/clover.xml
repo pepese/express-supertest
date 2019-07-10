@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1562541426841" clover="3.2.0">
-  <project timestamp="1562541426842" name="All files">
-    <metrics statements="218" coveredstatements="192" conditionals="22" coveredconditionals="19" methods="53" coveredmethods="38" elements="293" coveredelements="249" complexity="0" loc="218" ncloc="218" packages="9" files="13" classes="13"/>
+<coverage generated="1562800024493" clover="3.2.0">
+  <project timestamp="1562800024493" name="All files">
+    <metrics statements="228" coveredstatements="199" conditionals="29" coveredconditionals="26" methods="54" coveredmethods="38" elements="311" coveredelements="263" complexity="0" loc="228" ncloc="228" packages="9" files="14" classes="14"/>
     <package name="app">
-      <metrics statements="19" coveredstatements="14" conditionals="7" coveredconditionals="7" methods="8" coveredmethods="3"/>
+      <metrics statements="28" coveredstatements="22" conditionals="14" coveredconditionals="14" methods="9" coveredmethods="3"/>
       <file name="config.js" path="/Users/tanakakns/workspace/github/express-supertest/app/config.js">
-        <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="0" coveredmethods="0"/>
-        <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
+        <metrics statements="5" coveredstatements="5" conditionals="8" coveredconditionals="8" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="3" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="error.js" path="/Users/tanakakns/workspace/github/express-supertest/app/error.js">
+        <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="logger.js" path="/Users/tanakakns/workspace/github/express-supertest/app/logger.js">
-        <metrics statements="17" coveredstatements="12" conditionals="3" coveredconditionals="3" methods="8" coveredmethods="3"/>
+        <metrics statements="17" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="8" coveredmethods="2"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="46" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
       </file>
     </package>
     <package name="app.domain">
@@ -50,48 +62,50 @@
       </file>
     </package>
     <package name="app.infrastructure.datastore.dynamodb">
-      <metrics statements="25" coveredstatements="22" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="4"/>
+      <metrics statements="26" coveredstatements="23" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="4"/>
       <file name="user-repo-impl.js" path="/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/dynamodb/user-repo-impl.js">
-        <metrics statements="25" coveredstatements="22" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="4"/>
+        <metrics statements="26" coveredstatements="23" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="4"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="46" count="4" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
         <line num="52" count="4" type="stmt"/>
         <line num="53" count="4" type="stmt"/>
-        <line num="54" count="4" type="stmt"/>
-        <line num="55" count="4" type="cond" truecount="5" falsecount="0"/>
+        <line num="54" count="4" type="cond" truecount="5" falsecount="0"/>
+        <line num="55" count="3" type="stmt"/>
         <line num="56" count="3" type="stmt"/>
-        <line num="57" count="3" type="stmt"/>
-        <line num="59" count="4" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="66" count="3" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
+        <line num="72" count="3" type="stmt"/>
         <line num="73" count="3" type="stmt"/>
         <line num="74" count="3" type="stmt"/>
-        <line num="75" count="3" type="stmt"/>
-        <line num="77" count="0" type="stmt"/>
-        <line num="82" count="2" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
       </file>
     </package>
     <package name="app.infrastructure.datastore.mongodb">
-      <metrics statements="26" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <metrics statements="27" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
       <file name="mongodb.js" path="/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/mongodb/mongodb.js">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
       <file name="user-repo-impl.js" path="/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js">
-        <metrics statements="21" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <metrics statements="21" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -102,9 +116,9 @@
         <line num="19" count="2" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
@@ -139,10 +153,10 @@
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
     </package>
     <package name="app.interface">
@@ -191,63 +205,62 @@
       </file>
     </package>
     <package name="app.usecase">
-      <metrics statements="75" coveredstatements="71" conditionals="10" coveredconditionals="7" methods="14" coveredmethods="14"/>
+      <metrics statements="74" coveredstatements="70" conditionals="10" coveredconditionals="7" methods="14" coveredmethods="14"/>
       <file name="pdf-uc.js" path="/Users/tanakakns/workspace/github/express-supertest/app/usecase/pdf-uc.js">
-        <metrics statements="54" coveredstatements="51" conditionals="2" coveredconditionals="1" methods="10" coveredmethods="10"/>
+        <metrics statements="53" coveredstatements="50" conditionals="2" coveredconditionals="1" methods="10" coveredmethods="10"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
+        <line num="17" count="61" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
-        <line num="20" count="61" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="45" count="3" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="59" count="0" type="stmt"/>
         <line num="61" count="1" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
-        <line num="63" count="1" type="stmt"/>
-        <line num="64" count="1" type="stmt"/>
-        <line num="65" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="66" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
         <line num="68" count="1" type="stmt"/>
-        <line num="71" count="0" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="74" count="2" type="stmt"/>
         <line num="75" count="1" type="stmt"/>
-        <line num="76" count="1" type="stmt"/>
-        <line num="77" count="1" type="stmt"/>
-        <line num="78" count="1" type="stmt"/>
-        <line num="81" count="2" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
         <line num="82" count="1" type="stmt"/>
-        <line num="87" count="1" type="stmt"/>
-        <line num="88" count="1" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="107" count="1" type="stmt"/>
+        <line num="112" count="1" type="stmt"/>
         <line num="113" count="1" type="stmt"/>
         <line num="114" count="1" type="stmt"/>
-        <line num="117" count="1" type="stmt"/>
-        <line num="122" count="1" type="stmt"/>
-        <line num="123" count="1" type="stmt"/>
-        <line num="124" count="1" type="stmt"/>
-        <line num="125" count="1" type="stmt"/>
-        <line num="126" count="1" type="stmt"/>
-        <line num="129" count="2" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+        <line num="116" count="1" type="stmt"/>
+        <line num="119" count="2" type="stmt"/>
       </file>
       <file name="token-uc.js" path="/Users/tanakakns/workspace/github/express-supertest/app/usecase/token-uc.js">
         <metrics statements="12" coveredstatements="11" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="2"/>
@@ -258,11 +271,11 @@
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="16" count="2" type="stmt"/>
-        <line num="17" count="2" type="cond" truecount="3" falsecount="1"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
+        <line num="19" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
       </file>
       <file name="user-uc.js" path="/Users/tanakakns/workspace/github/express-supertest/app/usecase/user-uc.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
