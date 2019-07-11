@@ -2,10 +2,10 @@
 
 class ContextRepository {
   constructor() {}
-  static async set(key, value) {
+  static set(key, value) {
     throw new Error('Not Implimented');
   }
-  static async get(key) {
+  static get(key) {
     throw new Error('Not Implimented');
   }
 }
