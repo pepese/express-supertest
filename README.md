@@ -1,8 +1,8 @@
-# requestId の設定
+# reqId の設定
 
-`express-http-context` を利用して 1 リクエスト中に利用できる key-value に requestId を設定する。  
-その値を logger が取得してログ出力時に requestId を付与する。  
-requestId には uuidv4 を利用する。  
+`express-http-context` を利用して 1 リクエスト中に利用できる key-value に reqId を設定する。  
+その値を logger が取得してログ出力時に reqId を付与する。  
+reqId には uuidv4 を利用する。  
 なお、`express-http-context` では スレッドローカルのように動作する **Continuation-local storage** が利用される。  
 詳しくは [ここ](https://github.com/jeff-lewis/cls-hooked#readme) 。
 
@@ -90,6 +90,16 @@ BSON（ Binary JSON ）のデータ型。（ [参考](https://docs.mongodb.com/m
     - `upsert()` :  id が存在する場合 `update()` 、 id が存在しない場合 `insert()`。
     - `findAndModify()` : 検索と修正を一括で行う。
     - `remove()` : ドキュメントの削除。
+
+## Jest で MongoDB アプリをテストするとき
+
+[ここ](https://jestjs.io/docs/en/mongodb)を参考に以下を利用してもよい。
+
+```bash
+$ npm i -D @shelf/jest-mongodb
+```
+
+## 操作メモ
 
 ```
 {item1:{item2:{item3:"2014-10-10T13:50:40+09:00"}}}

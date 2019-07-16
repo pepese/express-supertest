@@ -10,11 +10,19 @@ const winstonLogger = winston.createLogger({
 
 // Wrap Winston logger to print reqId in each log
 var formatMessage = function(message) {
-  var requestId = httpContext.get('requestId');
-  if (requestId) {
-    message.requestId = requestId;
+  var reqId = httpContext.get('reqId');
+  // if (reqId) {
+  //   message.reqId = reqId;
+  // }
+  // return message;
+  if (reqId) {
+    return {
+      reqId: reqId,
+      message: message
+    };
+  } else {
+    return message;
   }
-  return message;
 };
 
 var logger = {

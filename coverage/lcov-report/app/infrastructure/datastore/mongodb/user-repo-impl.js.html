@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">80.95% </span>
+        <span class="strong">80% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>17/21</span>
+        <span class='fraction'>16/20</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>5/5</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">80.95% </span>
+        <span class="strong">80% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>17/21</span>
+        <span class='fraction'>16/20</span>
       </div>
     </div>
     <p class="quiet">
@@ -89,16 +89,14 @@
 <a name='L41'></a><a href='#L41'>41</a>
 <a name='L42'></a><a href='#L42'>42</a>
 <a name='L43'></a><a href='#L43'>43</a>
-<a name='L44'></a><a href='#L44'>44</a>
-<a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L44'></a><a href='#L44'>44</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -107,11 +105,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
@@ -123,18 +121,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -144,45 +136,41 @@
 &nbsp;
 const logger = require('../../../logger');
 const UserRepository = require('../../../usecase/repository/user-repo');
-const UserModel = require('./mongodb').User;
-const userDoc = new UserModel();
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const uuid = require("uuid");
+const UserSchema = new Schema({
+  _id: { type: String, default: uuid.v4 },
+  name: String,
+});
+const connection = require('./mongodb');
+const UserModel = connection.model('User', UserSchema);
 &nbsp;
 class UserRepositoryImpl extends UserRepository {
   constructor() {
     super();
-    this.userDoc = userDoc;
   }
 &nbsp;
   // override
   async getUser(id) {
-    const params = {
-      _id: id,
-    };
-    return new Promise(async (resolve, reject) =&gt; {
-      try {
-        const result = await UserModel.find(params);
-        resolve(result);
-      } catch (e) {
-<span class="cstat-no" title="statement not covered" >        logger.error(e.stack);</span>
-<span class="cstat-no" title="statement not covered" >        reject(e);</span>
-      }
-    });
+    try {
+      const query = UserModel.find({ _id: id });
+      return await query.exec();
+    } catch (e) {
+<span class="cstat-no" title="statement not covered" >      logger.error(e.stack);</span>
+<span class="cstat-no" title="statement not covered" >      throw e;</span>
+    }
   }
 &nbsp;
   // override
   async createUser(name) {
-    const params = {
-      name: name,
-    };
-    return new Promise(async (resolve, reject) =&gt; {
-      try {
-        const result = await this.userDoc.save(params);
-        resolve(result);
-      } catch (e) {
-<span class="cstat-no" title="statement not covered" >        logger.error(e.stack);</span>
-<span class="cstat-no" title="statement not covered" >        reject(e);</span>
-      }
-    });
+    try {
+      const userDoc = new UserModel({ name: name });
+      return await userDoc.save();
+    } catch (e) {
+<span class="cstat-no" title="statement not covered" >      logger.error(e.stack);</span>
+<span class="cstat-no" title="statement not covered" >      throw e;</span>
+    }
   }
 }
 &nbsp;
@@ -193,7 +181,7 @@ module.exports = UserRepositoryImpl;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Jul 12 2019 08:00:08 GMT+0900 (GMT+09:00)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Jul 16 2019 17:49:26 GMT+0900 (GMT+09:00)
 </div>
 </div>
 <script src="../../../../prettify.js"></script>

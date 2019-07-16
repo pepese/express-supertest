@@ -21,16 +21,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ajv": "^6.10.0",
-    "aws-sdk": "^2.470.0",
+    "ajv": "^6.10.2",
+    "aws-sdk": "^2.493.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
-    "express-http-context": "^1.2.2",
-    "express-winston": "^3.2.0",
+    "express-http-context": "^1.2.3",
+    "express-winston": "^3.2.1",
     "helmet": "^3.18.0",
     "html-pdf": "^2.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.6.2",
+    "mongoose": "^5.6.4",
     "notp": "^2.0.3",
     "pdfkit": "^0.10.0",
     "pdfmake": "^0.1.57",
@@ -38,13 +38,13 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-jest": "^22.6.4",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-jest": "^22.8.0",
     "eslint-plugin-prettier": "^3.1.0",
     "jest": "^24.8.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.17.1",
+    "prettier": "^1.18.2",
     "supertest": "^4.0.2"
   }
 }

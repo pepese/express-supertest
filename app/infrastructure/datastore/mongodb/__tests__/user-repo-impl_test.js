@@ -1,13 +1,13 @@
 'use strict';
 
-const mongodb = require('../mongodb');
+const connection = require('../mongodb');
 const UserRepository = require('../user-repo-impl');
 const repository = new UserRepository();
 let tmpID;
 
 describe('app/infrastructure/datastore/mongodb/user-repo-impl.js', () => {
-  afterAll(() => {
-    return mongodb.close(); // これをやらないとテストが正常終了しない。。。なんか効かない。。。
+  afterAll( async () => {
+    return await connection.close(); // これをやらないとテストが正常終了しない。。。なんか効かない。。。
   });
   // 該当データが存在しない場合はエラーではなく空データが返却される
   test('getUser miss match', async () => {
