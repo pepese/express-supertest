@@ -19,45 +19,47 @@ const winstonLogger = winston.createLogger({
   transports: [new winston.transports.Console()],
 });
 
-// Wrap Winston logger to print reqId in each log
-var formatMessage = function(message) {
-  var reqId = httpContext.get('reqId');
-  // if (reqId) {
-  //   message.reqId = reqId;
-  // }
-  // return message;
-  if (reqId) {
-    return {
-      reqId: reqId,
-      message: message
-    };
-  } else {
-    return message;
-  }
-};
+// // Wrap Winston logger to print reqId in each log
+// var formatMessage = function(message) {
+//   var reqId = httpContext.get('reqId');
+//   // if (reqId) {
+//   //   message.reqId = reqId;
+//   // }
+//   // return message;
+//   if (reqId) {
+//     return {
+//       reqId: reqId,
+//       message: message
+//     };
+//   } else {
+//     return message;
+//   }
+// };
 
-var logger = {
-  log: function(level, message, meta = null) {
-    winstonLogger.log(level, formatMessage(message), meta);
-  },
-  error: function(message) {
-    winstonLogger.error(formatMessage(message));
-  },
-  warn: function(message) {
-    winstonLogger.warn(formatMessage(message));
-  },
-  verbose: function(message) {
-    winstonLogger.verbose(formatMessage(message));
-  },
-  info: function(message) {
-    winstonLogger.info(formatMessage(message));
-  },
-  debug: function(message) {
-    winstonLogger.debug(formatMessage(message));
-  },
-  silly: function(message) {
-    winstonLogger.silly(formatMessage(message));
-  },
-};
+// var logger = {
+//   log: function(level, message, meta = null) {
+//     winstonLogger.log(level, formatMessage(message), meta);
+//   },
+//   error: function(message) {
+//     winstonLogger.error(formatMessage(message));
+//   },
+//   warn: function(message) {
+//     winstonLogger.warn(formatMessage(message));
+//   },
+//   verbose: function(message) {
+//     winstonLogger.verbose(formatMessage(message));
+//   },
+//   info: function(message) {
+//     winstonLogger.info(formatMessage(message));
+//   },
+//   debug: function(message) {
+//     winstonLogger.debug(formatMessage(message));
+//   },
+//   silly: function(message) {
+//     winstonLogger.silly(formatMessage(message));
+//   },
+// };
+
+const logger = winstonLogger.child({reqId: httpContext.get('reqId')});
 
 module.exports = logger;

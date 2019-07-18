@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1563318825662" clover="3.2.0">
-  <project timestamp="1563318825662" name="All files">
-    <metrics statements="231" coveredstatements="195" conditionals="29" coveredconditionals="23" methods="57" coveredmethods="36" elements="317" coveredelements="254" complexity="0" loc="231" ncloc="231" packages="10" files="16" classes="16"/>
+<coverage generated="1563491236080" clover="3.2.0">
+  <project timestamp="1563491236080" name="All files">
+    <metrics statements="232" coveredstatements="201" conditionals="29" coveredconditionals="26" methods="57" coveredmethods="38" elements="318" coveredelements="265" complexity="0" loc="232" ncloc="232" packages="10" files="16" classes="16"/>
     <package name="app">
-      <metrics statements="28" coveredstatements="17" conditionals="14" coveredconditionals="11" methods="9" coveredmethods="1"/>
+      <metrics statements="28" coveredstatements="22" conditionals="14" coveredconditionals="14" methods="9" coveredmethods="3"/>
       <file name="config.js" path="/Users/tanakakns/workspace/github/express-supertest/app/config.js">
         <metrics statements="5" coveredstatements="5" conditionals="8" coveredconditionals="8" methods="0" coveredmethods="0"/>
         <line num="3" count="3" type="stmt"/>
@@ -22,17 +22,17 @@
         <line num="18" count="1" type="stmt"/>
       </file>
       <file name="logger.js" path="/Users/tanakakns/workspace/github/express-supertest/app/logger.js">
-        <metrics statements="17" coveredstatements="6" conditionals="3" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <metrics statements="17" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="8" coveredmethods="2"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="29" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
         <line num="39" count="2" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
+        <line num="41" count="3" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
@@ -137,9 +137,9 @@
       </file>
     </package>
     <package name="app.infrastructure.server">
-      <metrics statements="23" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <metrics statements="24" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="express.js" path="/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/server/express.js">
-        <metrics statements="23" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <metrics statements="24" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -154,6 +154,7 @@
         <line num="15" count="3" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
