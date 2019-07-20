@@ -6,7 +6,7 @@ const uuid = require('uuid');
 const expressWinston = require('express-winston');
 const router = require('../../interface/router');
 const helmet = require('helmet');
-const logger = require('../../logger');
+const logger = require('../../logger').getLogger();
 
 const app = express();
 app.use(httpContext.middleware);
