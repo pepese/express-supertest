@@ -66,4 +66,8 @@ describe('user.js', () => {
       throw e;
     }
   });
+  test('listUsers', async () => {
+    const result = await repository.listUsers('1');
+    expect(result[0]).toEqual({id: '1', name: 'Ichiro_rename'});
+  });
 });

@@ -2,24 +2,24 @@
 
 const dynamodb = require('./dynamodb').dynamodb;
 const docClient = require('./dynamodb').docClient;
-const UserRepository = require('../../../usecase/repository/user-repo');
+const AppRepository = require('../../../usecase/repository/app-repo');
 
-class UserRepositoryImpl extends UserRepository {
+class AppRepositoryImpl extends AppRepository {
   constructor() {
     super();
     this.dynamodb = dynamodb;
     this.docClient = docClient;
-    this.tableName = 'user';
+    this.tableName = 'app';
   }
   async createTable() {
-    const params = require('../../../../schemas/user.json');
+    const params = require('../../../../schemas/app.json');
     return this.dynamodb.createTable(params).promise();
   }
   async deleteTable() {
     return this.dynamodb.deleteTable({TableName: this.tableName}).promise();
   }
   // override
-  async getUser(id) {
+  async getApp(id) {
     const params = {
       Key: {
         id: {S: id},
@@ -39,7 +39,7 @@ class UserRepositoryImpl extends UserRepository {
     }
   }
   // override
-  async createUser(id, name) {
+  async createApp(id, name) {
     const params = {
       Item: {
         id: {S: id},
@@ -55,7 +55,7 @@ class UserRepositoryImpl extends UserRepository {
     }
   }
   // override
-  async listUsers(id) {
+  async listApps(id) {
     const params = {
       TableName: this.tableName,
       KeyConditions: {
@@ -74,4 +74,4 @@ class UserRepositoryImpl extends UserRepository {
   }
 }
 
-module.exports = UserRepositoryImpl;
+module.exports = AppRepositoryImpl;

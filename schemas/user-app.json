@@ -1,0 +1,32 @@
+{
+  "TableName": "user",
+  "KeySchema": [
+    { "AttributeName": "userId", "KeyType": "HASH" },
+    { "AttributeName": "appId", "KeyType": "RANGE" }
+  ],
+  "AttributeDefinitions": [
+    { "AttributeName": "userId", "AttributeType": "S" },
+    { "AttributeName": "appId", "AttributeType": "S" }
+  ],
+  "GlobalSecondaryIndexes": [
+    {
+      "appIndex": {
+        "KeySchema": [
+          {
+            "AttributeName": "appId",
+            "KeyType": "HASH"
+          },
+          {
+            "AttributeName": "userId",
+            "KeyType": "RANGE"
+          }
+        ],
+        "Projection": { "ProjectionType": "ALL" }
+      }
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 5,
+    "WriteCapacityUnits": 5
+  }
+}

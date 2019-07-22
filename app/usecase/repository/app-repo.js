@@ -1,16 +1,16 @@
 'use strict';
 
-class UserRepository {
+class AppRepository {
   constructor() {}
-  async listUsers() {
+  async listApps() {
     throw new Error('Not Implimented');
   }
-  async getUser() {
+  async getApp() {
     throw new Error('Not Implimented');
   }
-  async createUser() {
+  async createApp() {
     throw new Error('Not Implimented');
   }
 }
 
-module.exports = UserRepository;
+module.exports = AppRepository;
