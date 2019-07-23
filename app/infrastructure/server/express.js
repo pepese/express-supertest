@@ -11,7 +11,7 @@ const logger = require('../../logger').getLogger();
 const app = express();
 app.use(httpContext.middleware);
 app.use((req, res, next) => {
-  httpContext.set('reqId', uuid.v4);
+  httpContext.set('reqId', uuid.v4());
   next();
 });
 app.use(express.json());

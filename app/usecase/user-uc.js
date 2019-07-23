@@ -1,15 +1,17 @@
 'use strict';
 
 const UserRepository = require('../infrastructure/datastore/dynamodb/user-repo-impl');
-const repository = new UserRepository();
+const userRepository = new UserRepository();
+const ContextRepository = require('../infrastructure/datastore/local/context-repo-impl');
 
 const getUser = async id => {
-  const result = await repository.getUser(id);
+  console.log('!!!!! (reqId, loginId) = (%o, %o) !!!!!', ContextRepository.get('reqId'), ContextRepository.get('id'));
+  const result = await userRepository.getUser(id);
   return result;
 };
 
 const putUser = async (id, name) => {
-  await repository.createUser(id, name);
+  await userRepository.createUser(id, name);
   return {message: 'SUCCESS'};
 };
 
