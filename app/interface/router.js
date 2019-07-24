@@ -2,9 +2,17 @@
 
 const express = require('express');
 const router = express.Router();
+const Interceptor = require('./interceptor');
 const userUC = require('../usecase/user-uc');
 const tokenUC = require('../usecase/token-uc');
 const pdfUC = require('../usecase/pdf-uc');
+const echoUC = require('../usecase/echo-uc');
+
+router.get('/echo', Interceptor.init);
+router.get('/echo', (req, res) => {
+  echoUC.echo();
+  res.status(200).send();
+});
 
 router.post('/auth', (req, res) => {
   const id = req.body.id;
