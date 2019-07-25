@@ -4,6 +4,14 @@ const winston = require('winston');
 const httpContext = require('express-http-context');
 
 const winstonLogger = winston.createLogger({
+  levels: {
+    fatal: 0,
+    error: 1,
+    warn: 2,
+    info: 3,
+    debug: 4,
+    trace: 5,
+  },
   format: winston.format.combine(
     winston.format.timestamp(),
     winston.format.json()
@@ -11,39 +19,54 @@ const winstonLogger = winston.createLogger({
   transports: [new winston.transports.Console()],
 });
 
-// exports.getLogger = () => {
-//   let logger = httpContext.get('logger');
-//   if (!logger) {
-//     const reqId = httpContext.get('reqId');
-//     console.log('@logger reqId is %s .', reqId);
-//     logger = winstonLogger.child({reqId: reqId});
-//     httpContext.set('logger', logger);
-//   }
-//   return logger;
-// };
-
-exports.init = () => {
-  const logger = winstonLogger.child({reqId: httpContext.get('reqId')});
-  httpContext.set('logger', logger);
+const getLogger = () => {
+  let logger = httpContext.get('logger');
+  if (!logger) {
+    const logKeys = httpContext.get('log-keys');
+    if (logKeys) {
+      const additionalLog = {};
+      for ( let key of logKeys ) {
+        const value = httpContext.get(key);
+        if (value) {
+          additionalLog[key] = value;
+        }
+      }
+      logger = winstonLogger.child(additionalLog);
+      httpContext.set('logger');
+      return logger;
+    } else {
+      return winstonLogger;
+    }
+  } else {
+    return logger;
+  }
 }
 
-// exports.getLogger = () => {
-//   let logger = httpContext.get('logger');
-//   if (!logger) {
-//     this.init();
-//     logger = httpContext.get('logger');
-//   }
-//   if (!logger) {
-//     throw new Error('Logger is not initted.');
-//   }
-//   return logger;
-// }
-
-exports.getLogger = () => {
-  const logger = httpContext.get('logger');
-  if (logger) {
-    return logger;
-  } else {
-    return winstonLogger.child({reqId: httpContext.get('reqId')});
-  }
+exports.log = (...args) => {
+  const logger = getLogger();
+  logger.log(args);
+}
+exports.fatal = (...args) => {
+  const logger = getLogger();
+  logger.fatal(args);
+}
+exports.error = (...args) => {
+  const logger = getLogger();
+  logger.error(args);
+}
+exports.warn = (...args) => {
+  const logger = getLogger();
+  logger.warn(args);
+}
+exports.info = (...args) => {
+  const logger = getLogger();
+  logger.info(args);
+}
+exports.debug = (...args) => {
+  const logger = getLogger();
+  logger.debug(args);
+}
+exports.trace = (...args) => {
+  const logger = getLogger();
+  logger.trace(args);
 }

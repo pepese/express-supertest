@@ -8,10 +8,19 @@ const tokenUC = require('../usecase/token-uc');
 const pdfUC = require('../usecase/pdf-uc');
 const echoUC = require('../usecase/echo-uc');
 
-router.get('/echo', Interceptor.init);
+/////////////////////
+// access logging
+/////////////////////
+
+router.get('/echo', Interceptor.accessLogging);
+
+/////////////////////
+// application logics
+/////////////////////
+
 router.get('/echo', (req, res) => {
-  echoUC.echo();
-  res.status(200).send();
+  const result = echoUC.echo();
+  res.status(200).json(result);
 });
 
 router.post('/auth', (req, res) => {

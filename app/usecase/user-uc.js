@@ -2,10 +2,8 @@
 
 const UserRepository = require('../infrastructure/datastore/dynamodb/user-repo-impl');
 const userRepository = new UserRepository();
-const ContextRepository = require('../infrastructure/datastore/local/context-repo-impl');
 
 const getUser = async id => {
-  console.log('!!!!! (reqId, loginId) = (%o, %o) !!!!!', ContextRepository.get('reqId'), ContextRepository.get('id'));
   const result = await userRepository.getUser(id);
   return result;
 };

@@ -1,6 +1,6 @@
 'use strict';
 
-const logger = require('../../../logger').getLogger();
+const logger = require('../../../logger');
 const UserRepository = require('../../../usecase/repository/user-repo');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;

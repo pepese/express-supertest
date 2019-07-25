@@ -16,18 +16,18 @@ describe('app/logger.js', () => {
     context.ns.run(() =>
       (function() {
         ContextRepository.set('reqId', 'testId');
-        const logger = require('../logger').getLogger();
+        const logger = require('../logger');
         logger.info('hoge');
         expect(global.console.log).toHaveBeenCalledWith(
           expect.stringMatching(
-            /{"reqId":"testId","message":"hoge","level":"info","timestamp":"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}Z"}/
+            /{"message":\["hoge"\],"level":"info","timestamp":"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}Z"}/
           )
         );
       })()
     );
   });
   test('info object', () => {
-    const logger = require('../logger').getLogger();
+    const logger = require('../logger');
     logger.info({
       column1: 'hoge',
       column2: 'fuge',
