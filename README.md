@@ -1,3 +1,48 @@
+# ロギング
+
+## レベル
+
+|Level|説明|
+|:----|:---|
+|fatal|即座に対応が必要なエラー。|
+|error|ベストエフォートで対応が必要なエラー。|
+|warn |すぐに問題になることはないが、後々対応が必要、もしくは今後 error になりそうな事象。|
+|info |自分サーバ・プロセス外へのアクセスやサードパーティモジュールを利用する場合の入力情報などを出力。|
+|debug|商用・本番では出力しないデバッグ用の情報。|
+|trace|商用・本番では出力しない debug よりさらに詳細な情報。|
+
+## レスポンスとログ出力
+
+レスポンスベースで整理する。
+
+|Level|errorCode|status|type                  |mesage|説明|
+|:----|:--------|:-----|:---------------------|:-----|:---|
+|fatal|FATAL001 |-     |Service Start Failure |      |アプリケーションサービスの起動に失敗。|
+|error|ERROR001 |500   |Internal Server Error |      |ハンドリング不可能なエラーが発生。|
+|error|ERROR002 |500   |Database Access Error |      |データベースアクセスでエラーが発生。|
+|error|ERROR003 |500   |API Access Error      |      |APIアクセスでエラーが発生。|
+|warn |WARN001  |400   |Bad Request           |      |リクエストに不正がある。|
+|warn |WARN002  |401   |Unauthorized          |      |認証エラーが発生。|
+|warn |WARN003  |403   |Forbidden             |      |権限の無いアクセス。|
+|warn |WARN004  |404   |Not Found             |      |URIもしくは検索を依頼されたリソースが見つからない。サービスによっては空 body/200 statusで返却することを検討。|
+|warn |WARN005  |405   |Method Not Allowed    |      |存在しない HTTP メソッドでのアクセス。許可が無い場合は 403/Forbidden で返却する。|
+|warn |WARN006  |406   |Not Acceptable        |      |Accept-* ヘッダで準備のないものを依頼された場合。|
+|warn |WARN007  |409   |Conflict              |      |依頼内容を実行するとリソース競合が発生するため拒否。|
+|warn |WARN008  |415   |Unsupported Media Type|      |処理できない Content-Type で依頼された。|
+|warn |WARN009  |422   |Unprocessable Entity  |      |入力値のバリデーションチェックでエラーが発生。400/Bad Request で返却するか悩む。|
+
+レスポンスボディは以下。
+
+```
+{
+  "errorCode": "xxxxx",
+  "type": "xxxxx",
+  "message": "xxxxx"
+}
+```
+
+上記を加味して何をログ出力するかはこれから整理。
+
 # reqId の設定
 
 `express-http-context` を利用して 1 リクエスト中に利用できる key-value に reqId を設定する。  
