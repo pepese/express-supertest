@@ -1,6 +1,24 @@
-# ロギング
+# express-supertest
 
-## レベル
+![node.js](https://img.shields.io/badge/node.js-v12.4.0-brightgreen)
+![npm version](https://img.shields.io/badge/npm%20package-v6.10.2-brightgreen)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+![Coverage lines](./coverage/badge-lines.svg)
+![Coverage functions](./coverage/badge-functions.svg)
+![Coverage branches](./coverage/badge-branches.svg)
+![Coverage statements](./coverage/badge-statements.svg)
+<!-- description -->
+[SuperTest](https://github.com/visionmedia/supertest) をやりたいが為に作ったプロジェクト。  
+関係ないこともやってる。
+
+## バッジ
+
+[shields.io](https://shields.io/) で好きなバッジ作れる。  
+カバレッジは [jest-coverage-badges](https://github.com/pamepeixinho/jest-coverage-badges) で出した。
+
+## ロギング
+
+### レベル
 
 |Level|説明|
 |:----|:---|
@@ -11,7 +29,7 @@
 |debug|商用・本番では出力しないデバッグ用の情報。|
 |trace|商用・本番では出力しない debug よりさらに詳細な情報。|
 
-## レスポンスとログ出力
+### レスポンスとログ出力
 
 レスポンスベースで整理する。
 
@@ -41,19 +59,28 @@
 }
 ```
 
-上記を加味して何をログ出力するかはこれから整理。
+上記を加味して何をログ出力するかはこれから整理。（TODO）
 
-# reqId の設定
+### ロガー
 
-`express-http-context` を利用して 1 リクエスト中に利用できる key-value に reqId を設定する。  
+ロガーは [winston](https://github.com/winstonjs/winston) 。  
+リクエストロガーに [morgan](https://github.com/expressjs/morgan) とか [express-winston](https://github.com/bithavoc/express-winston) があるが、個人的に使いにくかったので使ってない。  
+代わりに [on-headers](https://github.com/jshttp/on-headers) と [on-finished](https://github.com/jshttp/on-finished) を使って自分で実装。
+
+### reqId の設定
+
+[express-http-context](https://github.com/skonves/express-http-context) を利用して 1 リクエスト中に利用できる key-value に リクエスト ID ・トレース ID （ reqId ）を設定する。  
 その値を logger が取得してログ出力時に reqId を付与する。  
 reqId には uuidv4 を利用する。  
-なお、`express-http-context` では スレッドローカルのように動作する **Continuation-local storage** が利用される。  
-詳しくは [ここ](https://github.com/jeff-lewis/cls-hooked#readme) 。
+なお、[express-http-context](https://github.com/skonves/express-http-context) では スレッドローカルのように動作する **Continuation-local storage** が利用される。（厳密にはスレッドローカルではない。）  
+詳しくは [cls-hooked](https://github.com/jeff-lewis/cls-hooked#readme) を参照 。
 
-# JWT
+## JWT
 
-## 予約済みクレーム名
+[node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) を利用してアクセストークンを実現した。  
+鍵管理については参考にしないこと。
+
+### 予約済みクレーム名
 
 Payload で予約されたパラメータは以下。
 
@@ -69,13 +96,23 @@ Payload で予約されたパラメータは以下。
 
 - [参考](https://qiita.com/keitatata/items/fa89f007de21e286df17)
 
-# JSON Schema
+## バリデーション
+
+### 入力チェック
+
+HTTP リクエストのバリデーションは [express-validator](https://github.com/express-validator/express-validator) で実現。（TODO）
+
+### JSON Schema
+
+JSON Schema および Ajv を利用して JSON のバリデーションを実現した。
 
 - [json-schema.org](https://json-schema.org/)
 - [Ajv: Another JSON Schema Validator](https://github.com/epoberezkin/ajv)
     - Ajv version 6.0.0 that supports JSON Schema draft-07 is released.
 
-# MongoDB
+## MongoDB
+
+以下のように Docker でローカル実行できる。
 
 ```bash
 $ docker pull mongo:3.6.13-xenial
@@ -84,6 +121,8 @@ $ docker exec -it mongo bash
 :/# mongo
 >
 ```
+
+### MongoDB 基礎
 
 |MongoDB|RDB|
 |:---|:---|
@@ -120,6 +159,8 @@ BSON（ Binary JSON ）のデータ型。（ [参考](https://docs.mongodb.com/m
 
 `ISODate` は文字列を `Date` へ変換するユーティリティであって型ではない。
 
+### Mongo Shell
+
 - `use [DB]` : DB の選択。無ければ作成される。
 - `show dbs` : DB 一覧。
 - `show collections` : コレクション一覧。
@@ -136,45 +177,22 @@ BSON（ Binary JSON ）のデータ型。（ [参考](https://docs.mongodb.com/m
     - `findAndModify()` : 検索と修正を一括で行う。
     - `remove()` : ドキュメントの削除。
 
-## Jest で MongoDB アプリをテストするとき
+### Jest で MongoDB アプリをテストするとき
 
+MongoDB へのコネクションが残ってしまい、正常に Jest テストが終了しない事象が発生することがある。  
 [ここ](https://jestjs.io/docs/en/mongodb)を参考に以下を利用してもよい。
 
 ```bash
 $ npm i -D @shelf/jest-mongodb
 ```
 
-## 操作メモ
+## PDF 作成
 
-```
-{item1:{item2:{item3:"2014-10-10T13:50:40+09:00"}}}
-db.sample.insert({item1:{item2:{item3:"2014-10-10T13:50:40+09:00"}}})
-db.sampple.find()
-db.sampple.find({item1:{item2:{item3: {$gte:"2014-10-10T13:50:40+09:00"}}}}) : だめ
-db.sample.insert({item1:{item2:{item4:ISODate("2014-10-10T13:50:40+09:00")}}})
-db.sampple.find({item1:{item2:{item4: {$gte:ISODate("2014-10-10T13:50:40+09:00")}}}}) : NG
-db.sampple.find({item1.item2.item3: {$gte:"2014-10-10T13:50:40+09:00"}}) : NG
-
-db.sampple.find({"item1.item2.item3": {$gte:"2014-10-10T13:50:40+09:00"}}) : NG
-db.sampple.find({"item1.item2.item4": {"$gte":ISODate("2014-10-10T13:50:40+09:00")}}) : NG
+右往左往したが、 [pdfmake](https://github.com/bpampuch/pdfmake) に落ち着いた。（内部で [pdfkit](https://github.com/foliojs/pdfkit) を利用している。）  
+HTML から PDF 変換したらキレイで楽かなと思い [node-html-pdf](https://github.com/marcbachmann/node-html-pdf) と [puppeteer](https://github.com/GoogleChrome/puppeteer) で作ってみたが、モジュールサイズがデカすぎてコンテナサイズが GB サイズになったのでやめた。。。ヘッドレスブラウザとは言えデカいのね。。。
 
 
-db.sample2.insert({item1: ISODate("2014-10-10T13:50:40+09:00")})
-db.sample2.find({item1: {"$gte":ISODate("2014-10-10T13:50:40+09:00")}}) : OK
+## Linter
 
-
-db.sample2.insert({item2: {item3: ISODate("2014-10-10T13:50:40+09:00")}})
-db.sample2.find({"item2.item3": {"$gte":ISODate("2014-10-10T13:50:40+09:00")}})
-
-db.sample3.insert({item1:{item2:{item3:ISODate("2014-10-10T13:50:40+09:00")}}})
-db.sample3.find({"item1.item2.item3": {"$gte":ISODate("2014-10-10T13:50:40+09:00")}}) : OK
-
-db.sample4.insert({item1: "2014-10-10T13:50:40+09:00"})
-db.sample4.find({item1: {"$gte":"2014-10-10T13:50:40+09:00"}})
-
-db.sample5.insert({item1:{item2:{item3:"2014-10-10T13:50:40+09:00"}}})
-db.sample5.find({"item1.item2.item3": {"$gte":"2014-10-10T13:50:40+09:00"}}) : OK
-```
-
-- ISODate は必要？ -> 日付を文字列として格納するとaggregateで日付として扱えない -> ISODate を適用して挿入するしかない模様、、、
-- ISODate は Date型へ変換してるだけ
+[eslint](https://github.com/eslint/eslint) と厳しいと噂の [Uber の設定](https://github.com/uber-web/uber-eslint)を参考に設定した。  
+[TypeScript](https://github.com/microsoft/TypeScript) にするか悩むが、型ファイルとかトランスパイルとかウザそうなので、そのうち ECMAScript に取り込まれることを祈って見送り。
