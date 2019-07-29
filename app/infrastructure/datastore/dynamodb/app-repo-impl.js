@@ -12,7 +12,7 @@ class AppRepositoryImpl extends AppRepository {
     this.tableName = 'app';
   }
   async createTable() {
-    const params = require('../../../../schemas/app.json');
+    const params = require('../../../../dynamodb-schema/app.json');
     return this.dynamodb.createTable(params).promise();
   }
   async deleteTable() {

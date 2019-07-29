@@ -12,7 +12,7 @@ class UserRepositoryImpl extends UserRepository {
     this.tableName = 'user';
   }
   async createTable() {
-    const params = require('../../../../schemas/user.json');
+    const params = require('../../../../dynamodb-schema/user.json');
     return this.dynamodb.createTable(params).promise();
   }
   async deleteTable() {
