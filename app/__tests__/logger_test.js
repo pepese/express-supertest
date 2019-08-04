@@ -1,7 +1,6 @@
 'use strict';
 
-const context = require('express-http-context');
-const ContextRepository = require('../infrastructure/datastore/local/context-repo-impl');
+const context = require('../context');
 
 // console 呼び出し時の引数取得用
 // global.console.log で引数を取得できる。
@@ -13,9 +12,9 @@ global.console = {
 
 describe('app/logger.js', () => {
   test('info string', () => {
-    context.ns.run(() =>
+    context.ns().run(() =>
       (function() {
-        ContextRepository.set('reqId', 'testId');
+        context.set('reqId', 'testId');
         const logger = require('../logger');
         logger.info('hoge');
         expect(global.console.log).toHaveBeenCalledWith(

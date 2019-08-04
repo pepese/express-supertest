@@ -1,6 +1,6 @@
 'use strict';
 
-const ContextRepository = require('../infrastructure/datastore/local/context-repo-impl');
+const context = require('../context');
 const onHeaders = require('on-headers');
 const onFinished = require('on-finished');
 const logger = require('../logger');
@@ -12,25 +12,22 @@ const validate = ajv.compile(userJsonSchema);
 class Interceptor {
   static accessLogging(req, res, next) {
     onHeaders(res, () => {
-      ContextRepository.set('startAt', process.hrtime());
+      context.set('startAt', process.hrtime());
     });
     onFinished(res, () => {
-      const startAt = ContextRepository.get('startAt');
+      const startAt = context.get('startAt');
       const diff = process.hrtime(startAt);
-      const responseTime = diff[0] * 1e9+ diff[1];
-      logger.info(
-        `${req.method} ${req.originalUrl}`,
-        {
-          req: {
-            headers: req.headers,
-            query: req.query,
-          },
-          res: {
-            status: res.statusCode,
-            responseTime: responseTime,
-          },
-        }
-      );
+      const responseTime = diff[0] * 1e9 + diff[1];
+      logger.info(`${req.method} ${req.originalUrl}`, {
+        req: {
+          headers: req.headers,
+          query: req.query,
+        },
+        res: {
+          status: res.statusCode,
+          responseTime: responseTime,
+        },
+      });
     });
     next();
   }

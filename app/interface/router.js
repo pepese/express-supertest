@@ -63,7 +63,7 @@ router.put('/user', async (req, res) => {
     },
   });
 });
-router.get('pdf', async (req, res) => {
+router.get('/pdf', async (req, res) => {
   const result = await pdfUC.getPdf();
   res.send(result);
 });

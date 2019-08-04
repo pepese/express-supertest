@@ -1,15 +1,15 @@
 'use strict';
 
-const ContextRepository = require('../infrastructure/datastore/local/context-repo-impl');
+const context = require('../context');
 const logger = require('../logger');
 
 class EchoUsecase {
   static echo() {
     logger.info('Echo called.');
     return {
-      'app': ContextRepository.get('app'),
-      'version': ContextRepository.get('version'),
-    }
+      app: context.get('app'),
+      version: context.get('version'),
+    };
   }
 }
 

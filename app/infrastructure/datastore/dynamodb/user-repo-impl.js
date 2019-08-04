@@ -59,9 +59,9 @@ class UserRepositoryImpl extends UserRepository {
     const params = {
       TableName: this.tableName,
       KeyConditions: {
-        'id': {
+        id: {
           ComparisonOperator: 'EQ',
-          AttributeValueList: [ id ]
+          AttributeValueList: [id],
         },
       },
     };

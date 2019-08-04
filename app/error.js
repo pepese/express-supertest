@@ -11,20 +11,23 @@ class AppError extends Error {
 }
 
 const errorCodes = {
-  ERROR001: { // データベースアクセスエラー
+  ERROR001: {
+    // データベースアクセスエラー
     code: 'ERROR001',
     status: 500,
-    message: 'Database access error.'
+    message: 'Database access error.',
   },
-  WARN001: { // ID/Password 不整合などの認証エラー
+  WARN001: {
+    // ID/Password 不整合などの認証エラー
     code: 'WARN001',
     status: 400,
-    message: 'Resource not found.'
+    message: 'Resource not found.',
   },
-  WARN002: { // データ検索の結果、何も見つからなかった
+  WARN002: {
+    // データ検索の結果、何も見つからなかった
     code: 'WARN002',
     status: 400,
-    message: 'Resource not found.'
+    message: 'Resource not found.',
   },
 };
 

@@ -1,7 +1,7 @@
 'use strict';
 
 const winston = require('winston');
-const httpContext = require('express-http-context');
+const context = require('./context');
 
 const winstonLogger = winston.createLogger({
   levels: {
@@ -20,19 +20,19 @@ const winstonLogger = winston.createLogger({
 });
 
 const getLogger = () => {
-  let logger = httpContext.get('logger');
+  let logger = context.get('logger');
   if (!logger) {
-    const logKeys = httpContext.get('log-keys');
+    const logKeys = context.get('log-keys');
     if (logKeys) {
       const additionalLog = {};
-      for ( let key of logKeys ) {
-        const value = httpContext.get(key);
+      for (let key of logKeys) {
+        const value = context.get(key);
         if (value) {
           additionalLog[key] = value;
         }
       }
       logger = winstonLogger.child(additionalLog);
-      httpContext.set('logger');
+      context.set('logger');
       return logger;
     } else {
       return winstonLogger;
@@ -40,33 +40,33 @@ const getLogger = () => {
   } else {
     return logger;
   }
-}
+};
 
 exports.log = (...args) => {
   const logger = getLogger();
   logger.log(args);
-}
+};
 exports.fatal = (...args) => {
   const logger = getLogger();
   logger.fatal(args);
-}
+};
 exports.error = (...args) => {
   const logger = getLogger();
   logger.error(args);
-}
+};
 exports.warn = (...args) => {
   const logger = getLogger();
   logger.warn(args);
-}
+};
 exports.info = (...args) => {
   const logger = getLogger();
   logger.info(args);
-}
+};
 exports.debug = (...args) => {
   const logger = getLogger();
   logger.debug(args);
-}
+};
 exports.trace = (...args) => {
   const logger = getLogger();
   logger.trace(args);
-}
+};

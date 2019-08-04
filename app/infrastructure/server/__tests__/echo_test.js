@@ -9,9 +9,9 @@ describe('ECHO TEST', () => {
     return request(app)
       .get('/echo')
       .expect(200)
-       .then(res => {
-         expect(res.body.app).toEqual(config.APP_NAME);
-         expect(res.body.version).toEqual(config.APP_VERSION);
-       });
+      .then(res => {
+        expect(res.body.app).toEqual(config.APP_NAME);
+        expect(res.body.version).toEqual(config.APP_VERSION);
+      });
   });
 });

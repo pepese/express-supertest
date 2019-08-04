@@ -1,7 +1,7 @@
 'use strict';
 
 const TokenDomain = require('../domain/token-domain');
-const ContextRepository = require('../infrastructure/datastore/local/context-repo-impl');
+const context = require('../context');
 
 const auth = (id, password) => {
   // TODO: MUST check id and password.
@@ -19,7 +19,7 @@ const verifyJWT = (req, res, next) => {
       );
       if (result && result.id) {
         res.locals.id = result.id;
-        ContextRepository.set('id', result.id);
+        context.set('id', result.id);
         next();
       }
     }

@@ -11,5 +11,5 @@ const docClient = new AWS.DynamoDB.DocumentClient();
 
 module.exports = {
   dynamodb: dynamodb,
-  docClient: docClient
-}
+  docClient: docClient,
+};
