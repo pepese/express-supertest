@@ -32,26 +32,41 @@ const getPdf = async () => {
   return pdfBase64;
 };
 
-const getPdfFromHtml = async () => {
-  const lines = ['TEST TEXT', 'TEST TEXT', 'TEST TEXT'];
+const getHtml = () => {
+  const lines = [
+    'TEST TEXT',
+    'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    'yyyyy                          yyyyy',
+    'ああああああああああああああああああ', // 等幅フォントの場合、全角の幅は半角の倍
+    'あああああ　　　　　　　　あああああ', // 全角スペースもまた然り
+  ];
   let pdfBody = '';
   for (let i in lines) {
-    pdfBody += '<tr><td>' + lines[i] + '</td></tr>';
+    lines[i] = lines[i].replace(/ /g, '&nbsp;'); // 半角スペース
+    lines[i] = lines[i].replace(/　/g, '&emsp;'); // 全角スペース
+    // lines[i] = lines[i].replace(/　/g, '&nbsp;&nbsp;'); // 全角スペース
+    pdfBody += '<tr><td>' + lines[i] + '</td></tr>\n';
   }
   const html = `
   <!doctype html>
-  <html lang="ja>
+  <html lang="ja">
   <head></head>
   <body>
-  <div style= "font-family: monospace; ">
+  <div style="text-align: center;">
+  <div style="font-family: monospace; border: solid 1px #000; display: inline-block; text-align: left;">
   <table>
   ${pdfBody}
   </table>
   </div>
+  </div>
   </body>
   </html>
   `;
+  return html;
+};
 
+const getPdfFromHtml = async () => {
+  const html = getHtml();
   const makePdf = () => {
     return new Promise((resolve, reject) => {
       try {
@@ -92,7 +107,7 @@ const makePdf = () => {
     'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
     'yyyyy                          yyyyy',
     'ああああああああああああああああああ', // 等幅フォントの場合、全角の幅は半角の倍
-    'あああああ　　　　　　　　あああああ' // 全角スペースもまた然り
+    'あああああ　　　　　　　　あああああ', // 全角スペースもまた然り
   ];
   // parameter
   const maxWardNums = 36; // 横の半角文字数上限、全角は半角2文字分の扱い
@@ -127,6 +142,7 @@ const makePdf = () => {
 
 module.exports = {
   getPdf: getPdf,
+  getHtml: getHtml,
   getPdfFromHtml: getPdfFromHtml,
   makePdf: makePdf,
 };
