@@ -5,7 +5,7 @@ const router = express.Router();
 const Interceptor = require('./interceptor');
 const userUC = require('../usecase/user-uc');
 const tokenUC = require('../usecase/token-uc');
-const pdfUC = require('../usecase/pdf-uc');
+const pdfUC = require('../usecase/view-uc');
 const echoUC = require('../usecase/echo-uc');
 
 /////////////////////
