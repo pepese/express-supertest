@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">app/context.js | express-supertest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/context.js~Context.html">Context</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">app/context.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&apos;use strict&apos;;
+
+const httpContext = require(&apos;express-http-context&apos;);
+const uuid = require(&apos;uuid&apos;);
+const config = require(&apos;./config&apos;);
+
+/**
+ * &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x30B9;&#x30B3;&#x30FC;&#x30D7;&#x30FB;&#x30B9;&#x30EC;&#x30C3;&#x30C9;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30E9;&#x30A4;&#x30AF;&#x306A;&#x6A5F;&#x80FD;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x3002;&lt;br&gt;
+ * Express &#x306E;&#x30DF;&#x30C9;&#x30EB;&#x30A6;&#x30A7;&#x30A2;&#x306B;&#x4EE5;&#x4E0B;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;&#x3002;
+ * &lt;code&gt;&lt;pre&gt;
+ * app.use(context.middleware);
+ * app.use(context.init);
+ * &lt;/pre&gt;&lt;/code&gt;
+ */
+export default class Context {
+  /**
+   * Express &#x306E;&#x30DF;&#x30C9;&#x30EB;&#x30A6;&#x30A7;&#x30A2;&#x306B;&#x9069;&#x7528;&#x3059;&#x308B;&#x3002;
+   * @param {object} req - Express req object.
+   * @param {object} res - Express res object.
+   * @param {object} next - Express next object.
+   */
+  static middleware(req, res, next) {
+    httpContext.middleware(req, res, next);
+  }
+
+  /**
+   * &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8; ID &#x3001;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x540D;&#x3001;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3; &#x306E;&#x53D6;&#x5F97;&#x30FB;&#x8A2D;&#x5B9A;&#x3092;&#x884C;&#x3046;&#x3002;&lt;br&gt;
+   * &#x305D;&#x306E;&#x4ED6;&#x3001;&#x60C5;&#x5831;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306F;&#x3053;&#x3053;&#x3078;&#x8A18;&#x8F09;&#x306E;&#x3053;&#x3068;&#x3002;&lt;br&gt;
+   * &#x307E;&#x305F;&#x3001;&lt;code&gt;log-keys&lt;/code&gt;&#x3078;&#x30ED;&#x30B0;&#x51FA;&#x529B;&#x3057;&#x305F;&#x3044;&#x30AD;&#x30FC;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x3001;&#x30ED;&#x30AC;&#x30FC;&#x304B;&#x3089;&#x53C2;&#x7167;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;
+   * @todo &#x8FFD;&#x52A0;&#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x3044;&#x60C5;&#x5831;&#x306A;&#x3069;&#x3042;&#x308C;&#x3070;&#x3002;
+   * @param {object} req - Express req object.
+   * @param {object} res - Express res object.
+   * @param {object} next - Express next object.
+   */
+  static init(req, res, next) {
+    // req/res &#x7D10;&#x4ED8;&#x3051;
+    httpContext.ns.bindEmitter(req);
+    httpContext.ns.bindEmitter(res);
+    // &#x5024;&#x306E;&#x30BB;&#x30C3;&#x30C8;
+    let reqId;
+    if (req.header(&apos;X-Request-Id&apos;)) {
+      reqId = req.header(&apos;X-Request-Id&apos;);
+    } else if (req.header(&apos;X-Amzn-Trace-Id&apos;)) {
+      reqId = req.header(&apos;X-Amzn-Trace-Id&apos;);
+    } else {
+      reqId = uuid.v4();
+    }
+    httpContext.set(&apos;reqId&apos;, reqId);
+    httpContext.set(&apos;app&apos;, config.APP_NAME);
+    httpContext.set(&apos;version&apos;, config.APP_VERSION);
+    // &#x30ED;&#x30AC;&#x30FC;&#x306B;&#x8FFD;&#x52A0;&#x60C5;&#x5831;&#x3092;&#x6559;&#x3048;&#x308B; key
+    httpContext.set(&apos;log-keys&apos;, [&apos;reqId&apos;, &apos;app&apos;, &apos;version&apos;]);
+    next();
+  }
+
+  /**
+   * &#x30C6;&#x30B9;&#x30C8;&#x7528;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x306E;&#x3067;&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;&#x3002;
+   * @return {object} namespace object.
+   */
+  static ns() {
+    return httpContext.ns;
+  }
+
+  /**
+   * key-value store &#x7684;&#x306A;&#x611F;&#x3058;&#x3067;&#x4F7F;&#x3048;&#x308B; setter &#x3002;
+   * @param {object} key - Key.
+   * @param {object} value - Value.
+   */
+  static set(key, value) {
+    httpContext.set(key, value);
+  }
+
+  /**
+   * key-value store &#x7684;&#x306A;&#x611F;&#x3058;&#x3067;&#x4F7F;&#x3048;&#x308B; getter &#x3002;
+   * @param {object} key - Key.
+   * @return {object} - set &#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x8FD4;&#x5374;&#x3002;
+   */
+  static get(key) {
+    return httpContext.get(key);
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

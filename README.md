@@ -204,3 +204,30 @@ TODO
 ## docker-compose
 
 TODO
+
+## ESDoc
+
+所謂 Javadoc の ES 版。  
+JSDoc というものもあるが、こっちにした。  
+導入。
+
+```bash
+$ npm i -D esdoc esdoc-standard-plugin
+```
+
+`package.json` に設定書いた。（ [参考](https://esdoc.org/manual/config.html) ）
+
+```javascript
+{
+  "esdoc": {
+    "source": "./app",
+    "destination": "./docs",
+    "plugins": [{"name": "esdoc-standard-plugin"}]
+  },
+  "scripts": {
+    "esdoc": "esdoc"
+  }
+}
+```
+
+使えるタグは [ここ](https://esdoc.org/manual/tags.html) 。

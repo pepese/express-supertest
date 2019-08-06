@@ -1,0 +1,4064 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "app/.external-ecmascript.js",
+    "static": true,
+    "longname": "app/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "app/__tests__/context_test.js",
+    "content": "'use strict';\n\nconst context = require('../context');\n\ndescribe('app/context.js', () => {\n  test('set/get by string key and string value', () => {\n    context.ns().run(() =>\n      (function() {\n        context.set('test-key', 'test-value');\n        const result = context.get('test-key');\n        expect(result).toEqual('test-value');\n      })()\n    );\n  });\n  test('can not get in Continuation-Local Storage', () => {\n    context.ns().run(() =>\n      (function() {\n        const result = context.get('test-key');\n        expect(result).not.toEqual('test-value');\n      })()\n    );\n  });\n  test('set/get by string key and string value over callback', () => {\n    context.ns().run(() =>\n      (function() {\n        const callback = () => {\n          const result = context.get('test-key');\n          expect(result).toEqual('test-value');\n        };\n        (function(callback) {\n          context.set('test-key', 'test-value');\n          callback();\n        })(callback);\n      })()\n    );\n  });\n  test('set/get by string key and object value', () => {\n    context.ns().run(() =>\n      (function() {\n        context.set('test-key', {test: 'test'});\n        const result = context.get('test-key');\n        expect(result).toEqual({test: 'test'});\n      })()\n    );\n  });\n  test('set/get by object key and string value', () => {\n    context.ns().run(() =>\n      (function() {\n        context.set({test: 'test'}, 'test-value');\n        const result = context.get({test: 'test'});\n        expect(result).toEqual('test-value');\n      })()\n    );\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/__tests__/context_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "context",
+    "memberof": "app/__tests__/context_test.js",
+    "static": true,
+    "longname": "app/__tests__/context_test.js~context",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/__tests__/context_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "app/__tests__/error_test.js",
+    "content": "'use strict';\n\nconst AppError = require('../error').AppError;\n\ndescribe('app/error.js', () => {\n  test('can new', () => {\n    const err = new AppError('test');\n    // console.log('err.name: %o', err.name);\n    // console.log('err.message: %o', err.message);\n    // console.log('err.stack: %o', err.stack);\n    // console.log('err.errorCode: %o', err.errorCode);\n    // console.log('err instanceof AppError: %o', err instanceof AppError);\n    expect(err.name).toEqual('AppError');\n    expect(err.message).toEqual('test');\n    expect(err.stack.length).toBeGreaterThan(1);\n    expect(err.errorCode).toBeUndefined();\n    expect(err instanceof AppError).toEqual(true);\n  });\n  test('can new from Erro', () => {\n    const e = new Error('test');\n    const err = new AppError(e);\n    // console.log('err.name: %o', err.name);\n    // console.log('err.message: %o', err.message);\n    // console.log('err.stack: %o', err.stack);\n    // console.log('err.errorCode: %o', err.errorCode);\n    // console.log('err instanceof AppError: %o', err instanceof AppError);\n    expect(err.name).toEqual('AppError');\n    expect(err.message).toEqual('Error: test'); // メッセージに前の Error 名が引き継がれる\n    expect(err.stack.length).toBeGreaterThan(1);\n    expect(err.errorCode).toBeUndefined();\n    expect(err instanceof AppError).toEqual(true);\n  });\n  test('can new from Erro with errorCode', () => {\n    const e = new Error('test');\n    const err = new AppError(e, 'xxxxx');\n    // console.log('err.name: %o', err.name);\n    // console.log('err.message: %o', err.message);\n    // console.log('err.stack: %o', err.stack);\n    // console.log('err.errorCode: %o', err.errorCode);\n    // console.log('err instanceof AppError: %o', err instanceof AppError);\n    expect(err.name).toEqual('AppError');\n    expect(err.message).toEqual('Error: test'); // メッセージに前の Error 名が引き継がれる\n    expect(err.stack.length).toBeGreaterThan(1);\n    expect(err.errorCode).toEqual('xxxxx');\n    expect(err instanceof AppError).toEqual(true);\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/__tests__/error_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "AppError",
+    "memberof": "app/__tests__/error_test.js",
+    "static": true,
+    "longname": "app/__tests__/error_test.js~AppError",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/__tests__/error_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "app/__tests__/logger_test.js",
+    "content": "'use strict';\n\nconst context = require('../context');\n\n// console 呼び出し時の引数取得用\n// global.console.log で引数を取得できる。\nglobal.console = {\n  log: jest.fn(),\n  info: jest.fn(),\n  error: jest.fn(),\n};\n\ndescribe('app/logger.js', () => {\n  test('info string', () => {\n    context.ns().run(() =>\n      (function() {\n        context.set('reqId', 'testId');\n        const logger = require('../logger');\n        logger.info('hoge');\n        expect(global.console.log).toHaveBeenCalledWith(\n          expect.stringMatching(\n            /{\"message\":\\[\"hoge\"\\],\"level\":\"info\",\"timestamp\":\"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]{3}Z\"}/\n          )\n        );\n      })()\n    );\n  });\n  test('info object', () => {\n    const logger = require('../logger');\n    logger.info({\n      column1: 'hoge',\n      column2: 'fuge',\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/__tests__/logger_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "context",
+    "memberof": "app/__tests__/logger_test.js",
+    "static": true,
+    "longname": "app/__tests__/logger_test.js~context",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/__tests__/logger_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "app/app.js",
+    "content": "'use strict';\n\nconst app = require('./infrastructure/server/express');\nconst http = require('http');\n\nif (!module.parent) {\n  const server = http.createServer(app);\n  // listenポートを指定してHTTP serverを起動\n  server.listen('3000', () => console.log(`API running on localhost:3000`));\n}\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/app.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "app/app.js",
+    "static": true,
+    "longname": "app/app.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "http",
+    "memberof": "app/app.js",
+    "static": true,
+    "longname": "app/app.js~http",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "app/config.js",
+    "content": "'use strict';\n\nrequire('dotenv').config();\n\nexports.APP_NAME = process.env.APP_NAME || 'express-supertest';\nexports.APP_VERSION = process.env.APP_VERSION || 'undefined';\nexports.AWS_REGION = process.env.AWS_REGION || 'us-west-2';\nexports.DYNAMODB_ENDPOINT =\n  process.env.DYNAMODB_ENDPOINT || 'http://localhost:8000';\nexports.SECRET = process.env.SECRET || 'secret';\nexports.TOTP_TTL = process.env.TOTP_TTL || 1;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/config.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "app/context.js",
+    "content": "'use strict';\n\nconst httpContext = require('express-http-context');\nconst uuid = require('uuid');\nconst config = require('./config');\n\n/**\n * リクエストスコープ・スレッドローカルライクな機能を提供する。<br>\n * Express のミドルウェアに以下を適用する。\n * <code><pre>\n * app.use(context.middleware);\n * app.use(context.init);\n * </pre></code>\n */\nexport default class Context {\n  /**\n   * Express のミドルウェアに適用する。\n   * @param {object} req - Express req object.\n   * @param {object} res - Express res object.\n   * @param {object} next - Express next object.\n   */\n  static middleware(req, res, next) {\n    httpContext.middleware(req, res, next);\n  }\n\n  /**\n   * リクエスト ID 、アプリケーション名、アプリケーションバージョン の取得・設定を行う。<br>\n   * その他、情報を設定したい場合はここへ記載のこと。<br>\n   * また、<code>log-keys</code>へログ出力したいキーを設定し、ロガーから参照するようにしている。\n   * @todo 追加で設定したい情報などあれば。\n   * @param {object} req - Express req object.\n   * @param {object} res - Express res object.\n   * @param {object} next - Express next object.\n   */\n  static init(req, res, next) {\n    // req/res 紐付け\n    httpContext.ns.bindEmitter(req);\n    httpContext.ns.bindEmitter(res);\n    // 値のセット\n    let reqId;\n    if (req.header('X-Request-Id')) {\n      reqId = req.header('X-Request-Id');\n    } else if (req.header('X-Amzn-Trace-Id')) {\n      reqId = req.header('X-Amzn-Trace-Id');\n    } else {\n      reqId = uuid.v4();\n    }\n    httpContext.set('reqId', reqId);\n    httpContext.set('app', config.APP_NAME);\n    httpContext.set('version', config.APP_VERSION);\n    // ロガーに追加情報を教える key\n    httpContext.set('log-keys', ['reqId', 'app', 'version']);\n    next();\n  }\n\n  /**\n   * テスト用に作成したので、基本使用しない。\n   * @return {object} namespace object.\n   */\n  static ns() {\n    return httpContext.ns;\n  }\n\n  /**\n   * key-value store 的な感じで使える setter 。\n   * @param {object} key - Key.\n   * @param {object} value - Value.\n   */\n  static set(key, value) {\n    httpContext.set(key, value);\n  }\n\n  /**\n   * key-value store 的な感じで使える getter 。\n   * @param {object} key - Key.\n   * @return {object} - set で設定したオブジェクトを返却。\n   */\n  static get(key) {\n    return httpContext.get(key);\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/context.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "httpContext",
+    "memberof": "app/context.js",
+    "static": true,
+    "longname": "app/context.js~httpContext",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/context.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "uuid",
+    "memberof": "app/context.js",
+    "static": true,
+    "longname": "app/context.js~uuid",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/context.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "variable",
+    "name": "config",
+    "memberof": "app/context.js",
+    "static": true,
+    "longname": "app/context.js~config",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/context.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "class",
+    "name": "Context",
+    "memberof": "app/context.js",
+    "static": true,
+    "longname": "app/context.js~Context",
+    "access": "public",
+    "export": true,
+    "importPath": "express-supertest/app/context.js",
+    "importStyle": "Context",
+    "description": "リクエストスコープ・スレッドローカルライクな機能を提供する。<br>\nExpress のミドルウェアに以下を適用する。\n<code><pre>\napp.use(context.middleware);\napp.use(context.init);\n</pre></code>",
+    "lineNumber": 15,
+    "interface": false
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "middleware",
+    "memberof": "app/context.js~Context",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/context.js~Context.middleware",
+    "access": "public",
+    "description": "Express のミドルウェアに適用する。",
+    "lineNumber": 22,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "req",
+        "description": "Express req object."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "res",
+        "description": "Express res object."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "next",
+        "description": "Express next object."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "init",
+    "memberof": "app/context.js~Context",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/context.js~Context.init",
+    "access": "public",
+    "description": "リクエスト ID 、アプリケーション名、アプリケーションバージョン の取得・設定を行う。<br>\nその他、情報を設定したい場合はここへ記載のこと。<br>\nまた、<code>log-keys</code>へログ出力したいキーを設定し、ロガーから参照するようにしている。",
+    "lineNumber": 35,
+    "todo": [
+      "追加で設定したい情報などあれば。"
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "req",
+        "description": "Express req object."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "res",
+        "description": "Express res object."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "next",
+        "description": "Express next object."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "ns",
+    "memberof": "app/context.js~Context",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/context.js~Context.ns",
+    "access": "public",
+    "description": "テスト用に作成したので、基本使用しない。",
+    "lineNumber": 60,
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "namespace object."
+    },
+    "params": []
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "set",
+    "memberof": "app/context.js~Context",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/context.js~Context.set",
+    "access": "public",
+    "description": "key-value store 的な感じで使える setter 。",
+    "lineNumber": 69,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "key",
+        "description": "Key."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "Value."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "get",
+    "memberof": "app/context.js~Context",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/context.js~Context.get",
+    "access": "public",
+    "description": "key-value store 的な感じで使える getter 。",
+    "lineNumber": 78,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "key",
+        "description": "Key."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "set で設定したオブジェクトを返却。"
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "app/domain/__tests__/token-domain_test.js",
+    "content": "'use strict';\n\nconst TokenDomain = require('../token-domain');\nlet jwtTmp = null;\nlet totpTmp = null;\n\ndescribe('token-domain.js', () => {\n  test('createJWT', () => {\n    const payload = {id: '1', password: 'password'};\n    jwtTmp = TokenDomain.createJWT(payload);\n    expect(jwtTmp).not.toEqual(null);\n  });\n  test('verifyJWT OK', () => {\n    const payload = TokenDomain.verifyJWT(jwtTmp);\n    expect(payload.id).toEqual('1');\n    expect(payload.password).toEqual('password');\n  });\n  test('createTOTP', () => {\n    expect(TokenDomain.createTOTP().length).toEqual(6);\n  });\n  test('verifyTOTP OK', () => {\n    expect(TokenDomain.verifyTOTP(totpTmp)).toEqual(null);\n  });\n  test('verifyTOTP NG', () => {\n    const sleep = (waitSeconds, someFunction) => {\n      return new Promise(resolve => {\n        setTimeout(() => {\n          resolve(someFunction());\n        }, waitSeconds * 1000);\n      });\n    };\n    const verify = () => {\n      const check = TokenDomain.verifyTOTP(totpTmp);\n      expect(check).toEqual(null);\n    };\n    return sleep(3, verify);\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/domain/__tests__/token-domain_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "variable",
+    "name": "TokenDomain",
+    "memberof": "app/domain/__tests__/token-domain_test.js",
+    "static": true,
+    "longname": "app/domain/__tests__/token-domain_test.js~TokenDomain",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/domain/__tests__/token-domain_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "jwtTmp",
+    "memberof": "app/domain/__tests__/token-domain_test.js",
+    "static": true,
+    "longname": "app/domain/__tests__/token-domain_test.js~jwtTmp",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/domain/__tests__/token-domain_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "variable",
+    "name": "totpTmp",
+    "memberof": "app/domain/__tests__/token-domain_test.js",
+    "static": true,
+    "longname": "app/domain/__tests__/token-domain_test.js~totpTmp",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/domain/__tests__/token-domain_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "app/domain/token-domain.js",
+    "content": "'use strict';\n\nconst jwt = require('jsonwebtoken');\nconst notp = require('notp');\nconst config = require('../config');\n\nclass Token {\n  constructor() {}\n  static createJWT(payload) {\n    payload.exp = Math.floor(Date.now() / 1000) + 24 * 60 * 60;\n    return jwt.sign(payload, config.SECRET);\n  }\n  static verifyJWT(token) {\n    try {\n      return jwt.verify(token, config.SECRET);\n    } catch (e) {\n      throw e;\n    }\n  }\n  static createTOTP() {\n    return notp.totp.gen(config.SECRET, {time: config.TOTP_TTL});\n  }\n  static verifyTOTP(token) {\n    try {\n      return notp.totp.verify(token, config.SECRET);\n    } catch (e) {\n      throw e;\n    }\n  }\n}\n\nmodule.exports = Token;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/domain/token-domain.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "variable",
+    "name": "jwt",
+    "memberof": "app/domain/token-domain.js",
+    "static": true,
+    "longname": "app/domain/token-domain.js~jwt",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/domain/token-domain.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "notp",
+    "memberof": "app/domain/token-domain.js",
+    "static": true,
+    "longname": "app/domain/token-domain.js~notp",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/domain/token-domain.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "config",
+    "memberof": "app/domain/token-domain.js",
+    "static": true,
+    "longname": "app/domain/token-domain.js~config",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/domain/token-domain.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "class",
+    "name": "Token",
+    "memberof": "app/domain/token-domain.js",
+    "static": true,
+    "longname": "app/domain/token-domain.js~Token",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/domain/token-domain.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/domain/token-domain.js~Token",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/domain/token-domain.js~Token#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "method",
+    "name": "createJWT",
+    "memberof": "app/domain/token-domain.js~Token",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/domain/token-domain.js~Token.createJWT",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "payload",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "verifyJWT",
+    "memberof": "app/domain/token-domain.js~Token",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/domain/token-domain.js~Token.verifyJWT",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "method",
+    "name": "createTOTP",
+    "memberof": "app/domain/token-domain.js~Token",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/domain/token-domain.js~Token.createTOTP",
+    "access": "public",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "verifyTOTP",
+    "memberof": "app/domain/token-domain.js~Token",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/domain/token-domain.js~Token.verifyTOTP",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "file",
+    "name": "app/error.js",
+    "content": "'use strict';\n\nclass AppError extends Error {\n  constructor(message, errorCode = null) {\n    super(message);\n    this.name = new.target.name; // name に AppError が入る\n    if (errorCode) {\n      this.errorCode = errorCode;\n    }\n  }\n}\n\nconst errorCodes = {\n  ERROR001: {\n    // データベースアクセスエラー\n    code: 'ERROR001',\n    status: 500,\n    message: 'Database access error.',\n  },\n  WARN001: {\n    // ID/Password 不整合などの認証エラー\n    code: 'WARN001',\n    status: 400,\n    message: 'Resource not found.',\n  },\n  WARN002: {\n    // データ検索の結果、何も見つからなかった\n    code: 'WARN002',\n    status: 400,\n    message: 'Resource not found.',\n  },\n};\n\nmodule.exports = {\n  AppError: AppError,\n  codes: errorCodes,\n};\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/error.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 83,
+    "kind": "class",
+    "name": "AppError",
+    "memberof": "app/error.js",
+    "static": true,
+    "longname": "app/error.js~AppError",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/error.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/error.js~AppError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/error.js~AppError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "member",
+    "name": "name",
+    "memberof": "app/error.js~AppError",
+    "static": false,
+    "longname": "app/error.js~AppError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "member",
+    "name": "errorCode",
+    "memberof": "app/error.js~AppError",
+    "static": false,
+    "longname": "app/error.js~AppError#errorCode",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "errorCodes",
+    "memberof": "app/error.js",
+    "static": true,
+    "longname": "app/error.js~errorCodes",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/error.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"ERROR001\": *, \"WARN001\": *, \"WARN002\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "file",
+    "name": "app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js",
+    "content": "'use strict';\n\nconst UserRepository = require('../user-repo-impl');\nconst repository = new UserRepository();\n\ndescribe('user.js', () => {\n  test('Table Creation Error', async () => {\n    try {\n      const result = await repository.createTable();\n      expect(result).toEqual(null);\n    } catch (e) {\n      expect(e.name).toEqual('ResourceInUseException');\n      expect(e.message).toEqual('Cannot create preexisting table');\n    }\n  });\n  // 該当データが存在しない場合はエラーではなく空データが返却される\n  test('getUser miss match', async () => {\n    try {\n      const result = await repository.getUser('1');\n      expect(result).toEqual({});\n    } catch (e) {\n      console.log('error.name: %s', e.name);\n      console.log('error.message: %s', e.message);\n      throw e;\n    }\n  });\n  test('createUser', async () => {\n    try {\n      const result = await repository.createUser('1', 'Ichiro');\n      expect(result).toEqual(true);\n    } catch (e) {\n      console.log('error.name: %s', e.name);\n      console.log('error.message: %s', e.message);\n      throw e;\n    }\n  });\n  test('getUser match', async () => {\n    try {\n      const result = await repository.getUser('1');\n      expect(result).toEqual({id: '1', name: 'Ichiro'});\n    } catch (e) {\n      console.log('error.name: %s', e.name);\n      console.log('error.message: %s', e.message);\n      throw e;\n    }\n  });\n  // すでに存在するキーに対して異なる項目値で putItem\n  test('createUser Same Key', async () => {\n    try {\n      const result = await repository.createUser('1', 'Ichiro_rename');\n      expect(result).toEqual(true);\n    } catch (e) {\n      console.log('error.name: %s', e.name);\n      console.log('error.message: %s', e.message);\n      throw e;\n    }\n  });\n  // 上記のオペレーションが更新として処理されていることを確認。。。\n  test('getUser match check putItem again', async () => {\n    try {\n      const result = await repository.getUser('1');\n      expect(result).toEqual({id: '1', name: 'Ichiro_rename'});\n    } catch (e) {\n      console.log('error.name: %s', e.name);\n      console.log('error.message: %s', e.message);\n      throw e;\n    }\n  });\n  test('listUsers', async () => {\n    const result = await repository.listUsers('1');\n    expect(result[0]).toEqual({id: '1', name: 'Ichiro_rename'});\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 89,
+    "kind": "variable",
+    "name": "UserRepository",
+    "memberof": "app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js~UserRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "variable",
+    "name": "repository",
+    "memberof": "app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js~repository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "app/usecase/repository/user-repo.js~UserRepository"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "file",
+    "name": "app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "content": "'use strict';\n\nconst dynamodb = require('./dynamodb').dynamodb;\nconst docClient = require('./dynamodb').docClient;\nconst AppRepository = require('../../../usecase/repository/app-repo');\n\nclass AppRepositoryImpl extends AppRepository {\n  constructor() {\n    super();\n    this.dynamodb = dynamodb;\n    this.docClient = docClient;\n    this.tableName = 'app';\n  }\n  async createTable() {\n    const params = require('../../../../dynamodb-schema/app.json');\n    return this.dynamodb.createTable(params).promise();\n  }\n  async deleteTable() {\n    return this.dynamodb.deleteTable({TableName: this.tableName}).promise();\n  }\n  // override\n  async getApp(id) {\n    const params = {\n      Key: {\n        id: {S: id},\n      },\n      TableName: this.tableName,\n    };\n    try {\n      const result = await this.dynamodb.getItem(params).promise();\n      const data = {};\n      if (result && result.Item && result.Item.name) {\n        data.id = id;\n        data.name = result.Item.name.S;\n      }\n      return data;\n    } catch (e) {\n      throw e;\n    }\n  }\n  // override\n  async createApp(id, name) {\n    const params = {\n      Item: {\n        id: {S: id},\n        name: {S: name},\n      },\n      TableName: this.tableName,\n    };\n    try {\n      const result = await this.dynamodb.putItem(params).promise();\n      return result != null;\n    } catch (e) {\n      throw e;\n    }\n  }\n  // override\n  async listApps(id) {\n    const params = {\n      TableName: this.tableName,\n      KeyConditions: {\n        id: {\n          ComparisonOperator: 'EQ',\n          AttributeValueList: [id],\n        },\n      },\n    };\n    try {\n      const result = await this.docClient.query(params).promise();\n      return result.Items;\n    } catch (e) {\n      throw e;\n    }\n  }\n}\n\nmodule.exports = AppRepositoryImpl;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 92,
+    "kind": "variable",
+    "name": "dynamodb",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~dynamodb",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "variable",
+    "name": "docClient",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~docClient",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "variable",
+    "name": "AppRepository",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "class",
+    "name": "AppRepositoryImpl",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/app-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "AppRepository"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 96,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "member",
+    "name": "dynamodb",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl#dynamodb",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "member",
+    "name": "docClient",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl#docClient",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "member",
+    "name": "tableName",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl#tableName",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 100,
+    "kind": "method",
+    "name": "createTable",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl#createTable",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "method",
+    "name": "deleteTable",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl#deleteTable",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "method",
+    "name": "getApp",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl#getApp",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "method",
+    "name": "createApp",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl#createApp",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "listApps",
+    "memberof": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl#listApps",
+    "access": "public",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "file",
+    "name": "app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "content": "'use strict';\n\nconst config = require('../../../config');\nconst AWS = require('aws-sdk');\nAWS.config.update({\n  region: config.AWS_REGION,\n  endpoint: config.DYNAMODB_ENDPOINT,\n});\nconst dynamodb = new AWS.DynamoDB();\nconst docClient = new AWS.DynamoDB.DocumentClient();\n\nmodule.exports = {\n  dynamodb: dynamodb,\n  docClient: docClient,\n};\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 106,
+    "kind": "variable",
+    "name": "config",
+    "memberof": "app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/dynamodb.js~config",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "variable",
+    "name": "AWS",
+    "memberof": "app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/dynamodb.js~AWS",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "variable",
+    "name": "dynamodb",
+    "memberof": "app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/dynamodb.js~dynamodb",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "variable",
+    "name": "docClient",
+    "memberof": "app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/dynamodb.js~docClient",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/dynamodb.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 110,
+    "kind": "file",
+    "name": "app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "content": "'use strict';\n\nconst dynamodb = require('./dynamodb').dynamodb;\nconst docClient = require('./dynamodb').docClient;\nconst UserRepository = require('../../../usecase/repository/user-repo');\n\nclass UserRepositoryImpl extends UserRepository {\n  constructor() {\n    super();\n    this.dynamodb = dynamodb;\n    this.docClient = docClient;\n    this.tableName = 'user';\n  }\n  async createTable() {\n    const params = require('../../../../dynamodb-schema/user.json');\n    return this.dynamodb.createTable(params).promise();\n  }\n  async deleteTable() {\n    return this.dynamodb.deleteTable({TableName: this.tableName}).promise();\n  }\n  // override\n  async getUser(id) {\n    const params = {\n      Key: {\n        id: {S: id},\n      },\n      TableName: this.tableName,\n    };\n    try {\n      const result = await this.dynamodb.getItem(params).promise();\n      const data = {};\n      if (result && result.Item && result.Item.name) {\n        data.id = id;\n        data.name = result.Item.name.S;\n      }\n      return data;\n    } catch (e) {\n      throw e;\n    }\n  }\n  // override\n  async createUser(id, name) {\n    const params = {\n      Item: {\n        id: {S: id},\n        name: {S: name},\n      },\n      TableName: this.tableName,\n    };\n    try {\n      const result = await this.dynamodb.putItem(params).promise();\n      return result != null;\n    } catch (e) {\n      throw e;\n    }\n  }\n  // override\n  async listUsers(id) {\n    const params = {\n      TableName: this.tableName,\n      KeyConditions: {\n        id: {\n          ComparisonOperator: 'EQ',\n          AttributeValueList: [id],\n        },\n      },\n    };\n    try {\n      const result = await this.docClient.query(params).promise();\n      return result.Items;\n    } catch (e) {\n      throw e;\n    }\n  }\n}\n\nmodule.exports = UserRepositoryImpl;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "variable",
+    "name": "dynamodb",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~dynamodb",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "variable",
+    "name": "docClient",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~docClient",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "variable",
+    "name": "UserRepository",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "class",
+    "name": "UserRepositoryImpl",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/dynamodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "UserRepository"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "member",
+    "name": "dynamodb",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl#dynamodb",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 117,
+    "kind": "member",
+    "name": "docClient",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl#docClient",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 118,
+    "kind": "member",
+    "name": "tableName",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl#tableName",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 119,
+    "kind": "method",
+    "name": "createTable",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl#createTable",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "method",
+    "name": "deleteTable",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl#deleteTable",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 121,
+    "kind": "method",
+    "name": "getUser",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl#getUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 122,
+    "kind": "method",
+    "name": "createUser",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl#createUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 123,
+    "kind": "method",
+    "name": "listUsers",
+    "memberof": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl#listUsers",
+    "access": "public",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "file",
+    "name": "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js",
+    "content": "'use strict';\n\nconst connection = require('../mongodb');\nconst UserRepository = require('../user-repo-impl');\nconst repository = new UserRepository();\nlet tmpID;\n\ndescribe('app/infrastructure/datastore/mongodb/user-repo-impl.js', () => {\n  afterAll(async () => {\n    return await connection.close(); // これをやらないとテストが正常終了しない。。。なんか効かない。。。\n  });\n  // 該当データが存在しない場合はエラーではなく空データが返却される\n  test('getUser miss match', async () => {\n    const result = await repository.getUser('1');\n    expect(result).toEqual([]);\n  });\n  test('createUser', async () => {\n    const result = await repository.createUser('Ichiro');\n    tmpID = result._id;\n    expect(result).not.toEqual(null);\n  });\n  test('getUser match', async () => {\n    const result = await repository.getUser(tmpID);\n    expect(result[0]['_doc']).toEqual({__v: 0, _id: tmpID, name: 'Ichiro'});\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 125,
+    "kind": "variable",
+    "name": "connection",
+    "memberof": "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js~connection",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "variable",
+    "name": "UserRepository",
+    "memberof": "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js~UserRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "variable",
+    "name": "repository",
+    "memberof": "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js~repository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "app/usecase/repository/user-repo.js~UserRepository"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "file",
+    "name": "app/infrastructure/datastore/mongodb/mongodb.js",
+    "content": "'use strict';\n\nconst mongoose = require('mongoose');\n\nconst connection = mongoose.createConnection('mongodb://localhost:27017/test', {\n  useNewUrlParser: true,\n});\n\nmodule.exports = connection;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/mongodb/mongodb.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 129,
+    "kind": "variable",
+    "name": "mongoose",
+    "memberof": "app/infrastructure/datastore/mongodb/mongodb.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/mongodb.js~mongoose",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/mongodb.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "variable",
+    "name": "connection",
+    "memberof": "app/infrastructure/datastore/mongodb/mongodb.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/mongodb.js~connection",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/mongodb.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "file",
+    "name": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "content": "'use strict';\n\nconst logger = require('../../../logger');\nconst UserRepository = require('../../../usecase/repository/user-repo');\nconst mongoose = require('mongoose');\nconst Schema = mongoose.Schema;\nconst uuid = require('uuid');\nconst UserSchema = new Schema({\n  _id: {type: String, default: uuid.v4},\n  name: String,\n});\nconst connection = require('./mongodb');\nconst UserModel = connection.model('User', UserSchema);\n\nclass UserRepositoryImpl extends UserRepository {\n  constructor() {\n    super();\n  }\n\n  // override\n  async getUser(id) {\n    try {\n      const query = UserModel.find({_id: id});\n      return await query.exec();\n    } catch (e) {\n      logger.error(e.stack);\n      throw e;\n    }\n  }\n\n  // override\n  async createUser(name) {\n    try {\n      const userDoc = new UserModel({name: name});\n      return await userDoc.save();\n    } catch (e) {\n      logger.error(e.stack);\n      throw e;\n    }\n  }\n}\n\nmodule.exports = UserRepositoryImpl;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 132,
+    "kind": "variable",
+    "name": "logger",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~logger",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "variable",
+    "name": "UserRepository",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 134,
+    "kind": "variable",
+    "name": "mongoose",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~mongoose",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "variable",
+    "name": "Schema",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~Schema",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "variable",
+    "name": "uuid",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~uuid",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 137,
+    "kind": "variable",
+    "name": "UserSchema",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserSchema",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "variable",
+    "name": "connection",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~connection",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "variable",
+    "name": "UserModel",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserModel",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "class",
+    "name": "UserRepositoryImpl",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "static": true,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserRepositoryImpl",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/datastore/mongodb/user-repo-impl.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "UserRepository"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserRepositoryImpl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserRepositoryImpl#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "method",
+    "name": "getUser",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserRepositoryImpl#getUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 143,
+    "kind": "method",
+    "name": "createUser",
+    "memberof": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserRepositoryImpl",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/infrastructure/datastore/mongodb/user-repo-impl.js~UserRepositoryImpl#createUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 144,
+    "kind": "file",
+    "name": "app/infrastructure/server/__tests__/echo_test.js",
+    "content": "'use strict';\n\nconst app = require('../express');\nconst request = require('supertest');\nconst config = require('../../../config');\n\ndescribe('ECHO TEST', () => {\n  test('POST /echo', () => {\n    return request(app)\n      .get('/echo')\n      .expect(200)\n      .then(res => {\n        expect(res.body.app).toEqual(config.APP_NAME);\n        expect(res.body.version).toEqual(config.APP_VERSION);\n      });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/server/__tests__/echo_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 145,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "app/infrastructure/server/__tests__/echo_test.js",
+    "static": true,
+    "longname": "app/infrastructure/server/__tests__/echo_test.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/__tests__/echo_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 146,
+    "kind": "variable",
+    "name": "request",
+    "memberof": "app/infrastructure/server/__tests__/echo_test.js",
+    "static": true,
+    "longname": "app/infrastructure/server/__tests__/echo_test.js~request",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/__tests__/echo_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 147,
+    "kind": "variable",
+    "name": "config",
+    "memberof": "app/infrastructure/server/__tests__/echo_test.js",
+    "static": true,
+    "longname": "app/infrastructure/server/__tests__/echo_test.js~config",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/__tests__/echo_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "file",
+    "name": "app/infrastructure/server/__tests__/express_test.js",
+    "content": "'use strict';\n\nconst app = require('../express');\nconst request = require('supertest');\nlet auth_token = null;\n\ndescribe('express.js', () => {\n  test('POST /auth', () => {\n    return request(app)\n      .post('/auth')\n      .set('Accept', 'application/json')\n      .set('Content-Type', 'application/json')\n      .send({id: 'id', password: 'password'})\n      .expect(200)\n      .then(res => {\n        auth_token = res.body.token;\n      });\n  });\n  test('PUT /user', () => {\n    return request(app)\n      .put('/user')\n      .set('Authorization', `Bearer ${auth_token}`)\n      .set('Accept', 'application/json')\n      .set('Content-Type', 'application/json')\n      .send({id: '2', name: 'Jiro'})\n      .expect(200);\n  });\n  test('GET /user', () => {\n    return request(app)\n      .get('/user')\n      .set('Authorization', `Bearer ${auth_token}`)\n      .set('Accept', 'application/json')\n      .query({id: '2'})\n      .expect(200);\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/server/__tests__/express_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 149,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "app/infrastructure/server/__tests__/express_test.js",
+    "static": true,
+    "longname": "app/infrastructure/server/__tests__/express_test.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/__tests__/express_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "variable",
+    "name": "request",
+    "memberof": "app/infrastructure/server/__tests__/express_test.js",
+    "static": true,
+    "longname": "app/infrastructure/server/__tests__/express_test.js~request",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/__tests__/express_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "variable",
+    "name": "auth_token",
+    "memberof": "app/infrastructure/server/__tests__/express_test.js",
+    "static": true,
+    "longname": "app/infrastructure/server/__tests__/express_test.js~auth_token",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/__tests__/express_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "file",
+    "name": "app/infrastructure/server/express.js",
+    "content": "'use strict';\n\nconst express = require('express');\nconst context = require('../../context');\nconst router = require('../../interface/router');\nconst helmet = require('helmet');\nconst logger = require('../../logger');\n\nconst app = express();\n\n// コンテキストの設定と初期化\napp.use(context.middleware);\napp.use(context.init);\n// その他ミドルウェアの設定\napp.use(express.json());\napp.use(express.urlencoded({extended: false}));\napp.use(helmet());\n// ルーターの設定\napp.use('/', router);\n// 500\napp.use((err, req, res, next) => {\n  logger.error(err.stack);\n  res\n    .status(500)\n    .json({message: 'Internal Server Error.'})\n    .end();\n});\n// 404\napp.use((req, res, next) => {\n  res\n    .status(404)\n    .json({message: 'Not Found.'})\n    .end();\n});\napp.set('port', '3000');\n\nmodule.exports = app;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/infrastructure/server/express.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 153,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "app/infrastructure/server/express.js",
+    "static": true,
+    "longname": "app/infrastructure/server/express.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/express.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "variable",
+    "name": "context",
+    "memberof": "app/infrastructure/server/express.js",
+    "static": true,
+    "longname": "app/infrastructure/server/express.js~context",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/express.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 155,
+    "kind": "variable",
+    "name": "router",
+    "memberof": "app/infrastructure/server/express.js",
+    "static": true,
+    "longname": "app/infrastructure/server/express.js~router",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/express.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 156,
+    "kind": "variable",
+    "name": "helmet",
+    "memberof": "app/infrastructure/server/express.js",
+    "static": true,
+    "longname": "app/infrastructure/server/express.js~helmet",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/express.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 157,
+    "kind": "variable",
+    "name": "logger",
+    "memberof": "app/infrastructure/server/express.js",
+    "static": true,
+    "longname": "app/infrastructure/server/express.js~logger",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/express.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 158,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "app/infrastructure/server/express.js",
+    "static": true,
+    "longname": "app/infrastructure/server/express.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/infrastructure/server/express.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 159,
+    "kind": "file",
+    "name": "app/interface/__tests__/interceptor_test.js",
+    "content": "'use strict';\n\nconst Interceptor = require('../interceptor');\n\ndescribe('app/interface/interceptor.js', () => {\n  test('validateUserJson() OK', () => {\n    const req = {\n      body: {id: '1', name: 'ichiro'},\n    };\n    const res = {\n      status: jest.fn().mockReturnThis(),\n      json: jest.fn().mockReturnThis(),\n    };\n    const next = jest.fn().mockReturnThis();\n    Interceptor.validateUserJson(req, res, next);\n    expect(next.mock.calls[0][0]).toBeUndefined();\n  });\n  test('validateUserJson() NG', () => {\n    const req = {\n      body: {id: 1, name: 'ichiro'},\n    };\n    const res = {\n      status: jest.fn().mockReturnThis(),\n      json: jest.fn().mockReturnThis(),\n    };\n    const next = jest.fn().mockReturnThis();\n    Interceptor.validateUserJson(req, res, next);\n    expect(res.status.mock.calls[0][0]).toBe(400);\n    expect(res.json.mock.calls[0][0]).not.toBeUndefined();\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/interface/__tests__/interceptor_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 160,
+    "kind": "variable",
+    "name": "Interceptor",
+    "memberof": "app/interface/__tests__/interceptor_test.js",
+    "static": true,
+    "longname": "app/interface/__tests__/interceptor_test.js~Interceptor",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/__tests__/interceptor_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 161,
+    "kind": "file",
+    "name": "app/interface/interceptor.js",
+    "content": "'use strict';\n\nconst context = require('../context');\nconst onHeaders = require('on-headers');\nconst onFinished = require('on-finished');\nconst logger = require('../logger');\nconst Ajv = require('ajv');\nconst ajv = new Ajv();\nconst userJsonSchema = require('../../json-schema/user-schema');\nconst validate = ajv.compile(userJsonSchema);\n\nclass Interceptor {\n  static accessLogging(req, res, next) {\n    onHeaders(res, () => {\n      context.set('startAt', process.hrtime());\n    });\n    onFinished(res, () => {\n      const startAt = context.get('startAt');\n      const diff = process.hrtime(startAt);\n      const responseTime = diff[0] * 1e9 + diff[1];\n      logger.info(`${req.method} ${req.originalUrl}`, {\n        req: {\n          headers: req.headers,\n          query: req.query,\n        },\n        res: {\n          status: res.statusCode,\n          responseTime: responseTime,\n        },\n      });\n    });\n    next();\n  }\n  static validateUserJson(req, res, next) {\n    const valid = validate(req.body);\n    if (valid) {\n      next();\n    } else {\n      logger.warn(validate.errors);\n      res.status(400).json(validate.errors);\n    }\n  }\n}\n\nmodule.exports = Interceptor;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/interface/interceptor.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 162,
+    "kind": "variable",
+    "name": "context",
+    "memberof": "app/interface/interceptor.js",
+    "static": true,
+    "longname": "app/interface/interceptor.js~context",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 163,
+    "kind": "variable",
+    "name": "onHeaders",
+    "memberof": "app/interface/interceptor.js",
+    "static": true,
+    "longname": "app/interface/interceptor.js~onHeaders",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 164,
+    "kind": "variable",
+    "name": "onFinished",
+    "memberof": "app/interface/interceptor.js",
+    "static": true,
+    "longname": "app/interface/interceptor.js~onFinished",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 165,
+    "kind": "variable",
+    "name": "logger",
+    "memberof": "app/interface/interceptor.js",
+    "static": true,
+    "longname": "app/interface/interceptor.js~logger",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 166,
+    "kind": "variable",
+    "name": "Ajv",
+    "memberof": "app/interface/interceptor.js",
+    "static": true,
+    "longname": "app/interface/interceptor.js~Ajv",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 167,
+    "kind": "variable",
+    "name": "ajv",
+    "memberof": "app/interface/interceptor.js",
+    "static": true,
+    "longname": "app/interface/interceptor.js~ajv",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 168,
+    "kind": "variable",
+    "name": "userJsonSchema",
+    "memberof": "app/interface/interceptor.js",
+    "static": true,
+    "longname": "app/interface/interceptor.js~userJsonSchema",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 169,
+    "kind": "variable",
+    "name": "validate",
+    "memberof": "app/interface/interceptor.js",
+    "static": true,
+    "longname": "app/interface/interceptor.js~validate",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 170,
+    "kind": "class",
+    "name": "Interceptor",
+    "memberof": "app/interface/interceptor.js",
+    "static": true,
+    "longname": "app/interface/interceptor.js~Interceptor",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/interceptor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 171,
+    "kind": "method",
+    "name": "accessLogging",
+    "memberof": "app/interface/interceptor.js~Interceptor",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/interface/interceptor.js~Interceptor.accessLogging",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 172,
+    "kind": "method",
+    "name": "validateUserJson",
+    "memberof": "app/interface/interceptor.js~Interceptor",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/interface/interceptor.js~Interceptor.validateUserJson",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 173,
+    "kind": "file",
+    "name": "app/interface/router.js",
+    "content": "'use strict';\n\nconst express = require('express');\nconst router = express.Router();\nconst Interceptor = require('./interceptor');\nconst userUC = require('../usecase/user-uc');\nconst tokenUC = require('../usecase/token-uc');\nconst pdfUC = require('../usecase/view-uc');\nconst echoUC = require('../usecase/echo-uc');\n\n/////////////////////\n// access logging\n/////////////////////\n\nrouter.get('/echo', Interceptor.accessLogging);\n\n/////////////////////\n// application logics\n/////////////////////\n\nrouter.get('/echo', (req, res) => {\n  const result = echoUC.echo();\n  res.status(200).json(result);\n});\n\nrouter.post('/auth', (req, res) => {\n  const id = req.body.id;\n  const password = req.body.password;\n  // コンテンツネゴシエーション（アクセプトヘッダを見て分岐）\n  res.format({\n    'application/json': () => {\n      res.json({token: tokenUC.auth(id, password)});\n    },\n    default: () => {\n      res.status(406).send(body406);\n    },\n  });\n});\nrouter.get('/user', tokenUC.verifyJWT);\nrouter.get('/user', async (req, res) => {\n  const id = req.query.id;\n  const result = await userUC.getUser(id);\n  res.format({\n    'application/json': () => {\n      res.json(result);\n    },\n    default: () => {\n      res.status(406).send(body406);\n    },\n  });\n});\nrouter.put('/user', tokenUC.verifyJWT);\nrouter.put('/user', async (req, res) => {\n  const id = req.body.id;\n  const name = req.body.name;\n  const result = await userUC.putUser(id, name);\n  res.format({\n    'application/json': () => {\n      res.json(result);\n    },\n    default: () => {\n      res.status(406).send(body406);\n    },\n  });\n});\nrouter.get('/pdf', async (req, res) => {\n  const result = await pdfUC.getPdf();\n  res.send(result);\n});\n\nconst body406 = {\n  message: 'Not Acceptable',\n};\n\nmodule.exports = router;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/interface/router.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 174,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "app/interface/router.js",
+    "static": true,
+    "longname": "app/interface/router.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/router.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 175,
+    "kind": "variable",
+    "name": "router",
+    "memberof": "app/interface/router.js",
+    "static": true,
+    "longname": "app/interface/router.js~router",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/router.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 176,
+    "kind": "variable",
+    "name": "Interceptor",
+    "memberof": "app/interface/router.js",
+    "static": true,
+    "longname": "app/interface/router.js~Interceptor",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/router.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 177,
+    "kind": "variable",
+    "name": "userUC",
+    "memberof": "app/interface/router.js",
+    "static": true,
+    "longname": "app/interface/router.js~userUC",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/router.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "variable",
+    "name": "tokenUC",
+    "memberof": "app/interface/router.js",
+    "static": true,
+    "longname": "app/interface/router.js~tokenUC",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/router.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 179,
+    "kind": "variable",
+    "name": "pdfUC",
+    "memberof": "app/interface/router.js",
+    "static": true,
+    "longname": "app/interface/router.js~pdfUC",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/router.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 180,
+    "kind": "variable",
+    "name": "echoUC",
+    "memberof": "app/interface/router.js",
+    "static": true,
+    "longname": "app/interface/router.js~echoUC",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/router.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 181,
+    "kind": "variable",
+    "name": "body406",
+    "memberof": "app/interface/router.js",
+    "static": true,
+    "longname": "app/interface/router.js~body406",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/interface/router.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 71,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"message\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 182,
+    "kind": "file",
+    "name": "app/logger.js",
+    "content": "'use strict';\n\nconst winston = require('winston');\nconst context = require('./context');\n\nconst winstonLogger = winston.createLogger({\n  levels: {\n    fatal: 0,\n    error: 1,\n    warn: 2,\n    info: 3,\n    debug: 4,\n    trace: 5,\n  },\n  format: winston.format.combine(\n    winston.format.timestamp(),\n    winston.format.json()\n  ),\n  transports: [new winston.transports.Console()],\n});\n\nconst getLogger = () => {\n  let logger = context.get('logger');\n  if (!logger) {\n    const logKeys = context.get('log-keys');\n    if (logKeys) {\n      const additionalLog = {};\n      for (let key of logKeys) {\n        const value = context.get(key);\n        if (value) {\n          additionalLog[key] = value;\n        }\n      }\n      logger = winstonLogger.child(additionalLog);\n      context.set('logger');\n      return logger;\n    } else {\n      return winstonLogger;\n    }\n  } else {\n    return logger;\n  }\n};\n\nexports.log = (...args) => {\n  const logger = getLogger();\n  logger.log(args);\n};\nexports.fatal = (...args) => {\n  const logger = getLogger();\n  logger.fatal(args);\n};\nexports.error = (...args) => {\n  const logger = getLogger();\n  logger.error(args);\n};\nexports.warn = (...args) => {\n  const logger = getLogger();\n  logger.warn(args);\n};\nexports.info = (...args) => {\n  const logger = getLogger();\n  logger.info(args);\n};\nexports.debug = (...args) => {\n  const logger = getLogger();\n  logger.debug(args);\n};\nexports.trace = (...args) => {\n  const logger = getLogger();\n  logger.trace(args);\n};\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/logger.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 183,
+    "kind": "variable",
+    "name": "winston",
+    "memberof": "app/logger.js",
+    "static": true,
+    "longname": "app/logger.js~winston",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/logger.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 184,
+    "kind": "variable",
+    "name": "context",
+    "memberof": "app/logger.js",
+    "static": true,
+    "longname": "app/logger.js~context",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/logger.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 185,
+    "kind": "variable",
+    "name": "winstonLogger",
+    "memberof": "app/logger.js",
+    "static": true,
+    "longname": "app/logger.js~winstonLogger",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/logger.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 186,
+    "kind": "function",
+    "name": "getLogger",
+    "memberof": "app/logger.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/logger.js~getLogger",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/logger.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 187,
+    "kind": "file",
+    "name": "app/usecase/__tests__/view-uc_test.js",
+    "content": "'use strict';\n\nconst pdfUC = require('../view-uc');\nconst fs = require('fs');\n\ndescribe('app/usecase/view-uc.js', () => {\n  test('getHtml', async () => {\n    const result = await pdfUC.getHtml();\n    fs.writeFileSync('sample.html', result);\n  });\n  test('getPdf', async () => {\n    const result = await pdfUC.getPdf();\n    fs.writeFileSync('sample.pdf', result);\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/usecase/__tests__/view-uc_test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 188,
+    "kind": "variable",
+    "name": "pdfUC",
+    "memberof": "app/usecase/__tests__/view-uc_test.js",
+    "static": true,
+    "longname": "app/usecase/__tests__/view-uc_test.js~pdfUC",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/__tests__/view-uc_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 189,
+    "kind": "variable",
+    "name": "fs",
+    "memberof": "app/usecase/__tests__/view-uc_test.js",
+    "static": true,
+    "longname": "app/usecase/__tests__/view-uc_test.js~fs",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/__tests__/view-uc_test.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 190,
+    "kind": "file",
+    "name": "app/usecase/echo-uc.js",
+    "content": "'use strict';\n\nconst context = require('../context');\nconst logger = require('../logger');\n\nclass EchoUsecase {\n  static echo() {\n    logger.info('Echo called.');\n    return {\n      app: context.get('app'),\n      version: context.get('version'),\n    };\n  }\n}\n\nmodule.exports = EchoUsecase;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/usecase/echo-uc.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 191,
+    "kind": "variable",
+    "name": "context",
+    "memberof": "app/usecase/echo-uc.js",
+    "static": true,
+    "longname": "app/usecase/echo-uc.js~context",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/echo-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 192,
+    "kind": "variable",
+    "name": "logger",
+    "memberof": "app/usecase/echo-uc.js",
+    "static": true,
+    "longname": "app/usecase/echo-uc.js~logger",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/echo-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 193,
+    "kind": "class",
+    "name": "EchoUsecase",
+    "memberof": "app/usecase/echo-uc.js",
+    "static": true,
+    "longname": "app/usecase/echo-uc.js~EchoUsecase",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/echo-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 194,
+    "kind": "method",
+    "name": "echo",
+    "memberof": "app/usecase/echo-uc.js~EchoUsecase",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/usecase/echo-uc.js~EchoUsecase.echo",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "{\"app\": *, \"version\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 195,
+    "kind": "file",
+    "name": "app/usecase/repository/app-repo.js",
+    "content": "'use strict';\n\nclass AppRepository {\n  constructor() {}\n  async listApps() {\n    throw new Error('Not Implimented');\n  }\n  async getApp() {\n    throw new Error('Not Implimented');\n  }\n  async createApp() {\n    throw new Error('Not Implimented');\n  }\n}\n\nmodule.exports = AppRepository;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/usecase/repository/app-repo.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 196,
+    "kind": "class",
+    "name": "AppRepository",
+    "memberof": "app/usecase/repository/app-repo.js",
+    "static": true,
+    "longname": "app/usecase/repository/app-repo.js~AppRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/repository/app-repo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 197,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/usecase/repository/app-repo.js~AppRepository",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/usecase/repository/app-repo.js~AppRepository#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true
+  },
+  {
+    "__docId__": 198,
+    "kind": "method",
+    "name": "listApps",
+    "memberof": "app/usecase/repository/app-repo.js~AppRepository",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/usecase/repository/app-repo.js~AppRepository#listApps",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 199,
+    "kind": "method",
+    "name": "getApp",
+    "memberof": "app/usecase/repository/app-repo.js~AppRepository",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/usecase/repository/app-repo.js~AppRepository#getApp",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 200,
+    "kind": "method",
+    "name": "createApp",
+    "memberof": "app/usecase/repository/app-repo.js~AppRepository",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/usecase/repository/app-repo.js~AppRepository#createApp",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 201,
+    "kind": "file",
+    "name": "app/usecase/repository/user-repo.js",
+    "content": "'use strict';\n\nclass UserRepository {\n  constructor() {}\n  async listUsers() {\n    throw new Error('Not Implimented');\n  }\n  async getUser() {\n    throw new Error('Not Implimented');\n  }\n  async createUser() {\n    throw new Error('Not Implimented');\n  }\n}\n\nmodule.exports = UserRepository;\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/usecase/repository/user-repo.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 202,
+    "kind": "class",
+    "name": "UserRepository",
+    "memberof": "app/usecase/repository/user-repo.js",
+    "static": true,
+    "longname": "app/usecase/repository/user-repo.js~UserRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/repository/user-repo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 203,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "app/usecase/repository/user-repo.js~UserRepository",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "app/usecase/repository/user-repo.js~UserRepository#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true
+  },
+  {
+    "__docId__": 204,
+    "kind": "method",
+    "name": "listUsers",
+    "memberof": "app/usecase/repository/user-repo.js~UserRepository",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/usecase/repository/user-repo.js~UserRepository#listUsers",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 205,
+    "kind": "method",
+    "name": "getUser",
+    "memberof": "app/usecase/repository/user-repo.js~UserRepository",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/usecase/repository/user-repo.js~UserRepository#getUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 206,
+    "kind": "method",
+    "name": "createUser",
+    "memberof": "app/usecase/repository/user-repo.js~UserRepository",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "app/usecase/repository/user-repo.js~UserRepository#createUser",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 207,
+    "kind": "file",
+    "name": "app/usecase/token-uc.js",
+    "content": "'use strict';\n\nconst TokenDomain = require('../domain/token-domain');\nconst context = require('../context');\n\nconst auth = (id, password) => {\n  // TODO: MUST check id and password.\n  return TokenDomain.createJWT({id: id, password: password});\n};\n\nconst verifyJWT = (req, res, next) => {\n  try {\n    if (\n      req.headers.authorization &&\n      req.headers.authorization.split(' ')[0] === 'Bearer'\n    ) {\n      const result = TokenDomain.verifyJWT(\n        req.headers.authorization.split(' ')[1]\n      );\n      if (result && result.id) {\n        res.locals.id = result.id;\n        context.set('id', result.id);\n        next();\n      }\n    }\n  } catch (e) {\n    res.status(401);\n  }\n};\n\nmodule.exports = {\n  auth: auth,\n  verifyJWT: verifyJWT,\n};\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/usecase/token-uc.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 208,
+    "kind": "variable",
+    "name": "TokenDomain",
+    "memberof": "app/usecase/token-uc.js",
+    "static": true,
+    "longname": "app/usecase/token-uc.js~TokenDomain",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/token-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 209,
+    "kind": "variable",
+    "name": "context",
+    "memberof": "app/usecase/token-uc.js",
+    "static": true,
+    "longname": "app/usecase/token-uc.js~context",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/token-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 210,
+    "kind": "function",
+    "name": "auth",
+    "memberof": "app/usecase/token-uc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/usecase/token-uc.js~auth",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/token-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "password",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 211,
+    "kind": "function",
+    "name": "verifyJWT",
+    "memberof": "app/usecase/token-uc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/usecase/token-uc.js~verifyJWT",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/token-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 212,
+    "kind": "file",
+    "name": "app/usecase/user-uc.js",
+    "content": "'use strict';\n\nconst UserRepository = require('../infrastructure/datastore/dynamodb/user-repo-impl');\nconst userRepository = new UserRepository();\n\nconst getUser = async id => {\n  const result = await userRepository.getUser(id);\n  return result;\n};\n\nconst putUser = async (id, name) => {\n  await userRepository.createUser(id, name);\n  return {message: 'SUCCESS'};\n};\n\nmodule.exports = {\n  getUser: getUser,\n  putUser: putUser,\n};\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/usecase/user-uc.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 213,
+    "kind": "variable",
+    "name": "UserRepository",
+    "memberof": "app/usecase/user-uc.js",
+    "static": true,
+    "longname": "app/usecase/user-uc.js~UserRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/user-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 214,
+    "kind": "variable",
+    "name": "userRepository",
+    "memberof": "app/usecase/user-uc.js",
+    "static": true,
+    "longname": "app/usecase/user-uc.js~userRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/user-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "app/usecase/repository/user-repo.js~UserRepository"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 215,
+    "kind": "function",
+    "name": "getUser",
+    "memberof": "app/usecase/user-uc.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "app/usecase/user-uc.js~getUser",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/user-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 216,
+    "kind": "function",
+    "name": "putUser",
+    "memberof": "app/usecase/user-uc.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "app/usecase/user-uc.js~putUser",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/user-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"message\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 217,
+    "kind": "file",
+    "name": "app/usecase/view-uc.js",
+    "content": "'use strict';\n\nconst PdfPrinter = require('pdfmake');\nconst sizeOf = require('image-size');\nconst path = require('path');\n\n/**\n * 等幅フォント（Kosugi）・ HTML を使って綺麗に整列表示する。\n * フォントは Google Fonts (https://fonts.google.com/?subset=japanese) から取得。\n * 半角スペースは「&ensp;」、全角スペースは「&emsp;」がぴったり！\n * 「&nbsp;」は半角スペースより狭いので注意。\n */\nconst getHtml = () => {\n  const lines = [\n    'TEST TEXT',\n    '                     TEST       TEXT',\n    'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',\n    'yyyyy                          yyyyy',\n    'ああああああああああああああああああ', // 等幅フォントの場合、全角の幅は半角の倍\n    'あああああ　　　　　　　　あああああ', // 全角スペースもまた然り\n  ];\n  let pdfBody = '';\n  for (let i in lines) {\n    lines[i] = lines[i].replace(/ /g, '&ensp;'); // 半角スペース\n    lines[i] = lines[i].replace(/　/g, '&emsp;'); // 全角スペース\n    pdfBody += '<tr><td>' + lines[i] + '</td></tr>\\n';\n  }\n  const html = `\n  <!doctype html>\n  <html lang=\"ja\">\n  <head>\n  <!-- Kosugi font loading -->\n  <link href=\"https://fonts.googleapis.com/css?family=Kosugi&display=swap\" rel=\"stylesheet\">\n  </head>\n  <body>\n  <div style=\"text-align: center;\">\n  <!-- Kosugi font : 'font-family: 'Kosugi', sans-serif;' -->\n  <div style=\"font-family: 'Kosugi', sans-serif; border: solid 1px #000; display: inline-block; text-align: left;\">\n  <table>\n  ${pdfBody}\n  </table>\n  </div>\n  </div>\n  </body>\n  </html>\n  `;\n  return html;\n};\n\n/**\n * pdfMakeの単位は「us pt」（1pt = 0.35278mm）\n */\nconst getPdf = async () => {\n  const lines = [\n    'TEST TEXT',\n    '                     TEST       TEXT',\n    'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',\n    'yyyyy                          yyyyy',\n    'ああああああああああああああああああ', // 等幅フォントの場合、全角の幅は半角の倍\n    'あああああ　　　　　　　　あああああ', // 全角スペースもまた然り\n  ];\n  // data\n  const fonts = {\n    Roboto: {\n      normal: path.join(__dirname, 'font/ipag.ttf'),\n    },\n  };\n  const testImageDataUrl =\n    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAC+CAMAAAC8qkWvAAAAXVBMVEU/l1r821b///+Cq1nVyleouViqzLODtpFSnFrX5tvz11bfz1dzplmctFjp01dTn2m/wli0vVhkoVnKxlfs8+10r4X1+faPr1lkp3eexajM4NHB2cji7eS20r6Rvp3t0mJuAAAGY0lEQVR4AezBgQAAAACAoP2pF6kCAAAAAAAAYPbthrdxlYkCMEeAhMAgjCX5///Se+/bdms7nAxUJPW7Ek/3m83MieXPaPp3cdp+MH9Yq91l/YlyrUIWK8VuBoA3m126O8g0iGAdW7+w6mTHlVG1GHCSrOvvIMcnvP1R8YwHTj3YE28xHp8z7gfFq2y7unAZRFjeFx/BdRdf8Chf0wdQfnlffKzd8S0eJZKesG+Mj9JbnMRb1GEDh6DeGT93FnfyssUz+q3xU2fxSDfsH84Le+cr4xulisGJ6yu+gXDNjZ/cy+Nft5Wu1ikPIl5WmZ0n6MVfbH4cX4PZ+AU5rVrHfPyHV8dPz+N7c1iPEisYTy/I+XOHcSt8IQl4h/741yzlc50x9LS54aCPVfIqHUkC2oHj7z3hrKt4wSH6x/OKqs6Uh5fF57au4haHxVQXXnIt/qX4sav4hsNl3yvV7ZD5zfihr/jlH+PjebvcFn/pKr5fLqNLderEif/F+LGveL6+BCc3HrpedxQn1wnzeFk11X3CB7u+Mb5fHVlP9hDpkwp5ZlnJA5baA6BbHX5+3vcfv+bo6LpRNYvnEnt/wdqcPv7w+psGeT2QzzEMBMuxdxG2o8N4fLG7g8SSp4GDL60Ob48fIQlK3Pzm9vgZIieXiHfH9xBF+fD27sb41R2N/h9LPu7J4LDeG3+tuzn+zEKFm7d+IHcEiX3cEz1qq7t33y/ss4XtYe/4VDIeGK3UvfEjexax1anzU1kTvvmsuzr8X1msNcZs1i7q7zVN0zRN0zRNLmbjAQRDbm3J7A5fcuqTPmm2GVcyH7xpz+5o+rSBk1abcZYN3sizOzy+d0J83mZcRi04eXaHx0fm8aU24+kZv8izOzw+Co8vtRljwe2N2R0e3/D4UpshzoPaWrM7PD40jy+3efnG96U5u8PjGxpfaDNmG5jdYfERSXyhzaCEs9Wu4YjXmN3h8ROJL7QZREbxDLD0zu5oVCyJL7QZY3ASPndFa/tmd/iqdyS+0OaV+36uNog8u6NRsyQ+bzPO4kGI6tCY3eHxfcGJ1GacQyUdlZuzOxpExonYZpxFzbje2R2NFrnNuIBaKu3Znf74UpthjhUOrj270x9fajNuRW1tz+70xxfbjFsMKqU1u1PFNwlER5txS/a4ss3ZnSq+BtFsM2hfPvfNmHC2NWd3qvjKoNZsM8YlWEcujaY5u1PH16i12wwft94WXtdAsFTx2RNhs82Q5dk8rWnP7tTxCyrNNkMCOKzt2R1hIPrQbDPCirtGhsjxbwa4arYZUDw4mL7ZHd082FttRuziVmnO7pD4KuGq1WZI9MJQVHN2h8WPuGq0GbSE52XbsztV/PoolduMi4l+Z2HX7A6Lr3HRajNuzx4HE9WnjtmdOn51rRPavM4S7fYxeLM7Ne6mNvebpmmapmmapmn6l5ryULVuhYFwCJCwaKGo6Grv/5j3yvhLWLrr6XPaVieZz8IxVfuzUbYy80IvSKporlzXymidR31cFvjVnlxFcym6DdYXopYqelLC34bfoj7SftD+ffj75+PDHGvw/4qUpVidjiLaPXbKma/9s0ifM4Xd41uRCOslCqoVRuSC0S4rV2mkJ6S4UCmtuSBNQx2kE2wHV62GEufkA4aNq5J4/JKYGZVDFJEkrtqst0vMqeCFPf8enJmbAtHJTYI7h5I5fGewagBNx8ffpiGKNm7azbdL9nH8lSz1hhEWaB3xExGt3CUdf7mHL+x7Oqd8HF8wKdrOM9UbsaWOssMPAW+UMo4x4ObUd0thjg/vzuiJdglxr+GXBd6DiFFvESe3ieMJUue4oAj3bMFtdmlXFhu+Ag2T16iIBsgRBNuJwrf+8/QPRnS5eHUD6SV4H+6u2lA9PrfJa1Tz/KtsOR/Hxwc85lVEDpF2VBioK4kxIb3UP8EizrtRYHRGnuFnNMD1lTm+vY0PoL2cixC1h3qoBOslTpHMjfZOkdzsELW7RbviYzUc7+GDGEoZm4GOCX4gvIEm7RTbPXz173HAR+nyPn4MDG11dHBTHvEVeU2FOkVOd/BxJAgY8XP6ID6Z1BZB8F50qUurUhNGgTmcBJq9GzpFXJjTuc7xSVc8UJrgkwZ8/IiyZjdSpUExekOcdKB7ireX7RTRPvqvPTggAACAYADWv7UW4NsAAAAAAACmFPlhXKoKwfOKAAAAAElFTkSuQmCC';\n  const dimensions = sizeOf(Buffer.from(testImageDataUrl.substr(22), 'base64')); // dimensions.width, dimensions.height = 90, 90\n  // parameter\n  const maxWardNums = 36; // 横の半角文字数上限、全角は半角2文字分の扱い\n  const fontSize = 20;\n  const fontWHratio = 1 / 2; // フォントの縦横比：横÷縦\n  const pageMargin = 20; // ページ上下左右のマージン\n  let width = pageMargin * 2 + maxWardNums * fontSize * fontWHratio; // マージン＋横のフォントサイズの合計\n  let height = pageMargin * 2 + (dimensions.height / dimensions.width) * 200; // マージン＋縦の画像サイズ（後々行数に応じて縦のフォントサイズを加算）\n  // define contents\n  const docDefinition = {};\n  docDefinition.pageMargins = pageMargin;\n  docDefinition.content = [];\n  docDefinition.content.push({\n    image: testImageDataUrl,\n    width: 200,\n    alignment: 'center',\n  });\n  for (let text of lines) {\n    // 細かい設定は以下を参照\n    // https://gist.github.com/jfdesrochers/08833957232a04638c1cad4d071b31e9\n    docDefinition.content.push({\n      text: text,\n      fontSize: fontSize,\n      preserveLeadingSpaces: true, // 空白を正しく表示\n    });\n    height += fontSize;\n  }\n  docDefinition.pageSize = {width: width, height: height};\n  // make pdf\n  const makePdf = () => {\n    return new Promise((resolve, reject) => {\n      try {\n        const bufs = [];\n        const printer = new PdfPrinter(fonts);\n        const pdfDoc = printer.createPdfKitDocument(docDefinition);\n        pdfDoc.on('data', chunk => {\n          bufs.push(chunk);\n        });\n        pdfDoc.on('end', () => {\n          resolve(Buffer.concat(bufs));\n        });\n        pdfDoc.end();\n      } catch (e) {\n        reject(e);\n      }\n    });\n  };\n  const buffer = await makePdf();\n  return buffer;\n};\n\nmodule.exports = {\n  getHtml: getHtml,\n  getPdf: getPdf,\n};\n",
+    "static": true,
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/app/usecase/view-uc.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 218,
+    "kind": "variable",
+    "name": "PdfPrinter",
+    "memberof": "app/usecase/view-uc.js",
+    "static": true,
+    "longname": "app/usecase/view-uc.js~PdfPrinter",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/view-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 219,
+    "kind": "variable",
+    "name": "sizeOf",
+    "memberof": "app/usecase/view-uc.js",
+    "static": true,
+    "longname": "app/usecase/view-uc.js~sizeOf",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/view-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 220,
+    "kind": "variable",
+    "name": "path",
+    "memberof": "app/usecase/view-uc.js",
+    "static": true,
+    "longname": "app/usecase/view-uc.js~path",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/view-uc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 221,
+    "kind": "function",
+    "name": "getHtml",
+    "memberof": "app/usecase/view-uc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "app/usecase/view-uc.js~getHtml",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/view-uc.js",
+    "importStyle": null,
+    "description": "等幅フォント（Kosugi）・ HTML を使って綺麗に整列表示する。\nフォントは Google Fonts (https://fonts.google.com/?subset=japanese) から取得。\n半角スペースは「&ensp;」、全角スペースは「&emsp;」がぴったり！\n「&nbsp;」は半角スペースより狭いので注意。",
+    "lineNumber": 13,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 222,
+    "kind": "function",
+    "name": "getPdf",
+    "memberof": "app/usecase/view-uc.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "app/usecase/view-uc.js~getPdf",
+    "access": "public",
+    "export": false,
+    "importPath": "express-supertest/app/usecase/view-uc.js",
+    "importStyle": null,
+    "description": "pdfMakeの単位は「us pt」（1pt = 0.35278mm）",
+    "lineNumber": 53,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# express-supertest\n\n![node.js](https://img.shields.io/badge/node.js-v12.4.0-brightgreen)\n![npm version](https://img.shields.io/badge/npm%20package-v6.10.2-brightgreen)\n[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)\n![Coverage lines](./coverage/badge-lines.svg)\n![Coverage functions](./coverage/badge-functions.svg)\n![Coverage branches](./coverage/badge-branches.svg)\n![Coverage statements](./coverage/badge-statements.svg)\n<!-- description -->\n[SuperTest](https://github.com/visionmedia/supertest) をやりたいが為に作ったプロジェクト。  \n関係ないこともやってる。\n\n## バッジ\n\n[shields.io](https://shields.io/) で好きなバッジ作れる。  \nカバレッジは [jest-coverage-badges](https://github.com/pamepeixinho/jest-coverage-badges) で出した。\n\n## ロギング\n\n### レベル\n\n|Level|説明|\n|:----|:---|\n|fatal|即座に対応が必要なエラー。|\n|error|ベストエフォートで対応が必要なエラー。|\n|warn |すぐに問題になることはないが、後々対応が必要、もしくは今後 error になりそうな事象。|\n|info |自分サーバ・プロセス外へのアクセスやサードパーティモジュールを利用する場合の入力情報などを出力。|\n|debug|商用・本番では出力しないデバッグ用の情報。|\n|trace|商用・本番では出力しない debug よりさらに詳細な情報。|\n\n### レスポンスとログ出力\n\nレスポンスベースで整理する。\n\n|Level|errorCode|status|type                  |mesage|説明|\n|:----|:--------|:-----|:---------------------|:-----|:---|\n|fatal|FATAL001 |-     |Service Start Failure |      |アプリケーションサービスの起動に失敗。|\n|error|ERROR001 |500   |Internal Server Error |      |ハンドリング不可能なエラーが発生。|\n|error|ERROR002 |500   |Database Access Error |      |データベースアクセスでエラーが発生。|\n|error|ERROR003 |500   |API Access Error      |      |APIアクセスでエラーが発生。|\n|warn |WARN001  |400   |Bad Request           |      |リクエストに不正がある。|\n|warn |WARN002  |401   |Unauthorized          |      |認証エラーが発生。|\n|warn |WARN003  |403   |Forbidden             |      |権限の無いアクセス。|\n|warn |WARN004  |404   |Not Found             |      |URIもしくは検索を依頼されたリソースが見つからない。サービスによっては空 body/200 statusで返却することを検討。|\n|warn |WARN005  |405   |Method Not Allowed    |      |存在しない HTTP メソッドでのアクセス。許可が無い場合は 403/Forbidden で返却する。|\n|warn |WARN006  |406   |Not Acceptable        |      |Accept-* ヘッダで準備のないものを依頼された場合。|\n|warn |WARN007  |409   |Conflict              |      |依頼内容を実行するとリソース競合が発生するため拒否。|\n|warn |WARN008  |415   |Unsupported Media Type|      |処理できない Content-Type で依頼された。|\n|warn |WARN009  |422   |Unprocessable Entity  |      |入力値のバリデーションチェックでエラーが発生。400/Bad Request で返却するか悩む。|\n\nレスポンスボディは以下。\n\n```\n{\n  \"errorCode\": \"xxxxx\",\n  \"type\": \"xxxxx\",\n  \"message\": \"xxxxx\"\n}\n```\n\n上記を加味して何をログ出力するかはこれから整理。（TODO）\n\n### ロガー\n\nロガーは [winston](https://github.com/winstonjs/winston) 。  \nリクエストロガーに [morgan](https://github.com/expressjs/morgan) とか [express-winston](https://github.com/bithavoc/express-winston) があるが、個人的に使いにくかったので使ってない。  \n代わりに [on-headers](https://github.com/jshttp/on-headers) と [on-finished](https://github.com/jshttp/on-finished) を使って自分で実装。\n\n### reqId の設定\n\n[express-http-context](https://github.com/skonves/express-http-context) を利用して 1 リクエスト中に利用できる key-value に リクエスト ID ・トレース ID （ reqId ）を設定する。  \nその値を logger が取得してログ出力時に reqId を付与する。  \nreqId には uuidv4 を利用する。  \nなお、[express-http-context](https://github.com/skonves/express-http-context) では スレッドローカルのように動作する **Continuation-local storage** が利用される。（厳密にはスレッドローカルではない。）  \n詳しくは [cls-hooked](https://github.com/jeff-lewis/cls-hooked#readme) を参照 。\n\n## JWT\n\n[node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) を利用してアクセストークンを実現した。  \n鍵管理については参考にしないこと。\n\n### 予約済みクレーム名\n\nPayload で予約されたパラメータは以下。\n\n|クレーム名|説明|nodeで使う時|\n|---|---|---|\n|iat|tokenが発行された時間|デフォルトで勝手に入る|\n|exp|tokenの有効期限|expiresIn|\n|iss|token発行者の名前|issuer|\n|aud|どのクライアント向けに発行されたトークンであるかの識別子|audience|\n|jti|トークンの固有 ID|jwtid|\n|sub|ユーザーの識別子|subject|\n|nbf|JWTが有効になる日時|notBefore|\n\n- [参考](https://qiita.com/keitatata/items/fa89f007de21e286df17)\n\n## バリデーション\n\n### 入力チェック\n\nHTTP リクエストのバリデーションは [express-validator](https://github.com/express-validator/express-validator) で実現。（TODO）\n\n### JSON Schema\n\nJSON Schema および Ajv を利用して JSON のバリデーションを実現した。\n\n- [json-schema.org](https://json-schema.org/)\n- [Ajv: Another JSON Schema Validator](https://github.com/epoberezkin/ajv)\n    - Ajv version 6.0.0 that supports JSON Schema draft-07 is released.\n\n## MongoDB\n\n以下のように Docker でローカル実行できる。\n\n```bash\n$ docker pull mongo:3.6.13-xenial\n$ docker run -d --name mongo -p 27017:27017 mongo:3.6.13-xenial\n$ docker exec -it mongo bash\n:/# mongo\n>\n```\n\n### MongoDB 基礎\n\n|MongoDB|RDB|\n|:---|:---|\n|データベース|データベース|\n|コレクション|テーブル|\n|ドキュメント|行 / レコード|\n|フィールド|列 / カラム|\n\nBSON（ Binary JSON ）のデータ型。（ [参考](https://docs.mongodb.com/manual/reference/operator/query/type/) ）\n\n|Type|Number|Alias|Notes|\n|:---|:---|:---|:---|\n|Double|1|“double”||\n|String|2|“string”||\n|Object|3|“object”||\n|Array|4|“array”||\n|Binary data|5|“binData”||\n|Undefined|6|“undefined”|Deprecated.|\n|Object id|7|“objectId”||\n|Boolean|8|“bool”||\n|Date|9|“date”||\n|Null|10|“null”||\n|Regular Expression|11|“regex”||\n|DBPointer|12|“dbPointer”|Deprecated.|\n|JavaScript|13|“javascript”||\n|Symbol|14|“symbol”|Deprecated.|\n|JavaScript (with scope)|15|“javascriptWithScope”||\n|32-bit integer|16|“int”||\n|Timestamp|17|“timestamp”||\n|64-bit integer|18|“long”||\n|Decimal128|19|“decimal”||\n|Min key|-1|“minKey”||\n|Max key|127|“maxKey”||\n\n`ISODate` は文字列を `Date` へ変換するユーティリティであって型ではない。\n\n### Mongo Shell\n\n- `use [DB]` : DB の選択。無ければ作成される。\n- `show dbs` : DB 一覧。\n- `show collections` : コレクション一覧。\n- `db.stats()` : 現在の DB の状態表示。\n- `db.createCollection(name, options)` : コレクションの作成。\n- `db.コレクション名.コマンド名(options)` : 基本操作の構文。\n    - `insert()` : 挿入。コレクションが無い場合、暗黙的に作成される。`createCollections` で作成する方が望ましい。\n    - `insertMany()` : 複数ドキュメントを配列で挿入。\n    - `find()` : 検索。\n    - `findOne()` : 1 つ検索。\n    - `update()` : フィールドの追加、更新。\n    - `save()` :  id が存在する場合 `update()` 、 id が存在しない場合 `insert()`。\n    - `upsert()` :  id が存在する場合 `update()` 、 id が存在しない場合 `insert()`。\n    - `findAndModify()` : 検索と修正を一括で行う。\n    - `remove()` : ドキュメントの削除。\n\n### Jest で MongoDB アプリをテストするとき\n\nMongoDB へのコネクションが残ってしまい、正常に Jest テストが終了しない事象が発生することがある。  \n[ここ](https://jestjs.io/docs/en/mongodb)を参考に以下を利用してもよい。\n\n```bash\n$ npm i -D @shelf/jest-mongodb\n```\n\n## PDF 作成\n\n右往左往したが、 [pdfmake](https://github.com/bpampuch/pdfmake) に落ち着いた。（内部で [pdfkit](https://github.com/foliojs/pdfkit) を利用している。）  \nHTML から PDF 変換したらキレイで楽かなと思い [node-html-pdf](https://github.com/marcbachmann/node-html-pdf) と [puppeteer](https://github.com/GoogleChrome/puppeteer) で作ってみたが、モジュールサイズがデカすぎてコンテナサイズが GB サイズになったのでやめた。。。ヘッドレスブラウザとは言えデカいのね。。。\n\n\n## Linter\n\n[eslint](https://github.com/eslint/eslint) と厳しいと噂の [Uber の設定](https://github.com/uber-web/uber-eslint)を参考に設定した。  \n[TypeScript](https://github.com/microsoft/TypeScript) にするか悩むが、型ファイルとかトランスパイルとかウザそうなので、そのうち ECMAScript に取り込まれることを祈って見送り。\n\n## Docker\n\nTODO\n\n## docker-compose\n\nTODO\n\n## ESDoc\n\n所謂 Javadoc の ES 版。  \nJSDoc というものもあるが、こっちにした。  \n導入。\n\n```bash\n$ npm i -D esdoc esdoc-standard-plugin\n```\n\n`package.json` に設定書いた。（ [参考](https://esdoc.org/manual/config.html) ）\n\n```javascript\n{\n  \"esdoc\": {\n    \"source\": \"./app\",\n    \"destination\": \"./docs\",\n    \"plugins\": [{\"name\": \"esdoc-standard-plugin\"}]\n  },\n  \"scripts\": {\n    \"esdoc\": \"esdoc\"\n  }\n}\n```\n\n使えるタグは [ここ](https://esdoc.org/manual/tags.html) 。\n",
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"express-supertest\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"lint\": \"eslint --ext .js --ignore-path .gitignore . -f codeframe --fix\",\n    \"test\": \"npm-run-all test:*\",\n    \"test:pull-dynamo\": \"docker pull amazon/dynamodb-local\",\n    \"test:run-dynamo\": \"docker run -d --name dynamodb -p 8000:8000 amazon/dynamodb-local\",\n    \"test:pull-mongo\": \"docker pull mongo:3.6.13-xenial\",\n    \"test:run-mongo\": \"docker run -d --name mongo -p 27017:27017 mongo:3.6.13-xenial\",\n    \"test:env\": \"node createTable.js\",\n    \"test:exec\": \"jest --coverage && jest-coverage-badges\",\n    \"test:docker-stop\": \"docker container stop `docker container ls -q`\",\n    \"test:docker-rm\": \"docker container rm `docker container ls -a -q`\",\n    \"esdoc\": \"esdoc\"\n  },\n  \"jest\": {\n    \"testEnvironment\": \"node\",\n    \"coverageReporters\": [\n      \"text\",\n      \"json-summary\"\n    ]\n  },\n  \"esdoc\": {\n    \"source\": \"./app\",\n    \"destination\": \"./docs\",\n    \"plugins\": [{\"name\": \"esdoc-standard-plugin\"}]\n  },\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"ajv\": \"^6.10.2\",\n    \"aws-sdk\": \"^2.493.0\",\n    \"dotenv\": \"^8.0.0\",\n    \"express\": \"^4.17.1\",\n    \"express-http-context\": \"^1.2.3\",\n    \"express-validator\": \"^6.1.1\",\n    \"helmet\": \"^3.18.0\",\n    \"image-size\": \"^0.7.4\",\n    \"jsonwebtoken\": \"^8.5.1\",\n    \"mongoose\": \"^5.6.4\",\n    \"notp\": \"^2.0.3\",\n    \"on-finished\": \"^2.3.0\",\n    \"on-headers\": \"^1.0.2\",\n    \"pdfmake\": \"^0.1.58\",\n    \"uuid\": \"^3.3.2\",\n    \"winston\": \"^3.2.1\"\n  },\n  \"devDependencies\": {\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^6.0.1\",\n    \"eslint-config-prettier\": \"^6.0.0\",\n    \"eslint-plugin-jest\": \"^22.8.0\",\n    \"eslint-plugin-prettier\": \"^3.1.0\",\n    \"jest\": \"^24.8.0\",\n    \"jest-coverage-badges\": \"^1.1.2\",\n    \"npm-run-all\": \"^4.1.5\",\n    \"prettier\": \"^1.18.2\",\n    \"supertest\": \"^4.0.2\"\n  }\n}\n",
+    "longname": "/Users/tanakakns/workspace/github/express-supertest/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

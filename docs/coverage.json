@@ -1,0 +1,318 @@
+{
+  "coverage": "5.51%",
+  "expectCount": 145,
+  "actualCount": 8,
+  "files": {
+    "app/__tests__/context_test.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "app/__tests__/error_test.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "app/__tests__/logger_test.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "app/app.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4
+      ]
+    },
+    "app/context.js": {
+      "expectCount": 9,
+      "actualCount": 6,
+      "undocumentLines": [
+        3,
+        4,
+        5
+      ]
+    },
+    "app/domain/__tests__/token-domain_test.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5
+      ]
+    },
+    "app/domain/token-domain.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        13,
+        20,
+        23
+      ]
+    },
+    "app/error.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6,
+        8,
+        13
+      ]
+    },
+    "app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4
+      ]
+    },
+    "app/infrastructure/datastore/dynamodb/app-repo-impl.js": {
+      "expectCount": 13,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14,
+        18,
+        22,
+        42,
+        58
+      ]
+    },
+    "app/infrastructure/datastore/dynamodb/dynamodb.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        9,
+        10
+      ]
+    },
+    "app/infrastructure/datastore/dynamodb/user-repo-impl.js": {
+      "expectCount": 13,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14,
+        18,
+        22,
+        42,
+        58
+      ]
+    },
+    "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5
+      ]
+    },
+    "app/infrastructure/datastore/mongodb/mongodb.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        5
+      ]
+    },
+    "app/infrastructure/datastore/mongodb/user-repo-impl.js": {
+      "expectCount": 12,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        32
+      ]
+    },
+    "app/infrastructure/server/__tests__/echo_test.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5
+      ]
+    },
+    "app/infrastructure/server/__tests__/express_test.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5
+      ]
+    },
+    "app/infrastructure/server/express.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    "app/interface/__tests__/interceptor_test.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "app/interface/interceptor.js": {
+      "expectCount": 11,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        34
+      ]
+    },
+    "app/interface/router.js": {
+      "expectCount": 8,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        71
+      ]
+    },
+    "app/logger.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6,
+        22
+      ]
+    },
+    "app/usecase/__tests__/view-uc_test.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4
+      ]
+    },
+    "app/usecase/echo-uc.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    "app/usecase/repository/app-repo.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        8,
+        11
+      ]
+    },
+    "app/usecase/repository/user-repo.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        5,
+        8,
+        11
+      ]
+    },
+    "app/usecase/token-uc.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6,
+        11
+      ]
+    },
+    "app/usecase/user-uc.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6,
+        11
+      ]
+    },
+    "app/usecase/view-uc.js": {
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        3,
+        4,
+        5
+      ]
+    }
+  }
+}

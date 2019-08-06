@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | express-supertest</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/context.js~Context.html">Context</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="express-supertest">express-supertest</h1><p><img src="https://img.shields.io/badge/node.js-v12.4.0-brightgreen" alt="node.js">
+<img src="https://img.shields.io/badge/npm%20package-v6.10.2-brightgreen" alt="npm version">
+<a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="tested with jest"></a>
+<img src="./coverage/badge-lines.svg" alt="Coverage lines">
+<img src="./coverage/badge-functions.svg" alt="Coverage functions">
+<img src="./coverage/badge-branches.svg" alt="Coverage branches">
+<img src="./coverage/badge-statements.svg" alt="Coverage statements">
+<!-- description -->
+<a href="https://github.com/visionmedia/supertest">SuperTest</a> &#x3092;&#x3084;&#x308A;&#x305F;&#x3044;&#x304C;&#x70BA;&#x306B;&#x4F5C;&#x3063;&#x305F;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3002;<br>&#x95A2;&#x4FC2;&#x306A;&#x3044;&#x3053;&#x3068;&#x3082;&#x3084;&#x3063;&#x3066;&#x308B;&#x3002;</p>
+<h2 id="&#x30D0;&#x30C3;&#x30B8;">&#x30D0;&#x30C3;&#x30B8;</h2><p><a href="https://shields.io/">shields.io</a> &#x3067;&#x597D;&#x304D;&#x306A;&#x30D0;&#x30C3;&#x30B8;&#x4F5C;&#x308C;&#x308B;&#x3002;<br>&#x30AB;&#x30D0;&#x30EC;&#x30C3;&#x30B8;&#x306F; <a href="https://github.com/pamepeixinho/jest-coverage-badges">jest-coverage-badges</a> &#x3067;&#x51FA;&#x3057;&#x305F;&#x3002;</p>
+<h2 id="&#x30ED;&#x30AE;&#x30F3;&#x30B0;">&#x30ED;&#x30AE;&#x30F3;&#x30B0;</h2><h3 id="&#x30EC;&#x30D9;&#x30EB;">&#x30EC;&#x30D9;&#x30EB;</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">Level</th>
+<th style="text-align:left">&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">fatal</td>
+<td style="text-align:left">&#x5373;&#x5EA7;&#x306B;&#x5BFE;&#x5FDC;&#x304C;&#x5FC5;&#x8981;&#x306A;&#x30A8;&#x30E9;&#x30FC;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">error</td>
+<td style="text-align:left">&#x30D9;&#x30B9;&#x30C8;&#x30A8;&#x30D5;&#x30A9;&#x30FC;&#x30C8;&#x3067;&#x5BFE;&#x5FDC;&#x304C;&#x5FC5;&#x8981;&#x306A;&#x30A8;&#x30E9;&#x30FC;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">&#x3059;&#x3050;&#x306B;&#x554F;&#x984C;&#x306B;&#x306A;&#x308B;&#x3053;&#x3068;&#x306F;&#x306A;&#x3044;&#x304C;&#x3001;&#x5F8C;&#x3005;&#x5BFE;&#x5FDC;&#x304C;&#x5FC5;&#x8981;&#x3001;&#x3082;&#x3057;&#x304F;&#x306F;&#x4ECA;&#x5F8C; error &#x306B;&#x306A;&#x308A;&#x305D;&#x3046;&#x306A;&#x4E8B;&#x8C61;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">info</td>
+<td style="text-align:left">&#x81EA;&#x5206;&#x30B5;&#x30FC;&#x30D0;&#x30FB;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x5916;&#x3078;&#x306E;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3084;&#x30B5;&#x30FC;&#x30C9;&#x30D1;&#x30FC;&#x30C6;&#x30A3;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;&#x306E;&#x5165;&#x529B;&#x60C5;&#x5831;&#x306A;&#x3069;&#x3092;&#x51FA;&#x529B;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">debug</td>
+<td style="text-align:left">&#x5546;&#x7528;&#x30FB;&#x672C;&#x756A;&#x3067;&#x306F;&#x51FA;&#x529B;&#x3057;&#x306A;&#x3044;&#x30C7;&#x30D0;&#x30C3;&#x30B0;&#x7528;&#x306E;&#x60C5;&#x5831;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">trace</td>
+<td style="text-align:left">&#x5546;&#x7528;&#x30FB;&#x672C;&#x756A;&#x3067;&#x306F;&#x51FA;&#x529B;&#x3057;&#x306A;&#x3044; debug &#x3088;&#x308A;&#x3055;&#x3089;&#x306B;&#x8A73;&#x7D30;&#x306A;&#x60C5;&#x5831;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x3068;&#x30ED;&#x30B0;&#x51FA;&#x529B;">&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x3068;&#x30ED;&#x30B0;&#x51FA;&#x529B;</h3><p>&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x30D9;&#x30FC;&#x30B9;&#x3067;&#x6574;&#x7406;&#x3059;&#x308B;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Level</th>
+<th style="text-align:left">errorCode</th>
+<th style="text-align:left">status</th>
+<th style="text-align:left">type</th>
+<th style="text-align:left">mesage</th>
+<th style="text-align:left">&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">fatal</td>
+<td style="text-align:left">FATAL001</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">Service Start Failure</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x306E;&#x8D77;&#x52D5;&#x306B;&#x5931;&#x6557;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">error</td>
+<td style="text-align:left">ERROR001</td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">Internal Server Error</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x30CF;&#x30F3;&#x30C9;&#x30EA;&#x30F3;&#x30B0;&#x4E0D;&#x53EF;&#x80FD;&#x306A;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x767A;&#x751F;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">error</td>
+<td style="text-align:left">ERROR002</td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">Database Access Error</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3067;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x767A;&#x751F;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">error</td>
+<td style="text-align:left">ERROR003</td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">API Access Error</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">API&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3067;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x767A;&#x751F;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">WARN001</td>
+<td style="text-align:left">400</td>
+<td style="text-align:left">Bad Request</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306B;&#x4E0D;&#x6B63;&#x304C;&#x3042;&#x308B;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">WARN002</td>
+<td style="text-align:left">401</td>
+<td style="text-align:left">Unauthorized</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x8A8D;&#x8A3C;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x767A;&#x751F;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">WARN003</td>
+<td style="text-align:left">403</td>
+<td style="text-align:left">Forbidden</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x6A29;&#x9650;&#x306E;&#x7121;&#x3044;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">WARN004</td>
+<td style="text-align:left">404</td>
+<td style="text-align:left">Not Found</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">URI&#x3082;&#x3057;&#x304F;&#x306F;&#x691C;&#x7D22;&#x3092;&#x4F9D;&#x983C;&#x3055;&#x308C;&#x305F;&#x30EA;&#x30BD;&#x30FC;&#x30B9;&#x304C;&#x898B;&#x3064;&#x304B;&#x3089;&#x306A;&#x3044;&#x3002;&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x306B;&#x3088;&#x3063;&#x3066;&#x306F;&#x7A7A; body/200 status&#x3067;&#x8FD4;&#x5374;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x691C;&#x8A0E;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">WARN005</td>
+<td style="text-align:left">405</td>
+<td style="text-align:left">Method Not Allowed</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x5B58;&#x5728;&#x3057;&#x306A;&#x3044; HTTP &#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x306E;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3002;&#x8A31;&#x53EF;&#x304C;&#x7121;&#x3044;&#x5834;&#x5408;&#x306F; 403/Forbidden &#x3067;&#x8FD4;&#x5374;&#x3059;&#x308B;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">WARN006</td>
+<td style="text-align:left">406</td>
+<td style="text-align:left">Not Acceptable</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Accept-* &#x30D8;&#x30C3;&#x30C0;&#x3067;&#x6E96;&#x5099;&#x306E;&#x306A;&#x3044;&#x3082;&#x306E;&#x3092;&#x4F9D;&#x983C;&#x3055;&#x308C;&#x305F;&#x5834;&#x5408;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">WARN007</td>
+<td style="text-align:left">409</td>
+<td style="text-align:left">Conflict</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x4F9D;&#x983C;&#x5185;&#x5BB9;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x30EA;&#x30BD;&#x30FC;&#x30B9;&#x7AF6;&#x5408;&#x304C;&#x767A;&#x751F;&#x3059;&#x308B;&#x305F;&#x3081;&#x62D2;&#x5426;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">WARN008</td>
+<td style="text-align:left">415</td>
+<td style="text-align:left">Unsupported Media Type</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x51E6;&#x7406;&#x3067;&#x304D;&#x306A;&#x3044; Content-Type &#x3067;&#x4F9D;&#x983C;&#x3055;&#x308C;&#x305F;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">warn</td>
+<td style="text-align:left">WARN009</td>
+<td style="text-align:left">422</td>
+<td style="text-align:left">Unprocessable Entity</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">&#x5165;&#x529B;&#x5024;&#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3067;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x767A;&#x751F;&#x3002;400/Bad Request &#x3067;&#x8FD4;&#x5374;&#x3059;&#x308B;&#x304B;&#x60A9;&#x3080;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x30DC;&#x30C7;&#x30A3;&#x306F;&#x4EE5;&#x4E0B;&#x3002;</p>
+<pre><code><code class="source-code prettyprint">{
+  &quot;errorCode&quot;: &quot;xxxxx&quot;,
+  &quot;type&quot;: &quot;xxxxx&quot;,
+  &quot;message&quot;: &quot;xxxxx&quot;
+}</code>
+</code></pre><p>&#x4E0A;&#x8A18;&#x3092;&#x52A0;&#x5473;&#x3057;&#x3066;&#x4F55;&#x3092;&#x30ED;&#x30B0;&#x51FA;&#x529B;&#x3059;&#x308B;&#x304B;&#x306F;&#x3053;&#x308C;&#x304B;&#x3089;&#x6574;&#x7406;&#x3002;&#xFF08;TODO&#xFF09;</p>
+<h3 id="&#x30ED;&#x30AC;&#x30FC;">&#x30ED;&#x30AC;&#x30FC;</h3><p>&#x30ED;&#x30AC;&#x30FC;&#x306F; <a href="https://github.com/winstonjs/winston">winston</a> &#x3002;<br>&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x30ED;&#x30AC;&#x30FC;&#x306B; <a href="https://github.com/expressjs/morgan">morgan</a> &#x3068;&#x304B; <a href="https://github.com/bithavoc/express-winston">express-winston</a> &#x304C;&#x3042;&#x308B;&#x304C;&#x3001;&#x500B;&#x4EBA;&#x7684;&#x306B;&#x4F7F;&#x3044;&#x306B;&#x304F;&#x304B;&#x3063;&#x305F;&#x306E;&#x3067;&#x4F7F;&#x3063;&#x3066;&#x306A;&#x3044;&#x3002;<br>&#x4EE3;&#x308F;&#x308A;&#x306B; <a href="https://github.com/jshttp/on-headers">on-headers</a> &#x3068; <a href="https://github.com/jshttp/on-finished">on-finished</a> &#x3092;&#x4F7F;&#x3063;&#x3066;&#x81EA;&#x5206;&#x3067;&#x5B9F;&#x88C5;&#x3002;</p>
+<h3 id="reqid-&#x306E;&#x8A2D;&#x5B9A;">reqId &#x306E;&#x8A2D;&#x5B9A;</h3><p><a href="https://github.com/skonves/express-http-context">express-http-context</a> &#x3092;&#x5229;&#x7528;&#x3057;&#x3066; 1 &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x4E2D;&#x306B;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B; key-value &#x306B; &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8; ID &#x30FB;&#x30C8;&#x30EC;&#x30FC;&#x30B9; ID &#xFF08; reqId &#xFF09;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3002;<br>&#x305D;&#x306E;&#x5024;&#x3092; logger &#x304C;&#x53D6;&#x5F97;&#x3057;&#x3066;&#x30ED;&#x30B0;&#x51FA;&#x529B;&#x6642;&#x306B; reqId &#x3092;&#x4ED8;&#x4E0E;&#x3059;&#x308B;&#x3002;<br>reqId &#x306B;&#x306F; uuidv4 &#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x3002;<br>&#x306A;&#x304A;&#x3001;<a href="https://github.com/skonves/express-http-context">express-http-context</a> &#x3067;&#x306F; &#x30B9;&#x30EC;&#x30C3;&#x30C9;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x306E;&#x3088;&#x3046;&#x306B;&#x52D5;&#x4F5C;&#x3059;&#x308B; <strong>Continuation-local storage</strong> &#x304C;&#x5229;&#x7528;&#x3055;&#x308C;&#x308B;&#x3002;&#xFF08;&#x53B3;&#x5BC6;&#x306B;&#x306F;&#x30B9;&#x30EC;&#x30C3;&#x30C9;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x3067;&#x306F;&#x306A;&#x3044;&#x3002;&#xFF09;<br>&#x8A73;&#x3057;&#x304F;&#x306F; <a href="https://github.com/jeff-lewis/cls-hooked#readme">cls-hooked</a> &#x3092;&#x53C2;&#x7167; &#x3002;</p>
+<h2 id="jwt">JWT</h2><p><a href="https://github.com/auth0/node-jsonwebtoken">node-jsonwebtoken</a> &#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x5B9F;&#x73FE;&#x3057;&#x305F;&#x3002;<br>&#x9375;&#x7BA1;&#x7406;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x53C2;&#x8003;&#x306B;&#x3057;&#x306A;&#x3044;&#x3053;&#x3068;&#x3002;</p>
+<h3 id="&#x4E88;&#x7D04;&#x6E08;&#x307F;&#x30AF;&#x30EC;&#x30FC;&#x30E0;&#x540D;">&#x4E88;&#x7D04;&#x6E08;&#x307F;&#x30AF;&#x30EC;&#x30FC;&#x30E0;&#x540D;</h3><p>Payload &#x3067;&#x4E88;&#x7D04;&#x3055;&#x308C;&#x305F;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x306F;&#x4EE5;&#x4E0B;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30AF;&#x30EC;&#x30FC;&#x30E0;&#x540D;</th>
+<th>&#x8AAC;&#x660E;</th>
+<th>node&#x3067;&#x4F7F;&#x3046;&#x6642;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iat</td>
+<td>token&#x304C;&#x767A;&#x884C;&#x3055;&#x308C;&#x305F;&#x6642;&#x9593;</td>
+<td>&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x3067;&#x52DD;&#x624B;&#x306B;&#x5165;&#x308B;</td>
+</tr>
+<tr>
+<td>exp</td>
+<td>token&#x306E;&#x6709;&#x52B9;&#x671F;&#x9650;</td>
+<td>expiresIn</td>
+</tr>
+<tr>
+<td>iss</td>
+<td>token&#x767A;&#x884C;&#x8005;&#x306E;&#x540D;&#x524D;</td>
+<td>issuer</td>
+</tr>
+<tr>
+<td>aud</td>
+<td>&#x3069;&#x306E;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x5411;&#x3051;&#x306B;&#x767A;&#x884C;&#x3055;&#x308C;&#x305F;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3067;&#x3042;&#x308B;&#x304B;&#x306E;&#x8B58;&#x5225;&#x5B50;</td>
+<td>audience</td>
+</tr>
+<tr>
+<td>jti</td>
+<td>&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x306E;&#x56FA;&#x6709; ID</td>
+<td>jwtid</td>
+</tr>
+<tr>
+<td>sub</td>
+<td>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x8B58;&#x5225;&#x5B50;</td>
+<td>subject</td>
+</tr>
+<tr>
+<td>nbf</td>
+<td>JWT&#x304C;&#x6709;&#x52B9;&#x306B;&#x306A;&#x308B;&#x65E5;&#x6642;</td>
+<td>notBefore</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><a href="https://qiita.com/keitatata/items/fa89f007de21e286df17">&#x53C2;&#x8003;</a></li>
+</ul>
+<h2 id="&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;">&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;</h2><h3 id="&#x5165;&#x529B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;">&#x5165;&#x529B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;</h3><p>HTTP &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306F; <a href="https://github.com/express-validator/express-validator">express-validator</a> &#x3067;&#x5B9F;&#x73FE;&#x3002;&#xFF08;TODO&#xFF09;</p>
+<h3 id="json-schema">JSON Schema</h3><p>JSON Schema &#x304A;&#x3088;&#x3073; Ajv &#x3092;&#x5229;&#x7528;&#x3057;&#x3066; JSON &#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x5B9F;&#x73FE;&#x3057;&#x305F;&#x3002;</p>
+<ul>
+<li><a href="https://json-schema.org/">json-schema.org</a></li>
+<li><a href="https://github.com/epoberezkin/ajv">Ajv: Another JSON Schema Validator</a><ul>
+<li>Ajv version 6.0.0 that supports JSON Schema draft-07 is released.</li>
+</ul>
+</li>
+</ul>
+<h2 id="mongodb">MongoDB</h2><p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B; Docker &#x3067;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x5B9F;&#x884C;&#x3067;&#x304D;&#x308B;&#x3002;</p>
+<pre><code class="lang-bash"><code class="source-code prettyprint">$ docker pull mongo:3.6.13-xenial
+$ docker run -d --name mongo -p 27017:27017 mongo:3.6.13-xenial
+$ docker exec -it mongo bash
+:/# mongo
+&gt;</code>
+</code></pre>
+<h3 id="mongodb-&#x57FA;&#x790E;">MongoDB &#x57FA;&#x790E;</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">MongoDB</th>
+<th style="text-align:left">RDB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;</td>
+<td style="text-align:left">&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30B3;&#x30EC;&#x30AF;&#x30B7;&#x30E7;&#x30F3;</td>
+<td style="text-align:left">&#x30C6;&#x30FC;&#x30D6;&#x30EB;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;</td>
+<td style="text-align:left">&#x884C; / &#x30EC;&#x30B3;&#x30FC;&#x30C9;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;</td>
+<td style="text-align:left">&#x5217; / &#x30AB;&#x30E9;&#x30E0;</td>
+</tr>
+</tbody>
+</table>
+<p>BSON&#xFF08; Binary JSON &#xFF09;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x578B;&#x3002;&#xFF08; <a href="https://docs.mongodb.com/manual/reference/operator/query/type/">&#x53C2;&#x8003;</a> &#xFF09;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Number</th>
+<th style="text-align:left">Alias</th>
+<th style="text-align:left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Double</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">&#x201C;double&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">String</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">&#x201C;string&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Object</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">&#x201C;object&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Array</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">&#x201C;array&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Binary data</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">&#x201C;binData&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Undefined</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">&#x201C;undefined&#x201D;</td>
+<td style="text-align:left">Deprecated.</td>
+</tr>
+<tr>
+<td style="text-align:left">Object id</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">&#x201C;objectId&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">&#x201C;bool&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Date</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">&#x201C;date&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Null</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">&#x201C;null&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Regular Expression</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">&#x201C;regex&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">DBPointer</td>
+<td style="text-align:left">12</td>
+<td style="text-align:left">&#x201C;dbPointer&#x201D;</td>
+<td style="text-align:left">Deprecated.</td>
+</tr>
+<tr>
+<td style="text-align:left">JavaScript</td>
+<td style="text-align:left">13</td>
+<td style="text-align:left">&#x201C;javascript&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Symbol</td>
+<td style="text-align:left">14</td>
+<td style="text-align:left">&#x201C;symbol&#x201D;</td>
+<td style="text-align:left">Deprecated.</td>
+</tr>
+<tr>
+<td style="text-align:left">JavaScript (with scope)</td>
+<td style="text-align:left">15</td>
+<td style="text-align:left">&#x201C;javascriptWithScope&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">32-bit integer</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">&#x201C;int&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Timestamp</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">&#x201C;timestamp&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">64-bit integer</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">&#x201C;long&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Decimal128</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">&#x201C;decimal&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Min key</td>
+<td style="text-align:left">-1</td>
+<td style="text-align:left">&#x201C;minKey&#x201D;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">Max key</td>
+<td style="text-align:left">127</td>
+<td style="text-align:left">&#x201C;maxKey&#x201D;</td>
+</tr>
+</tbody>
+</table>
+<p><code>ISODate</code> &#x306F;&#x6587;&#x5B57;&#x5217;&#x3092; <code>Date</code> &#x3078;&#x5909;&#x63DB;&#x3059;&#x308B;&#x30E6;&#x30FC;&#x30C6;&#x30A3;&#x30EA;&#x30C6;&#x30A3;&#x3067;&#x3042;&#x3063;&#x3066;&#x578B;&#x3067;&#x306F;&#x306A;&#x3044;&#x3002;</p>
+<h3 id="mongo-shell">Mongo Shell</h3><ul>
+<li><code>use [DB]</code> : DB &#x306E;&#x9078;&#x629E;&#x3002;&#x7121;&#x3051;&#x308C;&#x3070;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x308B;&#x3002;</li>
+<li><code>show dbs</code> : DB &#x4E00;&#x89A7;&#x3002;</li>
+<li><code>show collections</code> : &#x30B3;&#x30EC;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x4E00;&#x89A7;&#x3002;</li>
+<li><code>db.stats()</code> : &#x73FE;&#x5728;&#x306E; DB &#x306E;&#x72B6;&#x614B;&#x8868;&#x793A;&#x3002;</li>
+<li><code>db.createCollection(name, options)</code> : &#x30B3;&#x30EC;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x4F5C;&#x6210;&#x3002;</li>
+<li><code>db.&#x30B3;&#x30EC;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x540D;.&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x540D;(options)</code> : &#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x306E;&#x69CB;&#x6587;&#x3002;<ul>
+<li><code>insert()</code> : &#x633F;&#x5165;&#x3002;&#x30B3;&#x30EC;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x7121;&#x3044;&#x5834;&#x5408;&#x3001;&#x6697;&#x9ED9;&#x7684;&#x306B;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x308B;&#x3002;<code>createCollections</code> &#x3067;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x65B9;&#x304C;&#x671B;&#x307E;&#x3057;&#x3044;&#x3002;</li>
+<li><code>insertMany()</code> : &#x8907;&#x6570;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x3092;&#x914D;&#x5217;&#x3067;&#x633F;&#x5165;&#x3002;</li>
+<li><code>find()</code> : &#x691C;&#x7D22;&#x3002;</li>
+<li><code>findOne()</code> : 1 &#x3064;&#x691C;&#x7D22;&#x3002;</li>
+<li><code>update()</code> : &#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x8FFD;&#x52A0;&#x3001;&#x66F4;&#x65B0;&#x3002;</li>
+<li><code>save()</code> :  id &#x304C;&#x5B58;&#x5728;&#x3059;&#x308B;&#x5834;&#x5408; <code>update()</code> &#x3001; id &#x304C;&#x5B58;&#x5728;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408; <code>insert()</code>&#x3002;</li>
+<li><code>upsert()</code> :  id &#x304C;&#x5B58;&#x5728;&#x3059;&#x308B;&#x5834;&#x5408; <code>update()</code> &#x3001; id &#x304C;&#x5B58;&#x5728;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408; <code>insert()</code>&#x3002;</li>
+<li><code>findAndModify()</code> : &#x691C;&#x7D22;&#x3068;&#x4FEE;&#x6B63;&#x3092;&#x4E00;&#x62EC;&#x3067;&#x884C;&#x3046;&#x3002;</li>
+<li><code>remove()</code> : &#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x306E;&#x524A;&#x9664;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="jest-&#x3067;-mongodb-&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x30C6;&#x30B9;&#x30C8;&#x3059;&#x308B;&#x3068;&#x304D;">Jest &#x3067; MongoDB &#x30A2;&#x30D7;&#x30EA;&#x3092;&#x30C6;&#x30B9;&#x30C8;&#x3059;&#x308B;&#x3068;&#x304D;</h3><p>MongoDB &#x3078;&#x306E;&#x30B3;&#x30CD;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x6B8B;&#x3063;&#x3066;&#x3057;&#x307E;&#x3044;&#x3001;&#x6B63;&#x5E38;&#x306B; Jest &#x30C6;&#x30B9;&#x30C8;&#x304C;&#x7D42;&#x4E86;&#x3057;&#x306A;&#x3044;&#x4E8B;&#x8C61;&#x304C;&#x767A;&#x751F;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3042;&#x308B;&#x3002;<br><a href="https://jestjs.io/docs/en/mongodb">&#x3053;&#x3053;</a>&#x3092;&#x53C2;&#x8003;&#x306B;&#x4EE5;&#x4E0B;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x3082;&#x3088;&#x3044;&#x3002;</p>
+<pre><code class="lang-bash"><code class="source-code prettyprint">$ npm i -D @shelf/jest-mongodb</code>
+</code></pre>
+<h2 id="pdf-&#x4F5C;&#x6210;">PDF &#x4F5C;&#x6210;</h2><p>&#x53F3;&#x5F80;&#x5DE6;&#x5F80;&#x3057;&#x305F;&#x304C;&#x3001; <a href="https://github.com/bpampuch/pdfmake">pdfmake</a> &#x306B;&#x843D;&#x3061;&#x7740;&#x3044;&#x305F;&#x3002;&#xFF08;&#x5185;&#x90E8;&#x3067; <a href="https://github.com/foliojs/pdfkit">pdfkit</a> &#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;&#xFF09;<br>HTML &#x304B;&#x3089; PDF &#x5909;&#x63DB;&#x3057;&#x305F;&#x3089;&#x30AD;&#x30EC;&#x30A4;&#x3067;&#x697D;&#x304B;&#x306A;&#x3068;&#x601D;&#x3044; <a href="https://github.com/marcbachmann/node-html-pdf">node-html-pdf</a> &#x3068; <a href="https://github.com/GoogleChrome/puppeteer">puppeteer</a> &#x3067;&#x4F5C;&#x3063;&#x3066;&#x307F;&#x305F;&#x304C;&#x3001;&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x30B5;&#x30A4;&#x30BA;&#x304C;&#x30C7;&#x30AB;&#x3059;&#x304E;&#x3066;&#x30B3;&#x30F3;&#x30C6;&#x30CA;&#x30B5;&#x30A4;&#x30BA;&#x304C; GB &#x30B5;&#x30A4;&#x30BA;&#x306B;&#x306A;&#x3063;&#x305F;&#x306E;&#x3067;&#x3084;&#x3081;&#x305F;&#x3002;&#x3002;&#x3002;&#x30D8;&#x30C3;&#x30C9;&#x30EC;&#x30B9;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3068;&#x306F;&#x8A00;&#x3048;&#x30C7;&#x30AB;&#x3044;&#x306E;&#x306D;&#x3002;&#x3002;&#x3002;</p>
+<h2 id="linter">Linter</h2><p><a href="https://github.com/eslint/eslint">eslint</a> &#x3068;&#x53B3;&#x3057;&#x3044;&#x3068;&#x5642;&#x306E; <a href="https://github.com/uber-web/uber-eslint">Uber &#x306E;&#x8A2D;&#x5B9A;</a>&#x3092;&#x53C2;&#x8003;&#x306B;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x3002;<br><a href="https://github.com/microsoft/TypeScript">TypeScript</a> &#x306B;&#x3059;&#x308B;&#x304B;&#x60A9;&#x3080;&#x304C;&#x3001;&#x578B;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3068;&#x304B;&#x30C8;&#x30E9;&#x30F3;&#x30B9;&#x30D1;&#x30A4;&#x30EB;&#x3068;&#x304B;&#x30A6;&#x30B6;&#x305D;&#x3046;&#x306A;&#x306E;&#x3067;&#x3001;&#x305D;&#x306E;&#x3046;&#x3061; ECMAScript &#x306B;&#x53D6;&#x308A;&#x8FBC;&#x307E;&#x308C;&#x308B;&#x3053;&#x3068;&#x3092;&#x7948;&#x3063;&#x3066;&#x898B;&#x9001;&#x308A;&#x3002;</p>
+<h2 id="docker">Docker</h2><p>TODO</p>
+<h2 id="docker-compose">docker-compose</h2><p>TODO</p>
+<h2 id="esdoc">ESDoc</h2><p>&#x6240;&#x8B02; Javadoc &#x306E; ES &#x7248;&#x3002;<br>JSDoc &#x3068;&#x3044;&#x3046;&#x3082;&#x306E;&#x3082;&#x3042;&#x308B;&#x304C;&#x3001;&#x3053;&#x3063;&#x3061;&#x306B;&#x3057;&#x305F;&#x3002;<br>&#x5C0E;&#x5165;&#x3002;</p>
+<pre><code class="lang-bash"><code class="source-code prettyprint">$ npm i -D esdoc esdoc-standard-plugin</code>
+</code></pre>
+<p><code>package.json</code> &#x306B;&#x8A2D;&#x5B9A;&#x66F8;&#x3044;&#x305F;&#x3002;&#xFF08; <a href="https://esdoc.org/manual/config.html">&#x53C2;&#x8003;</a> &#xFF09;</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">{
+  &quot;esdoc&quot;: {
+    &quot;source&quot;: &quot;./app&quot;,
+    &quot;destination&quot;: &quot;./docs&quot;,
+    &quot;plugins&quot;: [{&quot;name&quot;: &quot;esdoc-standard-plugin&quot;}]
+  },
+  &quot;scripts&quot;: {
+    &quot;esdoc&quot;: &quot;esdoc&quot;
+  }
+}</code>
+</code></pre>
+<p>&#x4F7F;&#x3048;&#x308B;&#x30BF;&#x30B0;&#x306F; <a href="https://esdoc.org/manual/tags.html">&#x3053;&#x3053;</a> &#x3002;</p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
