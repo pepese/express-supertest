@@ -26,22 +26,30 @@
   "esdoc": {
     "source": "./app",
     "destination": "./docs",
-    "plugins": [{"name": "esdoc-standard-plugin"}]
+    "plugins": [
+      {
+        "name": "esdoc-standard-plugin"
+      },
+      {
+        "name": "esdoc-node"
+      }
+    ]
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "ajv": "^6.10.2",
-    "aws-sdk": "^2.493.0",
+    "aws-sdk": "^2.505.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "express-http-context": "^1.2.3",
     "express-validator": "^6.1.1",
-    "helmet": "^3.18.0",
+    "helmet": "^3.20.0",
     "image-size": "^0.7.4",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.6.4",
+    "mongoose": "^5.6.8",
     "notp": "^2.0.3",
+    "npm-check-updates": "^3.1.20",
     "on-finished": "^2.3.0",
     "on-headers": "^1.0.2",
     "pdfmake": "^0.1.58",
@@ -50,10 +58,11 @@
   },
   "devDependencies": {
     "esdoc": "^1.1.0",
+    "esdoc-node": "^1.0.4",
     "esdoc-standard-plugin": "^1.0.0",
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-jest": "^22.8.0",
+    "eslint-plugin-jest": "^22.15.0",
     "eslint-plugin-prettier": "^3.1.0",
     "jest": "^24.8.0",
     "jest-coverage-badges": "^1.1.2",

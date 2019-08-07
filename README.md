@@ -3,10 +3,10 @@
 ![node.js](https://img.shields.io/badge/node.js-v12.4.0-brightgreen)
 ![npm version](https://img.shields.io/badge/npm%20package-v6.10.2-brightgreen)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
-![Coverage lines](./coverage/badge-lines.svg)
-![Coverage functions](./coverage/badge-functions.svg)
-![Coverage branches](./coverage/badge-branches.svg)
-![Coverage statements](./coverage/badge-statements.svg)
+![Coverage lines](/coverage/badge-lines.svg)
+![Coverage functions](/coverage/badge-functions.svg)
+![Coverage branches](/coverage/badge-branches.svg)
+![Coverage statements](/coverage/badge-statements.svg)
 <!-- description -->
 [SuperTest](https://github.com/visionmedia/supertest) をやりたいが為に作ったプロジェクト。  
 関係ないこともやってる。
@@ -212,9 +212,10 @@ JSDoc というものもあるが、こっちにした。
 導入。
 
 ```bash
-$ npm i -D esdoc esdoc-standard-plugin
+$ npm i -D esdoc esdoc-standard-plugin esdoc-node
 ```
 
+上記で注意なのは、 esdoc は commonjs を解釈できないので、 `esdoc-node` プラグインを入れてやる必要があること。  
 `package.json` に設定書いた。（ [参考](https://esdoc.org/manual/config.html) ）
 
 ```javascript
@@ -222,7 +223,14 @@ $ npm i -D esdoc esdoc-standard-plugin
   "esdoc": {
     "source": "./app",
     "destination": "./docs",
-    "plugins": [{"name": "esdoc-standard-plugin"}]
+    "plugins": [
+      {
+        "name": "esdoc-standard-plugin"
+      },
+      {
+        "name": "esdoc-node"
+      }
+    ]
   },
   "scripts": {
     "esdoc": "esdoc"

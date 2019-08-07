@@ -1,62 +1,37 @@
 {
-  "coverage": "5.51%",
-  "expectCount": 145,
+  "coverage": "8.51%",
+  "expectCount": 94,
   "actualCount": 8,
   "files": {
-    "app/__tests__/context_test.js": {
-      "expectCount": 1,
+    "app/config.js": {
+      "expectCount": 6,
       "actualCount": 0,
       "undocumentLines": [
-        3
-      ]
-    },
-    "app/__tests__/error_test.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
-    },
-    "app/__tests__/logger_test.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
-    },
-    "app/app.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        3,
-        4
+        5,
+        6,
+        7,
+        8,
+        10,
+        11
       ]
     },
     "app/context.js": {
-      "expectCount": 9,
+      "expectCount": 6,
       "actualCount": 6,
-      "undocumentLines": [
-        3,
-        4,
-        5
-      ]
+      "undocumentLines": []
     },
     "app/domain/__tests__/token-domain_test.js": {
-      "expectCount": 3,
+      "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
-        3,
         4,
         5
       ]
     },
     "app/domain/token-domain.js": {
-      "expectCount": 9,
+      "expectCount": 6,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
-        5,
         7,
         8,
         9,
@@ -69,28 +44,24 @@
       "expectCount": 5,
       "actualCount": 0,
       "undocumentLines": [
+        13,
         3,
         4,
         6,
-        8,
-        13
+        8
       ]
     },
     "app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js": {
-      "expectCount": 2,
+      "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        3,
         4
       ]
     },
     "app/infrastructure/datastore/dynamodb/app-repo-impl.js": {
-      "expectCount": 13,
+      "expectCount": 10,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
-        5,
         7,
         8,
         10,
@@ -104,22 +75,17 @@
       ]
     },
     "app/infrastructure/datastore/dynamodb/dynamodb.js": {
-      "expectCount": 4,
+      "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
         9,
         10
       ]
     },
     "app/infrastructure/datastore/dynamodb/user-repo-impl.js": {
-      "expectCount": 13,
+      "expectCount": 10,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
-        5,
         7,
         8,
         10,
@@ -133,33 +99,25 @@
       ]
     },
     "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js": {
-      "expectCount": 3,
+      "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
         5
       ]
     },
     "app/infrastructure/datastore/mongodb/mongodb.js": {
-      "expectCount": 2,
+      "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        3,
         5
       ]
     },
     "app/infrastructure/datastore/mongodb/user-repo-impl.js": {
-      "expectCount": 12,
+      "expectCount": 7,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
-        5,
         6,
-        7,
         8,
-        12,
         13,
         15,
         16,
@@ -167,54 +125,25 @@
         32
       ]
     },
-    "app/infrastructure/server/__tests__/echo_test.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        3,
-        4,
-        5
-      ]
-    },
     "app/infrastructure/server/__tests__/express_test.js": {
-      "expectCount": 3,
+      "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
         5
       ]
     },
     "app/infrastructure/server/express.js": {
-      "expectCount": 6,
-      "actualCount": 0,
-      "undocumentLines": [
-        3,
-        4,
-        5,
-        6,
-        7,
-        9
-      ]
-    },
-    "app/interface/__tests__/interceptor_test.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        3
+        9
       ]
     },
     "app/interface/interceptor.js": {
-      "expectCount": 11,
+      "expectCount": 5,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
-        5,
-        6,
-        7,
         8,
-        9,
         10,
         12,
         13,
@@ -222,43 +151,32 @@
       ]
     },
     "app/interface/router.js": {
-      "expectCount": 8,
-      "actualCount": 0,
-      "undocumentLines": [
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        71
-      ]
-    },
-    "app/logger.js": {
-      "expectCount": 4,
-      "actualCount": 0,
-      "undocumentLines": [
-        3,
-        4,
-        6,
-        22
-      ]
-    },
-    "app/usecase/__tests__/view-uc_test.js": {
       "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
-        3,
+        71,
         4
       ]
     },
-    "app/usecase/echo-uc.js": {
-      "expectCount": 4,
+    "app/logger.js": {
+      "expectCount": 9,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
+        6,
+        22,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65,
+        69
+      ]
+    },
+    "app/usecase/echo-uc.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
         6,
         7
       ]
@@ -286,33 +204,26 @@
       ]
     },
     "app/usecase/token-uc.js": {
-      "expectCount": 4,
+      "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
-        3,
-        4,
         6,
         11
       ]
     },
     "app/usecase/user-uc.js": {
-      "expectCount": 4,
+      "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
-        3,
         4,
         6,
         11
       ]
     },
     "app/usecase/view-uc.js": {
-      "expectCount": 5,
+      "expectCount": 2,
       "actualCount": 2,
-      "undocumentLines": [
-        3,
-        4,
-        5
-      ]
+      "undocumentLines": []
     }
   }
 }

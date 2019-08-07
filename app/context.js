@@ -12,7 +12,7 @@ const config = require('./config');
  * app.use(context.init);
  * </pre></code>
  */
-export default class Context {
+class Context {
   /**
    * Express のミドルウェアに適用する。
    * @param {object} req - Express req object.
@@ -79,3 +79,5 @@ export default class Context {
     return httpContext.get(key);
   }
 }
+
+module.exports = Context;
