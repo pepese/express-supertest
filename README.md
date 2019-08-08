@@ -239,3 +239,117 @@ $ npm i -D esdoc esdoc-standard-plugin esdoc-node
 ```
 
 使えるタグは [ここ](https://esdoc.org/manual/tags.html) 。
+
+## Javascritp (ES) 文法メモ
+
+### スプレッド構文
+
+配列やオブジェクトの名前の前に「...」をつけると中身が展開される。
+
+```javascript
+const arr1 = ['A', 'B', 'C']
+const arr2 = [...arr1, '1', '2']
+console.log(arr2) // ["A", "B", "C", "1", "2"]
+
+const obj1 = { first_name:'ichiro', age:'20'}
+const obj2 = { ...obj1, role: 'leader', last_name: 'sato' }
+console.log(obj2) //{first_name:"ichiro", age:"20", role: "leader", last_name: "sato"}
+```
+
+### this
+
+`this` は呼び出し元のオブジェクト。  
+つまり、`this` を呼んだ場所によって、その参照先は変わってくる。
+
+|呼んだ場所|thisの参照先|
+|:---|:---|
+|関数外|グローバルオブジェクト|
+|関数内|グローバルオブジェクト|
+|call/applyメソッド|引数で指定されたオブジェクト|
+|イベントリスナー|イベント発生元|
+|コンストラクタ|生成したインスタンス|
+|メソッド|呼び出し元のオブジェクト|
+
+### Default Prameters
+
+```javascript
+const before = x => {
+  if (x === undefined) {
+    x = 0
+  }
+  return x * 2
+}
+
+const after = (x = 0) => {
+  return x * 2
+}
+```
+
+### Rest Parameters
+
+```javascript
+function f(a, b, ...rest) {
+  console.log(rest)
+}
+f(1, 2, 3, 4, 5) // [3, 4, 5]
+```
+
+### Destructuring
+
+```javascript
+const arr = [10, 20, 30, 40];
+const [first, second, ...rest] = arr;
+console.log(rest); // [ 30, 40 ]
+```
+
+### Property Definition / プロパティ定義
+
+変数名とキーが一致している場合は省略可能。
+
+```javascript
+const a = 1, b = 2;
+const before = {
+  a: a,
+  b: b,
+}
+const after = {
+  a,
+  b,
+}
+console.log(after); // { a: 1, b: 2 }
+```
+
+### Computed property name / 動的なプロパティ名
+
+```javascript
+const key = 'foo';
+const o = {
+  [key]: 1,
+};
+console.log(o); // { foo: 1 } // key じゃなくて foo になってる
+```
+
+### Generator Function
+
+`function*` と `yield` の組み合わせ。  
+都度関数実行するので、配列全部作るよりメモリ節約。
+
+```javascript
+function* range(end) {
+  for (let i = 0; i < end; i++) {
+    yield i;
+  }
+}
+for (const x of range(5)) {
+  console.log(x);
+}
+// 0
+// 1
+// 2
+// 3
+// 4
+```
+
+### 参考
+
+- [ECMAScript 2019時代のJavaScript入門書](https://jsprimer.net/)
