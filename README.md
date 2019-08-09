@@ -264,11 +264,21 @@ console.log(obj2) //{first_name:"ichiro", age:"20", role: "leader", last_name: "
 |呼んだ場所|thisの参照先|
 |:---|:---|
 |関数外|グローバルオブジェクト|
-|関数内|グローバルオブジェクト|
+|関数内|グローバルオブジェクト（strict mode では undefined）|
 |call/applyメソッド|引数で指定されたオブジェクト|
 |イベントリスナー|イベント発生元|
 |コンストラクタ|生成したインスタンス|
-|メソッド|呼び出し元のオブジェクト|
+|メソッド|レシーバ（呼び出し元のオブジェクト）|
+
+`apply()` や `call()` は「引数オブジェクト」を「呼び出す関数」の `this` に指定することができるメソッド。
+
+```javascript
+function example(){
+    console.log(this);
+}
+var element = { num: 4 }
+example.apply(element); // { num: 4 }
+```
 
 ### Default Prameters
 
