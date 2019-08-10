@@ -270,7 +270,8 @@ console.log(obj2) //{first_name:"ichiro", age:"20", role: "leader", last_name: "
 |コンストラクタ|生成したインスタンス|
 |メソッド|レシーバ（呼び出し元のオブジェクト）|
 
-`apply()` や `call()` は「引数オブジェクト」を「呼び出す関数」の `this` に指定することができるメソッド。
+`apply()` や `call()` は「引数オブジェクト」を「呼び出す関数」の `this` に指定することができるメソッド。  
+`apply()` と `call()` の違いは、引数を配列で渡すか、カンマ区切りで渡すかだけ。
 
 ```javascript
 function example(){
@@ -278,6 +279,22 @@ function example(){
 }
 var element = { num: 4 }
 example.apply(element); // { num: 4 }
+```
+
+### bind
+
+`apply()` や `call()` に似ているが、`apply()` や `call()` はそれぞれ関数内で参照する `this` を指定するのに対して、 `bind()` は `this` を束縛した関数オブジェクトをを生成する。
+
+```javascript
+function func12(a, b) {
+  console.log(this.val + a + b)
+}
+const bind1 = func12.bind({val: 1})
+const bind2 = func12.bind({val: 5}, 5)
+const bind3 = func12.bind({val: 2}, 6, 9)
+bind1(1, 2) // 4  // 1 + 1 + 2
+bind2(3)    // 13 // 5 + 5 + 3
+bind3()     // 17 // 2 + 6 + 9
 ```
 
 ### Default Prameters
@@ -304,13 +321,20 @@ function f(a, b, ...rest) {
 f(1, 2, 3, 4, 5) // [3, 4, 5]
 ```
 
-### Destructuring
+### Destructuring / デストラクチャリング
 
 ```javascript
 const arr = [10, 20, 30, 40];
 const [first, second, ...rest] = arr;
 console.log(rest); // [ 30, 40 ]
+
+const obj = { a: 123, b: 456, c: 789, z: 999 };
+const { a, b, c, d } = obj;
+console.log(`${a}, ${b}, ${c}, ${d}`); // 123, 456, 789, undefined
+// ${z} は「ReferenceError: z is not defined」になる
 ```
+
+配列でもオブジェクトでも使える。
 
 ### Property Definition / プロパティ定義
 
@@ -358,6 +382,27 @@ for (const x of range(5)) {
 // 2
 // 3
 // 4
+```
+
+### シンボル
+
+- ES6から使えるようになった
+- `Symbol()` コンストラクタから作成し、作成されたシンボルは必ずユニークとなる
+- 必ずユニークとなるので、オブジェクトプロパティの名前として使うと、バッティングを回避できる
+- 必要に応じて説明のための文字列を渡すことも可能
+
+```javascript
+const obj = {};
+const HOGE = Symbol();
+
+obj[HOGE] = 123;
+obj.HOGE = 999;
+console.log(obj); // { HOGE: 999, [Symbol()]: 123 }
+
+const FUGE = Symbol('FUGE');
+obj[FUGE] = 123;
+obj.FUGE = 999;
+console.log(obj); // { HOGE: 999, FUGE: 999, [Symbol()]: 123, [Symbol(FUGE)]: 123 }
 ```
 
 ### 参考
