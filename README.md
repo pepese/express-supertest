@@ -277,9 +277,11 @@ console.log(obj2) //{first_name:"ichiro", age:"20", role: "leader", last_name: "
 function example(){
     console.log(this);
 }
-var element = { num: 4 }
+var element = { num: 4 };
 example.apply(element); // { num: 4 }
 ```
+
+いろいろあるけど、基本 `this` は操作・変更しない。
 
 ### bind
 
@@ -403,6 +405,41 @@ const FUGE = Symbol('FUGE');
 obj[FUGE] = 123;
 obj.FUGE = 999;
 console.log(obj); // { HOGE: 999, FUGE: 999, [Symbol()]: 123, [Symbol(FUGE)]: 123 }
+```
+
+### for
+
+```javascript
+const data = [10, 20 ,30];
+for (let i = 0; i < data.length; i++) { // インデックス：旧
+  console.log(data[i]);
+}
+for (let i in data) { // インデックス：新
+  console.log(data[i]);
+}
+data.forEach(value => { // 値：旧
+  console.log(value);
+});
+for (let x of data) { // 値：新
+  console.log(x);
+}
+```
+
+### オブジェクトのコピー
+
+```javascript
+const obj_old = { a: 10, b: 20 };
+const copy_old = {}
+Object.assign(copy_old, obj_old);
+console.log(copy_old); // { a: 10, b: 20 }
+obj_old.b = 30;
+console.log(copy_old); // { a: 10, b: 20 } // コピーであり参照でないことを確認
+
+const obj_new = { a: 10, b: 20 };
+const copy_new = { ...obj_new };
+console.log(copy_new); // { a: 10, b: 20 }
+obj_new.b = 30;
+console.log(copy_new); // { a: 10, b: 20 } // コピーであり参照でないことを確認
 ```
 
 ### 参考
