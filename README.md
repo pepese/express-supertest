@@ -445,3 +445,22 @@ console.log(copy_new); // { a: 10, b: 20 } // コピーであり参照でない�
 ### 参考
 
 - [ECMAScript 2019時代のJavaScript入門書](https://jsprimer.net/)
+- [ECMAScript® 2018 Language Specification](https://www.ecma-international.org/ecma-262/9.0/index.html)
+- [【まとめ】JavaScriptでデザインパターン](https://qiita.com/kenju/items/4d32598ffddf86af82f2)
+- [JavaScript/TypeScriptの例外ハンドリング戦略を考える](https://qiita.com/shibukawa/items/ffe7264ecff78f55b296)
+
+## Node.js
+
+### 参考
+
+- [Node.js v12.8.0 Documentation](https://nodejs.org/api/all.html)
+    - 公式、低レイヤの知識も身につき暇なときに読むべし
+- [ノンブロッキングI/Oと非同期I/Oの違いを理解する](https://blog.takanabe.tokyo/2015/03/26/240/)
+- [JSのデバッグにはconsole.log()ではなくNodeのデバッガーを使いなさい](https://www.webprofessional.jp/debugging-javascript-node-debugger/)
+- [Node.jsのパフォーマンスチューニングのtips](https://blog.hiroppy.me/entry/2017/11/06/095943)
+- [(初心者向け) Node.js コンソール (console) の使い方](https://qiita.com/tadnakam/items/dda690bb184fdc74851f)
+- [Node.jsのデバッグ方法の話](https://qiita.com/daijinload/items/b89788deff9ad83acb42)
+- [Node.js production checklist](https://speakerdeck.com/gergelyke/node-dot-js-production-checklist)
+- [Node.jsでマイクロサービス Micro](https://qiita.com/chanuu/items/ffcc5a3289b8181f9032)
+- [Node.js Performance 改善ガイド](https://yosuke-furukawa.hatenablog.com/entry/2017/12/05/125517)
+- [JavaScript の仕組み：メモリ管理+ 4つの共通のメモリリーク処理方法](https://qiita.com/tkdn/items/ea4f034e0d661def244a)
