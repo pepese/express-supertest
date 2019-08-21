@@ -1,7 +1,7 @@
-FROM node:12.8.0-alpine
+FROM node:12.8.1-alpine
 
 ARG APP_VERSION
-ENV APP_NAME app
+ENV APP_NAME express-supertest
 ENV TZ Asia/Tokyo
 ENV APP_VERSION ${APP_VERSION}
 

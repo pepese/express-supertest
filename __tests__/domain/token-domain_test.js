@@ -1,6 +1,6 @@
 'use strict';
 
-const TokenDomain = require('../token-domain');
+const TokenDomain = require('../../app/domain/token-domain');
 let jwtTmp = null;
 let totpTmp = null;
 

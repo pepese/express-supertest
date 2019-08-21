@@ -1,7 +1,7 @@
 'use strict';
 
-const connection = require('../mongodb');
-const UserRepository = require('../user-repo-impl');
+const connection = require('../../../../app/infrastructure/datastore/mongodb/mongodb');
+const UserRepository = require('../../../../app/infrastructure/datastore/mongodb/user-repo-impl');
 const repository = new UserRepository();
 let tmpID;
 

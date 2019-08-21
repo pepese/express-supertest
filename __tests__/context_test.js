@@ -1,6 +1,6 @@
 'use strict';
 
-const context = require('../context');
+const context = require('../app/context');
 
 describe('app/context.js', () => {
   test('set/get by string key and string value', () => {

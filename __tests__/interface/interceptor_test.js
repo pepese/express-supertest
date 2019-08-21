@@ -1,6 +1,6 @@
 'use strict';
 
-const Interceptor = require('../interceptor');
+const Interceptor = require('../../app/interface/interceptor');
 
 describe('app/interface/interceptor.js', () => {
   test('validateUserJson() OK', () => {

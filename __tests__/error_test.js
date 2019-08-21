@@ -1,6 +1,6 @@
 'use strict';
 
-const AppError = require('../error').AppError;
+const AppError = require('../app/error').AppError;
 
 describe('app/error.js', () => {
   test('can new', () => {

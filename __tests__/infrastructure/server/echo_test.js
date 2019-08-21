@@ -1,8 +1,8 @@
 'use strict';
 
-const app = require('../express');
+const app = require('../../../app/infrastructure/server/express');
 const request = require('supertest');
-const config = require('../../../config');
+const config = require('../../../app/config');
 
 describe('ECHO TEST', () => {
   test('POST /echo', () => {

@@ -38,10 +38,10 @@ class Context {
     httpContext.ns.bindEmitter(res);
     // 値のセット
     let reqId;
-    if (req.header('X-Request-Id')) {
-      reqId = req.header('X-Request-Id');
-    } else if (req.header('X-Amzn-Trace-Id')) {
-      reqId = req.header('X-Amzn-Trace-Id');
+    if (req.header('x-request-id')) {
+      reqId = req.header('x-request-id');
+    } else if (req.header('x-amzn-trace-id')) {
+      reqId = req.header('x-amzn-trace-id');
     } else {
       reqId = uuid.v4();
     }

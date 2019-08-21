@@ -1,7 +1,7 @@
 # express-supertest
 
-![node.js](https://img.shields.io/badge/node.js-v12.4.0-brightgreen)
-![npm version](https://img.shields.io/badge/npm%20package-v6.10.2-brightgreen)
+![node.js](https://img.shields.io/badge/node.js-v12.8.1-brightgreen)
+![npm version](https://img.shields.io/badge/npm%20package-v6.11.1-brightgreen)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 ![Coverage lines](/coverage/badge-lines.svg)
 ![Coverage functions](/coverage/badge-functions.svg)

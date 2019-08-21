@@ -1,12 +1,16 @@
 'use strict';
 
-const UserRepository = require('./app/infrastructure/datastore/dynamodb/user-repo-impl');
-const repository = new UserRepository();
+const dynamodb = require('./app/infrastructure/datastore/dynamodb/dynamodb').dynamodb;
 
 (async function() {
   try {
-    await repository.createTable();
+    const params = require('./dynamodb-schema/user.json');
+    await dynamodb.createTable(params).promise();
   } catch (e) {
     console.log('error: %s', e);
   }
 })();
+
+// async deleteTable() {
+//   return dynamodb.deleteTable({TableName: tableName}).promise();
+// }

@@ -1,6 +1,6 @@
 'use strict';
 
-const context = require('../context');
+const context = require('../app/context');
 
 // console 呼び出し時の引数取得用
 // global.console.log で引数を取得できる。
@@ -15,7 +15,7 @@ describe('app/logger.js', () => {
     context.ns().run(() =>
       (function() {
         context.set('reqId', 'testId');
-        const logger = require('../logger');
+        const logger = require('../app/logger');
         logger.info('hoge');
         expect(global.console.log).toHaveBeenCalledWith(
           expect.stringMatching(
@@ -26,7 +26,7 @@ describe('app/logger.js', () => {
     );
   });
   test('info object', () => {
-    const logger = require('../logger');
+    const logger = require('../app/logger');
     logger.info({
       column1: 'hoge',
       column2: 'fuge',

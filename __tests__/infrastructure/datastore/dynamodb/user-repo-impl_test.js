@@ -1,18 +1,9 @@
 'use strict';
 
-const UserRepository = require('../user-repo-impl');
+const UserRepository = require('../../../../app/infrastructure/datastore/dynamodb/user-repo-impl');
 const repository = new UserRepository();
 
 describe('user.js', () => {
-  test('Table Creation Error', async () => {
-    try {
-      const result = await repository.createTable();
-      expect(result).toEqual(null);
-    } catch (e) {
-      expect(e.name).toEqual('ResourceInUseException');
-      expect(e.message).toEqual('Cannot create preexisting table');
-    }
-  });
   // 該当データが存在しない場合はエラーではなく空データが返却される
   test('getUser miss match', async () => {
     try {

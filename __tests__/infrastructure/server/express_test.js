@@ -1,6 +1,6 @@
 'use strict';
 
-const app = require('../express');
+const app = require('../../../app/infrastructure/server/express');
 const request = require('supertest');
 let auth_token = null;
 

@@ -11,13 +11,6 @@ class UserRepositoryImpl extends UserRepository {
     this.docClient = docClient;
     this.tableName = 'user';
   }
-  async createTable() {
-    const params = require('../../../../dynamodb-schema/user.json');
-    return this.dynamodb.createTable(params).promise();
-  }
-  async deleteTable() {
-    return this.dynamodb.deleteTable({TableName: this.tableName}).promise();
-  }
   // override
   async getUser(id) {
     const params = {
