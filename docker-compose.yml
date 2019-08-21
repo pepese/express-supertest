@@ -1,11 +1,31 @@
 version: "3"
-
 services:
   dynamodb:
     image: amazon/dynamodb-local
+    hostname: dynamodb
     ports:
-      - 8000:8000
-    command: -jar DynamoDBLocal.jar
+      - "8000:8000"
+  mongodb:
+    image: mongo:4.1.13-bionic
+    hostname: mongodb
+    ports:
+      - "27017:27017"
   app:
-    build: ./
-    ports: 3000:300
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: app
+    environment:
+      - DYNAMODB_ENDPOINT=http://dynamodb:8000
+      - AWS_ACCESS_KEY_ID=fakeMyKeyId
+      - AWS_SECRET_ACCESS_KEY=fakeSecretAccessKey
+      - MONGODB_ENDPOINT=mongodb://mongodb:27017/receipt
+      - APP_VERSION=0.0.7
+    links:
+      - "dynamodb"
+      - "mongodb"
+    depends_on:
+      - "dynamodb"
+      - "mongodb"
+    ports:
+      - "3000:3000"
