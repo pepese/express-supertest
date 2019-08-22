@@ -33,7 +33,7 @@
 
 レスポンスベースで整理する。
 
-|Level|errorCode|status|type                  |mesage|説明|
+|Level|errorCode|status|error                 |mesage|説明|
 |:----|:--------|:-----|:---------------------|:-----|:---|
 |fatal|FATAL001 |-     |Service Start Failure |      |アプリケーションサービスの起動に失敗。|
 |error|ERROR001 |500   |Internal Server Error |      |ハンドリング不可能なエラーが発生。|
@@ -49,17 +49,7 @@
 |warn |WARN008  |415   |Unsupported Media Type|      |処理できない Content-Type で依頼された。|
 |warn |WARN009  |422   |Unprocessable Entity  |      |入力値のバリデーションチェックでエラーが発生。400/Bad Request で返却するか悩む。|
 
-レスポンスボディは以下。
-
-```
-{
-  "errorCode": "xxxxx",
-  "type": "xxxxx",
-  "message": "xxxxx"
-}
-```
-
-上記を加味して何をログ出力するかはこれから整理。（TODO）
+上記のステータスコードに応じたレスポンスオブジェクトの生成には [BOOM](https://github.com/hapijs/boom/) を利用する。
 
 ### ロガー
 

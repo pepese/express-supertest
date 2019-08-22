@@ -4,6 +4,7 @@ const express = require('express');
 const context = require('../../context');
 const router = require('../../interface/router');
 const helmet = require('helmet');
+const boom = require('boom');
 const logger = require('../../logger');
 
 const app = express();
@@ -17,20 +18,21 @@ app.use(express.urlencoded({extended: false}));
 app.use(helmet());
 // ルーターの設定
 app.use('/', router);
-// 500
+// handled error or 500
 app.use((err, req, res, next) => {
-  logger.error(err.stack);
-  res
-    .status(500)
-    .json({message: 'Internal Server Error.'})
-    .end();
+  let result;
+  if(boom.isBoom(err)){ // ハンドリング済みのエラーであるか？
+    result = err;
+  } else {
+    logger.error(err.stack);
+    result = boom.badImplementation(err);
+  }
+  res.status(result.output.statusCode).json(result.output.payload);
 });
 // 404
 app.use((req, res, next) => {
-  res
-    .status(404)
-    .json({message: 'Not Found.'})
-    .end();
+  const result = boom.notFound('missing');
+  res.status(result.output.statusCode).json(result.output.payload);
 });
 app.set('port', '3000');
 

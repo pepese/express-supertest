@@ -8,12 +8,12 @@ const getUser = async id => {
   return result;
 };
 
-const putUser = async (id, name) => {
+const postUser = async (id, name) => {
   await userRepository.createUser(id, name);
   return {message: 'SUCCESS'};
 };
 
 module.exports = {
   getUser: getUser,
-  putUser: putUser,
+  postUser: postUser,
 };

@@ -1,7 +1,7 @@
 'use strict';
 
 const pdfUC = require('../../app/usecase/view-uc');
-const fs = require('fs');
+// const fs = require('fs');
 
 describe('app/usecase/view-uc.js', () => {
   test('getHtml', async () => {
