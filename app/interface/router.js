@@ -26,19 +26,37 @@ router.get('/echo', (req, res) => {
   res.status(200).json(result);
 });
 
-router.post('/auth', (req, res) => {
-  const id = req.body.id;
-  const password = req.body.password;
-  // コンテンツネゴシエーション（アクセプトヘッダを見て分岐）
-  res.format({
-    'application/json': () => {
-      res.json({token: tokenUC.auth(id, password)});
-    },
-    default: () => {
-      res.status(406).send(body406);
-    },
-  });
-});
+router.post(
+  '/auth',
+  [
+    body('id')
+      .isString()
+      .isLength({min: 1}),
+    body('password')
+      .isString()
+      .isLength({min: 1}),
+  ],
+  async (req, res, next) => {
+    // validator
+    const errors = await validationResult(req);
+    if (!errors.isEmpty()) {
+      logger.warn(errors.array());
+      next(boom.badRequest(errors.array()));
+    } else {
+      const id = req.body.id;
+      const password = req.body.password;
+      // コンテンツネゴシエーション（アクセプトヘッダを見て分岐）
+      res.format({
+        'application/json': () => {
+          res.json({token: tokenUC.auth(id, password)});
+        },
+        default: () => {
+          res.status(406).send(body406);
+        },
+      });
+    }
+  }
+);
 
 router.get('/user', tokenUC.verifyJWT);
 router.get('/user', async (req, res) => {
@@ -58,11 +76,7 @@ router.post(
   '/user',
   [
     body().custom(async value => {
-      try {
-        return await Interceptor.validateUserJson(value);
-      } catch (e) {
-        throw e;
-      }
+      return await Interceptor.validateUserJson(value);
     }),
   ],
   async (req, res, next) => {

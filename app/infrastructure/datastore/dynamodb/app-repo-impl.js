@@ -3,6 +3,8 @@
 const dynamodb = require('./dynamodb').dynamodb;
 const docClient = require('./dynamodb').docClient;
 const AppRepository = require('../../../usecase/repository/app-repo');
+const logger = require('../../../logger');
+const boom = require('boom');
 
 class AppRepositoryImpl extends AppRepository {
   constructor() {
@@ -35,7 +37,12 @@ class AppRepositoryImpl extends AppRepository {
       }
       return data;
     } catch (e) {
-      throw e;
+      if (boom.isBoom(e)) {
+        throw e;
+      } else {
+        logger.error(e.stack);
+        throw boom.badImplementation(e);
+      }
     }
   }
   // override
@@ -51,7 +58,12 @@ class AppRepositoryImpl extends AppRepository {
       const result = await this.dynamodb.putItem(params).promise();
       return result != null;
     } catch (e) {
-      throw e;
+      if (boom.isBoom(e)) {
+        throw e;
+      } else {
+        logger.error(e.stack);
+        throw boom.badImplementation(e);
+      }
     }
   }
   // override
@@ -69,7 +81,12 @@ class AppRepositoryImpl extends AppRepository {
       const result = await this.docClient.query(params).promise();
       return result.Items;
     } catch (e) {
-      throw e;
+      if (boom.isBoom(e)) {
+        throw e;
+      } else {
+        logger.error(e.stack);
+        throw boom.badImplementation(e);
+      }
     }
   }
 }

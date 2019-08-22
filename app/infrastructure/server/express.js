@@ -21,7 +21,8 @@ app.use('/', router);
 // handled error or 500
 app.use((err, req, res, next) => {
   let result;
-  if(boom.isBoom(err)){ // ハンドリング済みのエラーであるか？
+  if (boom.isBoom(err)) {
+    // ハンドリング済みのエラーであるか？
     result = err;
   } else {
     logger.error(err.stack);

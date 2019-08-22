@@ -3,6 +3,8 @@
 const jwt = require('jsonwebtoken');
 const notp = require('notp');
 const config = require('../config');
+const logger = require('../logger');
+const boom = require('boom');
 
 class Token {
   constructor() {}
@@ -14,7 +16,12 @@ class Token {
     try {
       return jwt.verify(token, config.SECRET);
     } catch (e) {
-      throw e;
+      if (boom.isBoom(e)) {
+        throw e;
+      } else {
+        logger.warn(e.stack);
+        throw boom.unauthorized(e);
+      }
     }
   }
   static createTOTP() {
@@ -24,7 +31,12 @@ class Token {
     try {
       return notp.totp.verify(token, config.SECRET);
     } catch (e) {
-      throw e;
+      if (boom.isBoom(e)) {
+        throw e;
+      } else {
+        logger.warn(e.stack);
+        throw boom.forbidden(e);
+      }
     }
   }
 }

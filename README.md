@@ -90,7 +90,8 @@ Payload で予約されたパラメータは以下。
 
 ### 入力チェック
 
-HTTP リクエストのバリデーションは [express-validator](https://github.com/express-validator/express-validator) で実現。（TODO）
+HTTP リクエストのバリデーションは [express-validator](https://github.com/express-validator/express-validator) で実現。  
+その他に [joi](https://github.com/hapijs/joi) と [express-joi-validator](https://github.com/goodeggs/express-joi-validator) もあり、 IF のバリデーション以外にも Entity のバリデーションも重要な場合にはこっちの組み合わせかな。（今回は前者）
 
 ### JSON Schema
 
@@ -99,6 +100,18 @@ JSON Schema および Ajv を利用して JSON のバリデーションを実現
 - [json-schema.org](https://json-schema.org/)
 - [Ajv: Another JSON Schema Validator](https://github.com/epoberezkin/ajv)
     - Ajv version 6.0.0 that supports JSON Schema draft-07 is released.
+
+## セキュリティ
+
+### Helmet
+
+HTTP ヘッダによるセキュリティとして [Helmet](https://github.com/helmetjs/helmet) を利用。  
+以下のような対応ができる。
+
+- `X-Frame-Options` : クリックジャギング対策
+- `Strict-Transport-Security` : HTTPS を強要
+- `X-XSS-Protection` : XSS 対策
+- `X-DNS-Prefetch-Control` : DNS Prefetch 対策
 
 ## MongoDB
 
@@ -451,6 +464,7 @@ console.log(copy_new); // { a: 10, b: 20 } // コピーであり参照でない�
 - [(初心者向け) Node.js コンソール (console) の使い方](https://qiita.com/tadnakam/items/dda690bb184fdc74851f)
 - [Node.jsのデバッグ方法の話](https://qiita.com/daijinload/items/b89788deff9ad83acb42)
 - [Node.js production checklist](https://speakerdeck.com/gergelyke/node-dot-js-production-checklist)
+  - すごいいい
 - [Node.jsでマイクロサービス Micro](https://qiita.com/chanuu/items/ffcc5a3289b8181f9032)
 - [Node.js Performance 改善ガイド](https://yosuke-furukawa.hatenablog.com/entry/2017/12/05/125517)
 - [JavaScript の仕組み：メモリ管理+ 4つの共通のメモリリーク処理方法](https://qiita.com/tkdn/items/ea4f034e0d661def244a)

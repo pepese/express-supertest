@@ -22,7 +22,7 @@ const getHtml = () => {
   let pdfBody = '';
   for (let i in lines) {
     lines[i] = lines[i].replace(/ /g, '&ensp;'); // 半角スペース
-    lines[i] = lines[i].replace(/　/g, '&emsp;'); // 全角スペース
+    //lines[i] = lines[i].replace(/　/g, '&emsp;'); // 全角スペース
     pdfBody += '<tr><td>' + lines[i] + '</td></tr>\n';
   }
   const html = `

@@ -7,6 +7,14 @@ const testJson = {id: '2', name: 'Jiro'};
 let auth_token = null;
 
 describe('express.js', () => {
+  test('POST /auth 400', () => {
+    return request(app)
+      .post('/auth')
+      .set('Accept', 'application/json')
+      .set('Content-Type', 'application/json')
+      .send({})
+      .expect(400);
+  });
   test('POST /auth 200', () => {
     return request(app)
       .post('/auth')
@@ -25,7 +33,8 @@ describe('express.js', () => {
       .set('Accept', 'application/json')
       .set('Content-Type', 'application/json')
       .send({})
-      .expect(400).then(res => {
+      .expect(400)
+      .then(res => {
         expect(res.body.error).toEqual(boom.badRequest().output.payload.error);
       });
   });
@@ -44,7 +53,8 @@ describe('express.js', () => {
       .set('Authorization', `Bearer ${auth_token}`)
       .set('Accept', 'application/json')
       .query({id: '2'})
-      .expect(200).then(res => {
+      .expect(200)
+      .then(res => {
         expect(res.body).toEqual(testJson);
       });
   });
