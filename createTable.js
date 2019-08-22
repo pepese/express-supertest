@@ -1,6 +1,7 @@
 'use strict';
 
-const dynamodb = require('./app/infrastructure/datastore/dynamodb/dynamodb').dynamodb;
+const dynamodb = require('./app/infrastructure/datastore/dynamodb/dynamodb')
+  .dynamodb;
 
 (async function() {
   try {

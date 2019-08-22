@@ -31,14 +31,25 @@ class Interceptor {
     });
     next();
   }
-  static validateUserJson(req, res, next) {
-    const valid = validate(req.body);
-    if (valid) {
-      next();
-    } else {
-      logger.warn(validate.errors);
-      res.status(400).json(validate.errors);
-    }
+  // static validateUserJson(req, res, next) {
+  //   const valid = validate(req.body);
+  //   if (valid) {
+  //     next();
+  //   } else {
+  //     logger.warn(validate.errors);
+  //     res.status(400).json(validate.errors);
+  //   }
+  // }
+
+  static validateUserJson(data) {
+    return new Promise((resolve, reject) => {
+      const result = validate(data); // true of false
+      if (result) {
+        resolve(result);
+      } else {
+        reject(validate.errors);
+      }
+    });
   }
 }
 

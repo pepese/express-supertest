@@ -2,6 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
+const {body, validationResult} = require('express-validator');
 const Interceptor = require('./interceptor');
 const userUC = require('../usecase/user-uc');
 const tokenUC = require('../usecase/token-uc');
@@ -36,19 +37,41 @@ router.post('/auth', (req, res) => {
     },
   });
 });
+
 router.get('/user', tokenUC.verifyJWT);
-router.get('/user', async (req, res) => {
-  const id = req.query.id;
-  const result = await userUC.getUser(id);
-  res.format({
-    'application/json': () => {
-      res.json(result);
-    },
-    default: () => {
-      res.status(406).send(body406);
-    },
-  });
-});
+router.get(
+  '/user',
+  [
+    body().custom(async value => {
+      try {
+        const result = await Interceptor.validateUserJson({
+          DigitalReceipt: value,
+        });
+        return result;
+      } catch (e) {
+        throw e;
+      }
+    }),
+  ],
+  async (req, res) => {
+    // validator
+    const errors = await validationResult(req);
+    if (!errors.isEmpty()) {
+      res.status(400).json(errors.array());
+    } else {
+      const id = req.query.id;
+      const result = await userUC.getUser(id);
+      res.format({
+        'application/json': () => {
+          res.json(result);
+        },
+        default: () => {
+          res.status(406).send(body406);
+        },
+      });
+    }
+  }
+);
 router.put('/user', tokenUC.verifyJWT);
 router.put('/user', async (req, res) => {
   const id = req.body.id;
