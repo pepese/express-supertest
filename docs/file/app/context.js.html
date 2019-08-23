@@ -31,18 +31,13 @@
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/context.js~Context.html">Context</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/error.js~AppError.html">AppError</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debug">debug</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-error">error</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fatal">fatal</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-info">info</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-log">log</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trace">trace</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-warn">warn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/logger.js~Logger.html">Logger</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-APP_NAME">APP_NAME</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-APP_VERSION">APP_VERSION</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-AWS_REGION">AWS_REGION</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DYNAMODB_ENDPOINT">DYNAMODB_ENDPOINT</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SECRET">SECRET</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SERVER_PORT">SERVER_PORT</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TOTP_TTL">TOTP_TTL</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#domain">domain</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/domain/token-domain.js~Token.html">Token</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#infrastructure-datastore-dynamodb">infrastructure/datastore/dynamodb</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl.html">AppRepositoryImpl</a></span></span></li>
@@ -55,12 +50,9 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#interface">interface</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/interface/interceptor.js~Interceptor.html">Interceptor</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-router">router</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#usecase">usecase</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/echo-uc.js~EchoUsecase.html">EchoUsecase</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-auth">auth</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-verifyJWT">verifyJWT</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getUser">getUser</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-putUser">putUser</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getHtml">getHtml</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPdf">getPdf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/token-uc.js~AuthUsecase.html">AuthUsecase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/user-uc.js~UserUsecase.html">UserUsecase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/view-uc.js~ViewUsecase.html">ViewUsecase</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#usecase-repository">usecase/repository</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/repository/app-repo.js~AppRepository.html">AppRepository</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/repository/user-repo.js~UserRepository.html">UserRepository</a></span></span></li>
 </ul>
@@ -108,10 +100,10 @@ class Context {
     httpContext.ns.bindEmitter(res);
     // &#x5024;&#x306E;&#x30BB;&#x30C3;&#x30C8;
     let reqId;
-    if (req.header(&apos;X-Request-Id&apos;)) {
-      reqId = req.header(&apos;X-Request-Id&apos;);
-    } else if (req.header(&apos;X-Amzn-Trace-Id&apos;)) {
-      reqId = req.header(&apos;X-Amzn-Trace-Id&apos;);
+    if (req.header(&apos;x-request-id&apos;)) {
+      reqId = req.header(&apos;x-request-id&apos;);
+    } else if (req.header(&apos;x-amzn-trace-id&apos;)) {
+      reqId = req.header(&apos;x-amzn-trace-id&apos;);
     } else {
       reqId = uuid.v4();
     }

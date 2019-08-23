@@ -3,17 +3,14 @@
 const UserRepository = require('../infrastructure/datastore/dynamodb/user-repo-impl');
 const userRepository = new UserRepository();
 
-const getUser = async id => {
-  const result = await userRepository.getUser(id);
-  return result;
-};
+module.exports = class UserUsecase {
+  static async getUser(id) {
+    const result = await userRepository.getUser(id);
+    return result;
+  }
 
-const postUser = async (id, name) => {
-  await userRepository.createUser(id, name);
-  return {message: 'SUCCESS'};
-};
-
-module.exports = {
-  getUser: getUser,
-  postUser: postUser,
+  static async postUser(id, name) {
+    await userRepository.createUser(id, name);
+    return {message: 'SUCCESS'};
+  }
 };

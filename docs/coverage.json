@@ -1,18 +1,19 @@
 {
-  "coverage": "8.51%",
-  "expectCount": 94,
+  "coverage": "8.69%",
+  "expectCount": 92,
   "actualCount": 8,
   "files": {
     "app/config.js": {
-      "expectCount": 6,
+      "expectCount": 7,
       "actualCount": 0,
       "undocumentLines": [
         5,
         6,
         7,
         8,
-        10,
-        11
+        9,
+        11,
+        12
       ]
     },
     "app/context.js": {
@@ -20,24 +21,16 @@
       "actualCount": 6,
       "undocumentLines": []
     },
-    "app/domain/__tests__/token-domain_test.js": {
-      "expectCount": 2,
-      "actualCount": 0,
-      "undocumentLines": [
-        4,
-        5
-      ]
-    },
     "app/domain/token-domain.js": {
       "expectCount": 6,
       "actualCount": 0,
       "undocumentLines": [
-        7,
-        8,
         9,
-        13,
-        20,
-        23
+        10,
+        11,
+        16,
+        29,
+        34
       ]
     },
     "app/error.js": {
@@ -51,27 +44,20 @@
         8
       ]
     },
-    "app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        4
-      ]
-    },
     "app/infrastructure/datastore/dynamodb/app-repo-impl.js": {
       "expectCount": 10,
       "actualCount": 0,
       "undocumentLines": [
-        7,
-        8,
+        9,
         10,
-        11,
         12,
+        13,
         14,
-        18,
-        22,
-        42,
-        58
+        16,
+        20,
+        24,
+        49,
+        70
       ]
     },
     "app/infrastructure/datastore/dynamodb/dynamodb.js": {
@@ -83,26 +69,17 @@
       ]
     },
     "app/infrastructure/datastore/dynamodb/user-repo-impl.js": {
-      "expectCount": 10,
+      "expectCount": 8,
       "actualCount": 0,
       "undocumentLines": [
-        7,
-        8,
+        9,
         10,
-        11,
         12,
+        13,
         14,
-        18,
-        22,
+        17,
         42,
-        58
-      ]
-    },
-    "app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
+        63
       ]
     },
     "app/infrastructure/datastore/mongodb/mongodb.js": {
@@ -116,27 +93,20 @@
       "expectCount": 7,
       "actualCount": 0,
       "undocumentLines": [
-        6,
-        8,
-        13,
-        15,
+        7,
+        9,
+        14,
         16,
-        21,
-        32
-      ]
-    },
-    "app/infrastructure/server/__tests__/express_test.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
+        17,
+        22,
+        37
       ]
     },
     "app/infrastructure/server/express.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        9
+        11
       ]
     },
     "app/interface/interceptor.js": {
@@ -147,30 +117,31 @@
         10,
         12,
         13,
-        34
+        44
       ]
     },
     "app/interface/router.js": {
       "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
-        71,
+        109,
         4
       ]
     },
     "app/logger.js": {
-      "expectCount": 9,
+      "expectCount": 10,
       "actualCount": 0,
       "undocumentLines": [
         6,
         22,
-        45,
-        49,
-        53,
-        57,
-        61,
-        65,
-        69
+        23,
+        27,
+        31,
+        35,
+        39,
+        43,
+        47,
+        56
       ]
     },
     "app/usecase/echo-uc.js": {
@@ -204,26 +175,30 @@
       ]
     },
     "app/usecase/token-uc.js": {
-      "expectCount": 2,
+      "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
         6,
-        11
+        7,
+        12
       ]
     },
     "app/usecase/user-uc.js": {
-      "expectCount": 3,
+      "expectCount": 4,
       "actualCount": 0,
       "undocumentLines": [
         4,
         6,
-        11
+        7,
+        12
       ]
     },
     "app/usecase/view-uc.js": {
-      "expectCount": 2,
+      "expectCount": 3,
       "actualCount": 2,
-      "undocumentLines": []
+      "undocumentLines": [
+        7
+      ]
     }
   }
 }

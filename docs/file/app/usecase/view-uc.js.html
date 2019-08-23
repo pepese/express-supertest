@@ -31,18 +31,13 @@
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/context.js~Context.html">Context</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/error.js~AppError.html">AppError</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debug">debug</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-error">error</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fatal">fatal</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-info">info</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-log">log</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trace">trace</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-warn">warn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/logger.js~Logger.html">Logger</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-APP_NAME">APP_NAME</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-APP_VERSION">APP_VERSION</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-AWS_REGION">AWS_REGION</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DYNAMODB_ENDPOINT">DYNAMODB_ENDPOINT</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SECRET">SECRET</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SERVER_PORT">SERVER_PORT</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TOTP_TTL">TOTP_TTL</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#domain">domain</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/domain/token-domain.js~Token.html">Token</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#infrastructure-datastore-dynamodb">infrastructure/datastore/dynamodb</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl.html">AppRepositoryImpl</a></span></span></li>
@@ -55,12 +50,9 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#interface">interface</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/interface/interceptor.js~Interceptor.html">Interceptor</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-router">router</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#usecase">usecase</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/echo-uc.js~EchoUsecase.html">EchoUsecase</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-auth">auth</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-verifyJWT">verifyJWT</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getUser">getUser</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-putUser">putUser</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getHtml">getHtml</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPdf">getPdf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/token-uc.js~AuthUsecase.html">AuthUsecase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/user-uc.js~UserUsecase.html">UserUsecase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/view-uc.js~ViewUsecase.html">ViewUsecase</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#usecase-repository">usecase/repository</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/repository/app-repo.js~AppRepository.html">AppRepository</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/repository/user-repo.js~UserRepository.html">UserRepository</a></span></span></li>
 </ul>
@@ -74,123 +66,122 @@ const PdfPrinter = require(&apos;pdfmake&apos;);
 const sizeOf = require(&apos;image-size&apos;);
 const path = require(&apos;path&apos;);
 
-/**
- * &#x7B49;&#x5E45;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#xFF08;Kosugi&#xFF09;&#x30FB; HTML &#x3092;&#x4F7F;&#x3063;&#x3066;&#x7DBA;&#x9E97;&#x306B;&#x6574;&#x5217;&#x8868;&#x793A;&#x3059;&#x308B;&#x3002;
- * &#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x306F; Google Fonts (https://fonts.google.com/?subset=japanese) &#x304B;&#x3089;&#x53D6;&#x5F97;&#x3002;
- * &#x534A;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x306F;&#x300C;&amp;ensp;&#x300D;&#x3001;&#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x306F;&#x300C;&amp;emsp;&#x300D;&#x304C;&#x3074;&#x3063;&#x305F;&#x308A;&#xFF01;
- * &#x300C;&amp;nbsp;&#x300D;&#x306F;&#x534A;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3088;&#x308A;&#x72ED;&#x3044;&#x306E;&#x3067;&#x6CE8;&#x610F;&#x3002;
- */
-const getHtml = () =&gt; {
-  const lines = [
-    &apos;TEST TEXT&apos;,
-    &apos;                     TEST       TEXT&apos;,
-    &apos;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&apos;,
-    &apos;yyyyy                          yyyyy&apos;,
-    &apos;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&apos;, // &#x7B49;&#x5E45;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x306E;&#x5834;&#x5408;&#x3001;&#x5168;&#x89D2;&#x306E;&#x5E45;&#x306F;&#x534A;&#x89D2;&#x306E;&#x500D;
-    &apos;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&apos;, // &#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3082;&#x307E;&#x305F;&#x7136;&#x308A;
-  ];
-  let pdfBody = &apos;&apos;;
-  for (let i in lines) {
-    lines[i] = lines[i].replace(/ /g, &apos;&amp;ensp;&apos;); // &#x534A;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;
-    lines[i] = lines[i].replace(/&#x3000;/g, &apos;&amp;emsp;&apos;); // &#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;
-    pdfBody += &apos;&lt;tr&gt;&lt;td&gt;&apos; + lines[i] + &apos;&lt;/td&gt;&lt;/tr&gt;\n&apos;;
+module.exports = class ViewUsecase {
+  /**
+   * &#x7B49;&#x5E45;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#xFF08;Kosugi&#xFF09;&#x30FB; HTML &#x3092;&#x4F7F;&#x3063;&#x3066;&#x7DBA;&#x9E97;&#x306B;&#x6574;&#x5217;&#x8868;&#x793A;&#x3059;&#x308B;&#x3002;
+   * &#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x306F; Google Fonts (https://fonts.google.com/?subset=japanese) &#x304B;&#x3089;&#x53D6;&#x5F97;&#x3002;
+   * &#x534A;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x306F;&#x300C;&amp;ensp;&#x300D;&#x3001;&#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x306F;&#x300C;&amp;emsp;&#x300D;&#x304C;&#x3074;&#x3063;&#x305F;&#x308A;&#xFF01;
+   * &#x300C;&amp;nbsp;&#x300D;&#x306F;&#x534A;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3088;&#x308A;&#x72ED;&#x3044;&#x306E;&#x3067;&#x6CE8;&#x610F;&#x3002;
+   */
+  static getHtml() {
+    const lines = [
+      &apos;TEST TEXT&apos;,
+      &apos;                     TEST       TEXT&apos;,
+      &apos;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&apos;,
+      &apos;yyyyy                          yyyyy&apos;,
+      &apos;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&apos;, // &#x7B49;&#x5E45;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x306E;&#x5834;&#x5408;&#x3001;&#x5168;&#x89D2;&#x306E;&#x5E45;&#x306F;&#x534A;&#x89D2;&#x306E;&#x500D;
+      &apos;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&apos;, // &#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3082;&#x307E;&#x305F;&#x7136;&#x308A;
+    ];
+    let pdfBody = &apos;&apos;;
+    for (let i in lines) {
+      lines[i] = lines[i].replace(/ /g, &apos;&amp;ensp;&apos;); // &#x534A;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;
+      //lines[i] = lines[i].replace(/&#x3000;/g, &apos;&amp;emsp;&apos;); // &#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;
+      pdfBody += &apos;&lt;tr&gt;&lt;td&gt;&apos; + lines[i] + &apos;&lt;/td&gt;&lt;/tr&gt;\n&apos;;
+    }
+    const html = `
+    &lt;!doctype html&gt;
+    &lt;html lang=&quot;ja&quot;&gt;
+    &lt;head&gt;
+    &lt;!-- Kosugi font loading --&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Kosugi&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div style=&quot;text-align: center;&quot;&gt;
+    &lt;!-- Kosugi font : &apos;font-family: &apos;Kosugi&apos;, sans-serif;&apos; --&gt;
+    &lt;div style=&quot;font-family: &apos;Kosugi&apos;, sans-serif; border: solid 1px #000; display: inline-block; text-align: left;&quot;&gt;
+    &lt;table&gt;
+    ${pdfBody}
+    &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    `;
+    return html;
   }
-  const html = `
-  &lt;!doctype html&gt;
-  &lt;html lang=&quot;ja&quot;&gt;
-  &lt;head&gt;
-  &lt;!-- Kosugi font loading --&gt;
-  &lt;link href=&quot;https://fonts.googleapis.com/css?family=Kosugi&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;div style=&quot;text-align: center;&quot;&gt;
-  &lt;!-- Kosugi font : &apos;font-family: &apos;Kosugi&apos;, sans-serif;&apos; --&gt;
-  &lt;div style=&quot;font-family: &apos;Kosugi&apos;, sans-serif; border: solid 1px #000; display: inline-block; text-align: left;&quot;&gt;
-  &lt;table&gt;
-  ${pdfBody}
-  &lt;/table&gt;
-  &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-  `;
-  return html;
-};
 
-/**
- * pdfMake&#x306E;&#x5358;&#x4F4D;&#x306F;&#x300C;us pt&#x300D;&#xFF08;1pt = 0.35278mm&#xFF09;
- */
-const getPdf = async () =&gt; {
-  const lines = [
-    &apos;TEST TEXT&apos;,
-    &apos;                     TEST       TEXT&apos;,
-    &apos;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&apos;,
-    &apos;yyyyy                          yyyyy&apos;,
-    &apos;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&apos;, // &#x7B49;&#x5E45;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x306E;&#x5834;&#x5408;&#x3001;&#x5168;&#x89D2;&#x306E;&#x5E45;&#x306F;&#x534A;&#x89D2;&#x306E;&#x500D;
-    &apos;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&apos;, // &#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3082;&#x307E;&#x305F;&#x7136;&#x308A;
-  ];
-  // data
-  const fonts = {
-    Roboto: {
-      normal: path.join(__dirname, &apos;font/ipag.ttf&apos;),
-    },
-  };
-  const testImageDataUrl =
-    &apos;data:image/png;base64,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&apos;;
-  const dimensions = sizeOf(Buffer.from(testImageDataUrl.substr(22), &apos;base64&apos;)); // dimensions.width, dimensions.height = 90, 90
-  // parameter
-  const maxWardNums = 36; // &#x6A2A;&#x306E;&#x534A;&#x89D2;&#x6587;&#x5B57;&#x6570;&#x4E0A;&#x9650;&#x3001;&#x5168;&#x89D2;&#x306F;&#x534A;&#x89D2;2&#x6587;&#x5B57;&#x5206;&#x306E;&#x6271;&#x3044;
-  const fontSize = 20;
-  const fontWHratio = 1 / 2; // &#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x306E;&#x7E26;&#x6A2A;&#x6BD4;&#xFF1A;&#x6A2A;&#xF7;&#x7E26;
-  const pageMargin = 20; // &#x30DA;&#x30FC;&#x30B8;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x306E;&#x30DE;&#x30FC;&#x30B8;&#x30F3;
-  let width = pageMargin * 2 + maxWardNums * fontSize * fontWHratio; // &#x30DE;&#x30FC;&#x30B8;&#x30F3;&#xFF0B;&#x6A2A;&#x306E;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x30B5;&#x30A4;&#x30BA;&#x306E;&#x5408;&#x8A08;
-  let height = pageMargin * 2 + (dimensions.height / dimensions.width) * 200; // &#x30DE;&#x30FC;&#x30B8;&#x30F3;&#xFF0B;&#x7E26;&#x306E;&#x753B;&#x50CF;&#x30B5;&#x30A4;&#x30BA;&#xFF08;&#x5F8C;&#x3005;&#x884C;&#x6570;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x7E26;&#x306E;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x30B5;&#x30A4;&#x30BA;&#x3092;&#x52A0;&#x7B97;&#xFF09;
-  // define contents
-  const docDefinition = {};
-  docDefinition.pageMargins = pageMargin;
-  docDefinition.content = [];
-  docDefinition.content.push({
-    image: testImageDataUrl,
-    width: 200,
-    alignment: &apos;center&apos;,
-  });
-  for (let text of lines) {
-    // &#x7D30;&#x304B;&#x3044;&#x8A2D;&#x5B9A;&#x306F;&#x4EE5;&#x4E0B;&#x3092;&#x53C2;&#x7167;
-    // https://gist.github.com/jfdesrochers/08833957232a04638c1cad4d071b31e9
+  /**
+   * pdfMake&#x306E;&#x5358;&#x4F4D;&#x306F;&#x300C;us pt&#x300D;&#xFF08;1pt = 0.35278mm&#xFF09;
+   */
+  static async getPdf() {
+    const lines = [
+      &apos;TEST TEXT&apos;,
+      &apos;                     TEST       TEXT&apos;,
+      &apos;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&apos;,
+      &apos;yyyyy                          yyyyy&apos;,
+      &apos;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&apos;, // &#x7B49;&#x5E45;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x306E;&#x5834;&#x5408;&#x3001;&#x5168;&#x89D2;&#x306E;&#x5E45;&#x306F;&#x534A;&#x89D2;&#x306E;&#x500D;
+      &apos;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3042;&#x3042;&#x3042;&#x3042;&#x3042;&apos;, // &#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3082;&#x307E;&#x305F;&#x7136;&#x308A;
+    ];
+    // data
+    const fonts = {
+      Roboto: {
+        normal: path.join(__dirname, &apos;font/ipag.ttf&apos;),
+      },
+    };
+    const testImageDataUrl =
+      &apos;data:image/png;base64,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&apos;;
+    const dimensions = sizeOf(
+      Buffer.from(testImageDataUrl.substr(22), &apos;base64&apos;)
+    ); // dimensions.width, dimensions.height = 90, 90
+    // parameter
+    const maxWardNums = 36; // &#x6A2A;&#x306E;&#x534A;&#x89D2;&#x6587;&#x5B57;&#x6570;&#x4E0A;&#x9650;&#x3001;&#x5168;&#x89D2;&#x306F;&#x534A;&#x89D2;2&#x6587;&#x5B57;&#x5206;&#x306E;&#x6271;&#x3044;
+    const fontSize = 20;
+    const fontWHratio = 1 / 2; // &#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x306E;&#x7E26;&#x6A2A;&#x6BD4;&#xFF1A;&#x6A2A;&#xF7;&#x7E26;
+    const pageMargin = 20; // &#x30DA;&#x30FC;&#x30B8;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x306E;&#x30DE;&#x30FC;&#x30B8;&#x30F3;
+    let width = pageMargin * 2 + maxWardNums * fontSize * fontWHratio; // &#x30DE;&#x30FC;&#x30B8;&#x30F3;&#xFF0B;&#x6A2A;&#x306E;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x30B5;&#x30A4;&#x30BA;&#x306E;&#x5408;&#x8A08;
+    let height = pageMargin * 2 + (dimensions.height / dimensions.width) * 200; // &#x30DE;&#x30FC;&#x30B8;&#x30F3;&#xFF0B;&#x7E26;&#x306E;&#x753B;&#x50CF;&#x30B5;&#x30A4;&#x30BA;&#xFF08;&#x5F8C;&#x3005;&#x884C;&#x6570;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x7E26;&#x306E;&#x30D5;&#x30A9;&#x30F3;&#x30C8;&#x30B5;&#x30A4;&#x30BA;&#x3092;&#x52A0;&#x7B97;&#xFF09;
+    // define contents
+    const docDefinition = {};
+    docDefinition.pageMargins = pageMargin;
+    docDefinition.content = [];
     docDefinition.content.push({
-      text: text,
-      fontSize: fontSize,
-      preserveLeadingSpaces: true, // &#x7A7A;&#x767D;&#x3092;&#x6B63;&#x3057;&#x304F;&#x8868;&#x793A;
+      image: testImageDataUrl,
+      width: 200,
+      alignment: &apos;center&apos;,
     });
-    height += fontSize;
+    for (let text of lines) {
+      // &#x7D30;&#x304B;&#x3044;&#x8A2D;&#x5B9A;&#x306F;&#x4EE5;&#x4E0B;&#x3092;&#x53C2;&#x7167;
+      // https://gist.github.com/jfdesrochers/08833957232a04638c1cad4d071b31e9
+      docDefinition.content.push({
+        text: text,
+        fontSize: fontSize,
+        preserveLeadingSpaces: true, // &#x7A7A;&#x767D;&#x3092;&#x6B63;&#x3057;&#x304F;&#x8868;&#x793A;
+      });
+      height += fontSize;
+    }
+    docDefinition.pageSize = {width: width, height: height};
+    // make pdf
+    const makePdf = () =&gt; {
+      return new Promise((resolve, reject) =&gt; {
+        try {
+          const bufs = [];
+          const printer = new PdfPrinter(fonts);
+          const pdfDoc = printer.createPdfKitDocument(docDefinition);
+          pdfDoc.on(&apos;data&apos;, chunk =&gt; {
+            bufs.push(chunk);
+          });
+          pdfDoc.on(&apos;end&apos;, () =&gt; {
+            resolve(Buffer.concat(bufs));
+          });
+          pdfDoc.end();
+        } catch (e) {
+          reject(e);
+        }
+      });
+    };
+    const buffer = await makePdf();
+    return buffer;
   }
-  docDefinition.pageSize = {width: width, height: height};
-  // make pdf
-  const makePdf = () =&gt; {
-    return new Promise((resolve, reject) =&gt; {
-      try {
-        const bufs = [];
-        const printer = new PdfPrinter(fonts);
-        const pdfDoc = printer.createPdfKitDocument(docDefinition);
-        pdfDoc.on(&apos;data&apos;, chunk =&gt; {
-          bufs.push(chunk);
-        });
-        pdfDoc.on(&apos;end&apos;, () =&gt; {
-          resolve(Buffer.concat(bufs));
-        });
-        pdfDoc.end();
-      } catch (e) {
-        reject(e);
-      }
-    });
-  };
-  const buffer = await makePdf();
-  return buffer;
-};
-
-module.exports = {
-  getHtml: getHtml,
-  getPdf: getPdf,
 };
 </code></pre>
 

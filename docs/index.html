@@ -31,18 +31,13 @@
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/context.js~Context.html">Context</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/error.js~AppError.html">AppError</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debug">debug</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-error">error</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fatal">fatal</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-info">info</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-log">log</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trace">trace</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-warn">warn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/logger.js~Logger.html">Logger</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-APP_NAME">APP_NAME</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-APP_VERSION">APP_VERSION</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-AWS_REGION">AWS_REGION</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DYNAMODB_ENDPOINT">DYNAMODB_ENDPOINT</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SECRET">SECRET</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SERVER_PORT">SERVER_PORT</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TOTP_TTL">TOTP_TTL</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#domain">domain</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/domain/token-domain.js~Token.html">Token</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#infrastructure-datastore-dynamodb">infrastructure/datastore/dynamodb</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl.html">AppRepositoryImpl</a></span></span></li>
@@ -55,25 +50,22 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#interface">interface</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/interface/interceptor.js~Interceptor.html">Interceptor</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-router">router</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#usecase">usecase</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/echo-uc.js~EchoUsecase.html">EchoUsecase</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-auth">auth</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-verifyJWT">verifyJWT</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getUser">getUser</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-putUser">putUser</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getHtml">getHtml</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPdf">getPdf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/token-uc.js~AuthUsecase.html">AuthUsecase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/user-uc.js~UserUsecase.html">UserUsecase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/view-uc.js~ViewUsecase.html">ViewUsecase</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#usecase-repository">usecase/repository</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/repository/app-repo.js~AppRepository.html">AppRepository</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/repository/user-repo.js~UserRepository.html">UserRepository</a></span></span></li>
 </ul>
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="express-supertest">express-supertest</h1><p><img src="https://img.shields.io/badge/node.js-v12.4.0-brightgreen" alt="node.js">
-<img src="https://img.shields.io/badge/npm%20package-v6.10.2-brightgreen" alt="npm version">
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="express-supertest">express-supertest</h1><p><img src="https://img.shields.io/badge/node.js-v12.8.1-brightgreen" alt="node.js">
+<img src="https://img.shields.io/badge/npm%20package-v6.11.1-brightgreen" alt="npm version">
 <a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="tested with jest"></a>
-<img src="./coverage/badge-lines.svg" alt="Coverage lines">
-<img src="./coverage/badge-functions.svg" alt="Coverage functions">
-<img src="./coverage/badge-branches.svg" alt="Coverage branches">
-<img src="./coverage/badge-statements.svg" alt="Coverage statements">
+<img src="/coverage/badge-lines.svg" alt="Coverage lines">
+<img src="/coverage/badge-functions.svg" alt="Coverage functions">
+<img src="/coverage/badge-branches.svg" alt="Coverage branches">
+<img src="/coverage/badge-statements.svg" alt="Coverage statements">
 <!-- description -->
 <a href="https://github.com/visionmedia/supertest">SuperTest</a> &#x3092;&#x3084;&#x308A;&#x305F;&#x3044;&#x304C;&#x70BA;&#x306B;&#x4F5C;&#x3063;&#x305F;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3002;<br>&#x95A2;&#x4FC2;&#x306A;&#x3044;&#x3053;&#x3068;&#x3082;&#x3084;&#x3063;&#x3066;&#x308B;&#x3002;</p>
 <h2 id="&#x30D0;&#x30C3;&#x30B8;">&#x30D0;&#x30C3;&#x30B8;</h2><p><a href="https://shields.io/">shields.io</a> &#x3067;&#x597D;&#x304D;&#x306A;&#x30D0;&#x30C3;&#x30B8;&#x4F5C;&#x308C;&#x308B;&#x3002;<br>&#x30AB;&#x30D0;&#x30EC;&#x30C3;&#x30B8;&#x306F; <a href="https://github.com/pamepeixinho/jest-coverage-badges">jest-coverage-badges</a> &#x3067;&#x51FA;&#x3057;&#x305F;&#x3002;</p>
@@ -118,7 +110,7 @@
 <th style="text-align:left">Level</th>
 <th style="text-align:left">errorCode</th>
 <th style="text-align:left">status</th>
-<th style="text-align:left">type</th>
+<th style="text-align:left">error</th>
 <th style="text-align:left">mesage</th>
 <th style="text-align:left">&#x8AAC;&#x660E;</th>
 </tr>
@@ -230,13 +222,7 @@
 </tr>
 </tbody>
 </table>
-<p>&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x30DC;&#x30C7;&#x30A3;&#x306F;&#x4EE5;&#x4E0B;&#x3002;</p>
-<pre><code><code class="source-code prettyprint">{
-  &quot;errorCode&quot;: &quot;xxxxx&quot;,
-  &quot;type&quot;: &quot;xxxxx&quot;,
-  &quot;message&quot;: &quot;xxxxx&quot;
-}</code>
-</code></pre><p>&#x4E0A;&#x8A18;&#x3092;&#x52A0;&#x5473;&#x3057;&#x3066;&#x4F55;&#x3092;&#x30ED;&#x30B0;&#x51FA;&#x529B;&#x3059;&#x308B;&#x304B;&#x306F;&#x3053;&#x308C;&#x304B;&#x3089;&#x6574;&#x7406;&#x3002;&#xFF08;TODO&#xFF09;</p>
+<p>&#x4E0A;&#x8A18;&#x306E;&#x30B9;&#x30C6;&#x30FC;&#x30BF;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x5FDC;&#x3058;&#x305F;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x751F;&#x6210;&#x306B;&#x306F; <a href="https://github.com/hapijs/boom/">BOOM</a> &#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x3002;</p>
 <h3 id="&#x30ED;&#x30AC;&#x30FC;">&#x30ED;&#x30AC;&#x30FC;</h3><p>&#x30ED;&#x30AC;&#x30FC;&#x306F; <a href="https://github.com/winstonjs/winston">winston</a> &#x3002;<br>&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x30ED;&#x30AC;&#x30FC;&#x306B; <a href="https://github.com/expressjs/morgan">morgan</a> &#x3068;&#x304B; <a href="https://github.com/bithavoc/express-winston">express-winston</a> &#x304C;&#x3042;&#x308B;&#x304C;&#x3001;&#x500B;&#x4EBA;&#x7684;&#x306B;&#x4F7F;&#x3044;&#x306B;&#x304F;&#x304B;&#x3063;&#x305F;&#x306E;&#x3067;&#x4F7F;&#x3063;&#x3066;&#x306A;&#x3044;&#x3002;<br>&#x4EE3;&#x308F;&#x308A;&#x306B; <a href="https://github.com/jshttp/on-headers">on-headers</a> &#x3068; <a href="https://github.com/jshttp/on-finished">on-finished</a> &#x3092;&#x4F7F;&#x3063;&#x3066;&#x81EA;&#x5206;&#x3067;&#x5B9F;&#x88C5;&#x3002;</p>
 <h3 id="reqid-&#x306E;&#x8A2D;&#x5B9A;">reqId &#x306E;&#x8A2D;&#x5B9A;</h3><p><a href="https://github.com/skonves/express-http-context">express-http-context</a> &#x3092;&#x5229;&#x7528;&#x3057;&#x3066; 1 &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x4E2D;&#x306B;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B; key-value &#x306B; &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8; ID &#x30FB;&#x30C8;&#x30EC;&#x30FC;&#x30B9; ID &#xFF08; reqId &#xFF09;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3002;<br>&#x305D;&#x306E;&#x5024;&#x3092; logger &#x304C;&#x53D6;&#x5F97;&#x3057;&#x3066;&#x30ED;&#x30B0;&#x51FA;&#x529B;&#x6642;&#x306B; reqId &#x3092;&#x4ED8;&#x4E0E;&#x3059;&#x308B;&#x3002;<br>reqId &#x306B;&#x306F; uuidv4 &#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x3002;<br>&#x306A;&#x304A;&#x3001;<a href="https://github.com/skonves/express-http-context">express-http-context</a> &#x3067;&#x306F; &#x30B9;&#x30EC;&#x30C3;&#x30C9;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x306E;&#x3088;&#x3046;&#x306B;&#x52D5;&#x4F5C;&#x3059;&#x308B; <strong>Continuation-local storage</strong> &#x304C;&#x5229;&#x7528;&#x3055;&#x308C;&#x308B;&#x3002;&#xFF08;&#x53B3;&#x5BC6;&#x306B;&#x306F;&#x30B9;&#x30EC;&#x30C3;&#x30C9;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x3067;&#x306F;&#x306A;&#x3044;&#x3002;&#xFF09;<br>&#x8A73;&#x3057;&#x304F;&#x306F; <a href="https://github.com/jeff-lewis/cls-hooked#readme">cls-hooked</a> &#x3092;&#x53C2;&#x7167; &#x3002;</p>
 <h2 id="jwt">JWT</h2><p><a href="https://github.com/auth0/node-jsonwebtoken">node-jsonwebtoken</a> &#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x5B9F;&#x73FE;&#x3057;&#x305F;&#x3002;<br>&#x9375;&#x7BA1;&#x7406;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x53C2;&#x8003;&#x306B;&#x3057;&#x306A;&#x3044;&#x3053;&#x3068;&#x3002;</p>
@@ -290,7 +276,7 @@
 <ul>
 <li><a href="https://qiita.com/keitatata/items/fa89f007de21e286df17">&#x53C2;&#x8003;</a></li>
 </ul>
-<h2 id="&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;">&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;</h2><h3 id="&#x5165;&#x529B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;">&#x5165;&#x529B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;</h3><p>HTTP &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306F; <a href="https://github.com/express-validator/express-validator">express-validator</a> &#x3067;&#x5B9F;&#x73FE;&#x3002;&#xFF08;TODO&#xFF09;</p>
+<h2 id="&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;">&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;</h2><h3 id="&#x5165;&#x529B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;">&#x5165;&#x529B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;</h3><p>HTTP &#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306F; <a href="https://github.com/express-validator/express-validator">express-validator</a> &#x3067;&#x5B9F;&#x73FE;&#x3002;<br>&#x305D;&#x306E;&#x4ED6;&#x306B; <a href="https://github.com/hapijs/joi">joi</a> &#x3068; <a href="https://github.com/goodeggs/express-joi-validator">express-joi-validator</a> &#x3082;&#x3042;&#x308A;&#x3001; IF &#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x4EE5;&#x5916;&#x306B;&#x3082; Entity &#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3082;&#x91CD;&#x8981;&#x306A;&#x5834;&#x5408;&#x306B;&#x306F;&#x3053;&#x3063;&#x3061;&#x306E;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x304B;&#x306A;&#x3002;&#xFF08;&#x4ECA;&#x56DE;&#x306F;&#x524D;&#x8005;&#xFF09;</p>
 <h3 id="json-schema">JSON Schema</h3><p>JSON Schema &#x304A;&#x3088;&#x3073; Ajv &#x3092;&#x5229;&#x7528;&#x3057;&#x3066; JSON &#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x5B9F;&#x73FE;&#x3057;&#x305F;&#x3002;</p>
 <ul>
 <li><a href="https://json-schema.org/">json-schema.org</a></li>
@@ -298,6 +284,13 @@
 <li>Ajv version 6.0.0 that supports JSON Schema draft-07 is released.</li>
 </ul>
 </li>
+</ul>
+<h2 id="&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;">&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;</h2><h3 id="helmet">Helmet</h3><p>HTTP &#x30D8;&#x30C3;&#x30C0;&#x306B;&#x3088;&#x308B;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x3068;&#x3057;&#x3066; <a href="https://github.com/helmetjs/helmet">Helmet</a> &#x3092;&#x5229;&#x7528;&#x3002;<br>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x5BFE;&#x5FDC;&#x304C;&#x3067;&#x304D;&#x308B;&#x3002;</p>
+<ul>
+<li><code>X-Frame-Options</code> : &#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x30B8;&#x30E3;&#x30AE;&#x30F3;&#x30B0;&#x5BFE;&#x7B56;</li>
+<li><code>Strict-Transport-Security</code> : HTTPS &#x3092;&#x5F37;&#x8981;</li>
+<li><code>X-XSS-Protection</code> : XSS &#x5BFE;&#x7B56;</li>
+<li><code>X-DNS-Prefetch-Control</code> : DNS Prefetch &#x5BFE;&#x7B56;</li>
 </ul>
 <h2 id="mongodb">MongoDB</h2><p>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B; Docker &#x3067;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x5B9F;&#x884C;&#x3067;&#x304D;&#x308B;&#x3002;</p>
 <pre><code class="lang-bash"><code class="source-code prettyprint">$ docker pull mongo:3.6.13-xenial
@@ -498,14 +491,21 @@ $ docker exec -it mongo bash
 <h2 id="docker">Docker</h2><p>TODO</p>
 <h2 id="docker-compose">docker-compose</h2><p>TODO</p>
 <h2 id="esdoc">ESDoc</h2><p>&#x6240;&#x8B02; Javadoc &#x306E; ES &#x7248;&#x3002;<br>JSDoc &#x3068;&#x3044;&#x3046;&#x3082;&#x306E;&#x3082;&#x3042;&#x308B;&#x304C;&#x3001;&#x3053;&#x3063;&#x3061;&#x306B;&#x3057;&#x305F;&#x3002;<br>&#x5C0E;&#x5165;&#x3002;</p>
-<pre><code class="lang-bash"><code class="source-code prettyprint">$ npm i -D esdoc esdoc-standard-plugin</code>
+<pre><code class="lang-bash"><code class="source-code prettyprint">$ npm i -D esdoc esdoc-standard-plugin esdoc-node</code>
 </code></pre>
-<p><code>package.json</code> &#x306B;&#x8A2D;&#x5B9A;&#x66F8;&#x3044;&#x305F;&#x3002;&#xFF08; <a href="https://esdoc.org/manual/config.html">&#x53C2;&#x8003;</a> &#xFF09;</p>
+<p>&#x4E0A;&#x8A18;&#x3067;&#x6CE8;&#x610F;&#x306A;&#x306E;&#x306F;&#x3001; esdoc &#x306F; commonjs &#x3092;&#x89E3;&#x91C8;&#x3067;&#x304D;&#x306A;&#x3044;&#x306E;&#x3067;&#x3001; <code>esdoc-node</code> &#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x3092;&#x5165;&#x308C;&#x3066;&#x3084;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x3053;&#x3068;&#x3002;<br><code>package.json</code> &#x306B;&#x8A2D;&#x5B9A;&#x66F8;&#x3044;&#x305F;&#x3002;&#xFF08; <a href="https://esdoc.org/manual/config.html">&#x53C2;&#x8003;</a> &#xFF09;</p>
 <pre><code class="lang-javascript"><code class="source-code prettyprint">{
   &quot;esdoc&quot;: {
     &quot;source&quot;: &quot;./app&quot;,
     &quot;destination&quot;: &quot;./docs&quot;,
-    &quot;plugins&quot;: [{&quot;name&quot;: &quot;esdoc-standard-plugin&quot;}]
+    &quot;plugins&quot;: [
+      {
+        &quot;name&quot;: &quot;esdoc-standard-plugin&quot;
+      },
+      {
+        &quot;name&quot;: &quot;esdoc-node&quot;
+      }
+    ]
   },
   &quot;scripts&quot;: {
     &quot;esdoc&quot;: &quot;esdoc&quot;
@@ -513,6 +513,197 @@ $ docker exec -it mongo bash
 }</code>
 </code></pre>
 <p>&#x4F7F;&#x3048;&#x308B;&#x30BF;&#x30B0;&#x306F; <a href="https://esdoc.org/manual/tags.html">&#x3053;&#x3053;</a> &#x3002;</p>
+<h2 id="javascritp--es--&#x6587;&#x6CD5;&#x30E1;&#x30E2;">Javascritp (ES) &#x6587;&#x6CD5;&#x30E1;&#x30E2;</h2><h3 id="&#x30B9;&#x30D7;&#x30EC;&#x30C3;&#x30C9;&#x69CB;&#x6587;">&#x30B9;&#x30D7;&#x30EC;&#x30C3;&#x30C9;&#x69CB;&#x6587;</h3><p>&#x914D;&#x5217;&#x3084;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x540D;&#x524D;&#x306E;&#x524D;&#x306B;&#x300C;...&#x300D;&#x3092;&#x3064;&#x3051;&#x308B;&#x3068;&#x4E2D;&#x8EAB;&#x304C;&#x5C55;&#x958B;&#x3055;&#x308C;&#x308B;&#x3002;</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">const arr1 = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]
+const arr2 = [...arr1, &apos;1&apos;, &apos;2&apos;]
+console.log(arr2) // [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;1&quot;, &quot;2&quot;]
+
+const obj1 = { first_name:&apos;ichiro&apos;, age:&apos;20&apos;}
+const obj2 = { ...obj1, role: &apos;leader&apos;, last_name: &apos;sato&apos; }
+console.log(obj2) //{first_name:&quot;ichiro&quot;, age:&quot;20&quot;, role: &quot;leader&quot;, last_name: &quot;sato&quot;}</code>
+</code></pre>
+<h3 id="this">this</h3><p><code>this</code> &#x306F;&#x547C;&#x3073;&#x51FA;&#x3057;&#x5143;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3002;<br>&#x3064;&#x307E;&#x308A;&#x3001;<code>this</code> &#x3092;&#x547C;&#x3093;&#x3060;&#x5834;&#x6240;&#x306B;&#x3088;&#x3063;&#x3066;&#x3001;&#x305D;&#x306E;&#x53C2;&#x7167;&#x5148;&#x306F;&#x5909;&#x308F;&#x3063;&#x3066;&#x304F;&#x308B;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x547C;&#x3093;&#x3060;&#x5834;&#x6240;</th>
+<th style="text-align:left">this&#x306E;&#x53C2;&#x7167;&#x5148;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x95A2;&#x6570;&#x5916;</td>
+<td style="text-align:left">&#x30B0;&#x30ED;&#x30FC;&#x30D0;&#x30EB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x95A2;&#x6570;&#x5185;</td>
+<td style="text-align:left">&#x30B0;&#x30ED;&#x30FC;&#x30D0;&#x30EB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#xFF08;strict mode &#x3067;&#x306F; undefined&#xFF09;</td>
+</tr>
+<tr>
+<td style="text-align:left">call/apply&#x30E1;&#x30BD;&#x30C3;&#x30C9;</td>
+<td style="text-align:left">&#x5F15;&#x6570;&#x3067;&#x6307;&#x5B9A;&#x3055;&#x308C;&#x305F;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x30EA;&#x30B9;&#x30CA;&#x30FC;</td>
+<td style="text-align:left">&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x767A;&#x751F;&#x5143;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30B3;&#x30F3;&#x30B9;&#x30C8;&#x30E9;&#x30AF;&#x30BF;</td>
+<td style="text-align:left">&#x751F;&#x6210;&#x3057;&#x305F;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30E1;&#x30BD;&#x30C3;&#x30C9;</td>
+<td style="text-align:left">&#x30EC;&#x30B7;&#x30FC;&#x30D0;&#xFF08;&#x547C;&#x3073;&#x51FA;&#x3057;&#x5143;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p><code>apply()</code> &#x3084; <code>call()</code> &#x306F;&#x300C;&#x5F15;&#x6570;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x300D;&#x3092;&#x300C;&#x547C;&#x3073;&#x51FA;&#x3059;&#x95A2;&#x6570;&#x300D;&#x306E; <code>this</code> &#x306B;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3002;<br><code>apply()</code> &#x3068; <code>call()</code> &#x306E;&#x9055;&#x3044;&#x306F;&#x3001;&#x5F15;&#x6570;&#x3092;&#x914D;&#x5217;&#x3067;&#x6E21;&#x3059;&#x304B;&#x3001;&#x30AB;&#x30F3;&#x30DE;&#x533A;&#x5207;&#x308A;&#x3067;&#x6E21;&#x3059;&#x304B;&#x3060;&#x3051;&#x3002;</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">function example(){
+    console.log(this);
+}
+var element = { num: 4 };
+example.apply(element); // { num: 4 }</code>
+</code></pre>
+<p>&#x3044;&#x308D;&#x3044;&#x308D;&#x3042;&#x308B;&#x3051;&#x3069;&#x3001;&#x57FA;&#x672C; <code>this</code> &#x306F;&#x64CD;&#x4F5C;&#x30FB;&#x5909;&#x66F4;&#x3057;&#x306A;&#x3044;&#x3002;</p>
+<h3 id="bind">bind</h3><p><code>apply()</code> &#x3084; <code>call()</code> &#x306B;&#x4F3C;&#x3066;&#x3044;&#x308B;&#x304C;&#x3001;<code>apply()</code> &#x3084; <code>call()</code> &#x306F;&#x305D;&#x308C;&#x305E;&#x308C;&#x95A2;&#x6570;&#x5185;&#x3067;&#x53C2;&#x7167;&#x3059;&#x308B; <code>this</code> &#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x306E;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x3001; <code>bind()</code> &#x306F; <code>this</code> &#x3092;&#x675F;&#x7E1B;&#x3057;&#x305F;&#x95A2;&#x6570;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x3092;&#x751F;&#x6210;&#x3059;&#x308B;&#x3002;</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">function func12(a, b) {
+  console.log(this.val + a + b)
+}
+const bind1 = func12.bind({val: 1})
+const bind2 = func12.bind({val: 5}, 5)
+const bind3 = func12.bind({val: 2}, 6, 9)
+bind1(1, 2) // 4  // 1 + 1 + 2
+bind2(3)    // 13 // 5 + 5 + 3
+bind3()     // 17 // 2 + 6 + 9</code>
+</code></pre>
+<h3 id="default-prameters">Default Prameters</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const before = x =&gt; {
+  if (x === undefined) {
+    x = 0
+  }
+  return x * 2
+}
+
+const after = (x = 0) =&gt; {
+  return x * 2
+}</code>
+</code></pre>
+<h3 id="rest-parameters">Rest Parameters</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">function f(a, b, ...rest) {
+  console.log(rest)
+}
+f(1, 2, 3, 4, 5) // [3, 4, 5]</code>
+</code></pre>
+<h3 id="destructuring---&#x30C7;&#x30B9;&#x30C8;&#x30E9;&#x30AF;&#x30C1;&#x30E3;&#x30EA;&#x30F3;&#x30B0;">Destructuring / &#x30C7;&#x30B9;&#x30C8;&#x30E9;&#x30AF;&#x30C1;&#x30E3;&#x30EA;&#x30F3;&#x30B0;</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const arr = [10, 20, 30, 40];
+const [first, second, ...rest] = arr;
+console.log(rest); // [ 30, 40 ]
+
+const obj = { a: 123, b: 456, c: 789, z: 999 };
+const { a, b, c, d } = obj;
+console.log(`${a}, ${b}, ${c}, ${d}`); // 123, 456, 789, undefined
+// ${z} &#x306F;&#x300C;ReferenceError: z is not defined&#x300D;&#x306B;&#x306A;&#x308B;</code>
+</code></pre>
+<p>&#x914D;&#x5217;&#x3067;&#x3082;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x3082;&#x4F7F;&#x3048;&#x308B;&#x3002;</p>
+<h3 id="property-definition---&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x5B9A;&#x7FA9;">Property Definition / &#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x5B9A;&#x7FA9;</h3><p>&#x5909;&#x6570;&#x540D;&#x3068;&#x30AD;&#x30FC;&#x304C;&#x4E00;&#x81F4;&#x3057;&#x3066;&#x3044;&#x308B;&#x5834;&#x5408;&#x306F;&#x7701;&#x7565;&#x53EF;&#x80FD;&#x3002;</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">const a = 1, b = 2;
+const before = {
+  a: a,
+  b: b,
+}
+const after = {
+  a,
+  b,
+}
+console.log(after); // { a: 1, b: 2 }</code>
+</code></pre>
+<h3 id="computed-property-name---&#x52D5;&#x7684;&#x306A;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x540D;">Computed property name / &#x52D5;&#x7684;&#x306A;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x540D;</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const key = &apos;foo&apos;;
+const o = {
+  [key]: 1,
+};
+console.log(o); // { foo: 1 } // key &#x3058;&#x3083;&#x306A;&#x304F;&#x3066; foo &#x306B;&#x306A;&#x3063;&#x3066;&#x308B;</code>
+</code></pre>
+<h3 id="generator-function">Generator Function</h3><p><code>function*</code> &#x3068; <code>yield</code> &#x306E;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3002;<br>&#x90FD;&#x5EA6;&#x95A2;&#x6570;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x306E;&#x3067;&#x3001;&#x914D;&#x5217;&#x5168;&#x90E8;&#x4F5C;&#x308B;&#x3088;&#x308A;&#x30E1;&#x30E2;&#x30EA;&#x7BC0;&#x7D04;&#x3002;</p>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">function* range(end) {
+  for (let i = 0; i &lt; end; i++) {
+    yield i;
+  }
+}
+for (const x of range(5)) {
+  console.log(x);
+}
+// 0
+// 1
+// 2
+// 3
+// 4</code>
+</code></pre>
+<h3 id="&#x30B7;&#x30F3;&#x30DC;&#x30EB;">&#x30B7;&#x30F3;&#x30DC;&#x30EB;</h3><ul>
+<li>ES6&#x304B;&#x3089;&#x4F7F;&#x3048;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x305F;</li>
+<li><code>Symbol()</code> &#x30B3;&#x30F3;&#x30B9;&#x30C8;&#x30E9;&#x30AF;&#x30BF;&#x304B;&#x3089;&#x4F5C;&#x6210;&#x3057;&#x3001;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x305F;&#x30B7;&#x30F3;&#x30DC;&#x30EB;&#x306F;&#x5FC5;&#x305A;&#x30E6;&#x30CB;&#x30FC;&#x30AF;&#x3068;&#x306A;&#x308B;</li>
+<li>&#x5FC5;&#x305A;&#x30E6;&#x30CB;&#x30FC;&#x30AF;&#x3068;&#x306A;&#x308B;&#x306E;&#x3067;&#x3001;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306E;&#x540D;&#x524D;&#x3068;&#x3057;&#x3066;&#x4F7F;&#x3046;&#x3068;&#x3001;&#x30D0;&#x30C3;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3092;&#x56DE;&#x907F;&#x3067;&#x304D;&#x308B;</li>
+<li>&#x5FC5;&#x8981;&#x306B;&#x5FDC;&#x3058;&#x3066;&#x8AAC;&#x660E;&#x306E;&#x305F;&#x3081;&#x306E;&#x6587;&#x5B57;&#x5217;&#x3092;&#x6E21;&#x3059;&#x3053;&#x3068;&#x3082;&#x53EF;&#x80FD;</li>
+</ul>
+<pre><code class="lang-javascript"><code class="source-code prettyprint">const obj = {};
+const HOGE = Symbol();
+
+obj[HOGE] = 123;
+obj.HOGE = 999;
+console.log(obj); // { HOGE: 999, [Symbol()]: 123 }
+
+const FUGE = Symbol(&apos;FUGE&apos;);
+obj[FUGE] = 123;
+obj.FUGE = 999;
+console.log(obj); // { HOGE: 999, FUGE: 999, [Symbol()]: 123, [Symbol(FUGE)]: 123 }</code>
+</code></pre>
+<h3 id="for">for</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const data = [10, 20 ,30];
+for (let i = 0; i &lt; data.length; i++) { // &#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#xFF1A;&#x65E7;
+  console.log(data[i]);
+}
+for (let i in data) { // &#x30A4;&#x30F3;&#x30C7;&#x30C3;&#x30AF;&#x30B9;&#xFF1A;&#x65B0;
+  console.log(data[i]);
+}
+data.forEach(value =&gt; { // &#x5024;&#xFF1A;&#x65E7;
+  console.log(value);
+});
+for (let x of data) { // &#x5024;&#xFF1A;&#x65B0;
+  console.log(x);
+}</code>
+</code></pre>
+<h3 id="&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30B3;&#x30D4;&#x30FC;">&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30B3;&#x30D4;&#x30FC;</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">const obj_old = { a: 10, b: 20 };
+const copy_old = {}
+Object.assign(copy_old, obj_old);
+console.log(copy_old); // { a: 10, b: 20 }
+obj_old.b = 30;
+console.log(copy_old); // { a: 10, b: 20 } // &#x30B3;&#x30D4;&#x30FC;&#x3067;&#x3042;&#x308A;&#x53C2;&#x7167;&#x3067;&#x306A;&#x3044;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;
+
+const obj_new = { a: 10, b: 20 };
+const copy_new = { ...obj_new };
+console.log(copy_new); // { a: 10, b: 20 }
+obj_new.b = 30;
+console.log(copy_new); // { a: 10, b: 20 } // &#x30B3;&#x30D4;&#x30FC;&#x3067;&#x3042;&#x308A;&#x53C2;&#x7167;&#x3067;&#x306A;&#x3044;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;</code>
+</code></pre>
+<h3 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h3><ul>
+<li><a href="https://jsprimer.net/">ECMAScript 2019&#x6642;&#x4EE3;&#x306E;JavaScript&#x5165;&#x9580;&#x66F8;</a></li>
+<li><a href="https://www.ecma-international.org/ecma-262/9.0/index.html">ECMAScript&#xAE; 2018 Language Specification</a></li>
+<li><a href="https://qiita.com/kenju/items/4d32598ffddf86af82f2">&#x3010;&#x307E;&#x3068;&#x3081;&#x3011;JavaScript&#x3067;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x30D1;&#x30BF;&#x30FC;&#x30F3;</a></li>
+<li><a href="https://qiita.com/shibukawa/items/ffe7264ecff78f55b296">JavaScript/TypeScript&#x306E;&#x4F8B;&#x5916;&#x30CF;&#x30F3;&#x30C9;&#x30EA;&#x30F3;&#x30B0;&#x6226;&#x7565;&#x3092;&#x8003;&#x3048;&#x308B;</a></li>
+</ul>
+<h2 id="node-js">Node.js</h2><h3 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h3><ul>
+<li><a href="https://nodejs.org/api/all.html">Node.js v12.8.0 Documentation</a><ul>
+<li>&#x516C;&#x5F0F;&#x3001;&#x4F4E;&#x30EC;&#x30A4;&#x30E4;&#x306E;&#x77E5;&#x8B58;&#x3082;&#x8EAB;&#x306B;&#x3064;&#x304D;&#x6687;&#x306A;&#x3068;&#x304D;&#x306B;&#x8AAD;&#x3080;&#x3079;&#x3057;</li>
+</ul>
+</li>
+<li><a href="https://blog.takanabe.tokyo/2015/03/26/240/">&#x30CE;&#x30F3;&#x30D6;&#x30ED;&#x30C3;&#x30AD;&#x30F3;&#x30B0;I/O&#x3068;&#x975E;&#x540C;&#x671F;I/O&#x306E;&#x9055;&#x3044;&#x3092;&#x7406;&#x89E3;&#x3059;&#x308B;</a></li>
+<li><a href="https://www.webprofessional.jp/debugging-javascript-node-debugger/">JS&#x306E;&#x30C7;&#x30D0;&#x30C3;&#x30B0;&#x306B;&#x306F;console.log()&#x3067;&#x306F;&#x306A;&#x304F;Node&#x306E;&#x30C7;&#x30D0;&#x30C3;&#x30AC;&#x30FC;&#x3092;&#x4F7F;&#x3044;&#x306A;&#x3055;&#x3044;</a></li>
+<li><a href="https://blog.hiroppy.me/entry/2017/11/06/095943">Node.js&#x306E;&#x30D1;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30F3;&#x30B9;&#x30C1;&#x30E5;&#x30FC;&#x30CB;&#x30F3;&#x30B0;&#x306E;tips</a></li>
+<li><a href="https://qiita.com/tadnakam/items/dda690bb184fdc74851f">(&#x521D;&#x5FC3;&#x8005;&#x5411;&#x3051;) Node.js &#x30B3;&#x30F3;&#x30BD;&#x30FC;&#x30EB; (console) &#x306E;&#x4F7F;&#x3044;&#x65B9;</a></li>
+<li><a href="https://qiita.com/daijinload/items/b89788deff9ad83acb42">Node.js&#x306E;&#x30C7;&#x30D0;&#x30C3;&#x30B0;&#x65B9;&#x6CD5;&#x306E;&#x8A71;</a></li>
+<li><a href="https://speakerdeck.com/gergelyke/node-dot-js-production-checklist">Node.js production checklist</a><ul>
+<li>&#x3059;&#x3054;&#x3044;&#x3044;&#x3044;</li>
+</ul>
+</li>
+<li><a href="https://qiita.com/chanuu/items/ffcc5a3289b8181f9032">Node.js&#x3067;&#x30DE;&#x30A4;&#x30AF;&#x30ED;&#x30B5;&#x30FC;&#x30D3;&#x30B9; Micro</a></li>
+<li><a href="https://yosuke-furukawa.hatenablog.com/entry/2017/12/05/125517">Node.js Performance &#x6539;&#x5584;&#x30AC;&#x30A4;&#x30C9;</a></li>
+<li><a href="https://qiita.com/tkdn/items/ea4f034e0d661def244a">JavaScript &#x306E;&#x4ED5;&#x7D44;&#x307F;&#xFF1A;&#x30E1;&#x30E2;&#x30EA;&#x7BA1;&#x7406;+ 4&#x3064;&#x306E;&#x5171;&#x901A;&#x306E;&#x30E1;&#x30E2;&#x30EA;&#x30EA;&#x30FC;&#x30AF;&#x51E6;&#x7406;&#x65B9;&#x6CD5;</a></li>
+</ul>
 </div>
 </div>
 

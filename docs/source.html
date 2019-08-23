@@ -31,18 +31,13 @@
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/context.js~Context.html">Context</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/error.js~AppError.html">AppError</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-debug">debug</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-error">error</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fatal">fatal</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-info">info</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-log">log</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trace">trace</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-warn">warn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/logger.js~Logger.html">Logger</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-APP_NAME">APP_NAME</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-APP_VERSION">APP_VERSION</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-AWS_REGION">AWS_REGION</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DYNAMODB_ENDPOINT">DYNAMODB_ENDPOINT</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SECRET">SECRET</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SERVER_PORT">SERVER_PORT</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TOTP_TTL">TOTP_TTL</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#domain">domain</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/domain/token-domain.js~Token.html">Token</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#infrastructure-datastore-dynamodb">infrastructure/datastore/dynamodb</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl.html">AppRepositoryImpl</a></span></span></li>
@@ -55,19 +50,16 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#interface">interface</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/interface/interceptor.js~Interceptor.html">Interceptor</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-router">router</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#usecase">usecase</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/echo-uc.js~EchoUsecase.html">EchoUsecase</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-auth">auth</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-verifyJWT">verifyJWT</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getUser">getUser</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-putUser">putUser</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getHtml">getHtml</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPdf">getPdf</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/token-uc.js~AuthUsecase.html">AuthUsecase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/user-uc.js~UserUsecase.html">UserUsecase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/view-uc.js~ViewUsecase.html">ViewUsecase</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#usecase-repository">usecase/repository</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/repository/app-repo.js~AppRepository.html">AppRepository</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/app/usecase/repository/user-repo.js~UserRepository.html">UserRepository</a></span></span></li>
 </ul>
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">8/94</span></h1>
+<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">8/92</span></h1>
 
 <table class="files-summary" data-ice="files" data-use-coverage="true">
   <thead>
@@ -83,49 +75,26 @@
   <tbody>
     
   <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/__tests__/context_test.js.html">app/__tests__/context_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">1549 byte</td>
-      <td style="display: none;" data-ice="lines">55</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 04:55:49 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/__tests__/error_test.js.html">app/__tests__/error_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">2055 byte</td>
-      <td style="display: none;" data-ice="lines">47</td>
-      <td style="display: none;" data-ice="updated">2019-07-04 22:49:44 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/__tests__/logger_test.js.html">app/__tests__/logger_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">879 byte</td>
-      <td style="display: none;" data-ice="lines">35</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 04:56:41 (UTC)</td>
-    </tr>
-<tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/app/app.js.html">app/app.js</a></span></td>
       <td data-ice="identifier" class="identifiers">-</td>
       <td class="coverage"><span data-ice="coverage">-</span></td>
       <td style="display: none;" data-ice="size">300 byte</td>
       <td style="display: none;" data-ice="lines">10</td>
-      <td style="display: none;" data-ice="updated">2019-07-04 22:49:44 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 01:20:55 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/config.js.html#errorLines=10,11,5,6,7,8">app/config.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/app/config.js.html#errorLines=11,12,5,6,7,8,9">app/config.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-APP_NAME">APP_NAME</a></span>
 <span><a href="variable/index.html#static-variable-APP_VERSION">APP_VERSION</a></span>
 <span><a href="variable/index.html#static-variable-AWS_REGION">AWS_REGION</a></span>
 <span><a href="variable/index.html#static-variable-DYNAMODB_ENDPOINT">DYNAMODB_ENDPOINT</a></span>
 <span><a href="variable/index.html#static-variable-SECRET">SECRET</a></span>
+<span><a href="variable/index.html#static-variable-SERVER_PORT">SERVER_PORT</a></span>
 <span><a href="variable/index.html#static-variable-TOTP_TTL">TOTP_TTL</a></span></td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
-      <td style="display: none;" data-ice="size">413 byte</td>
-      <td style="display: none;" data-ice="lines">11</td>
-      <td style="display: none;" data-ice="updated">2019-07-05 22:30:10 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
+      <td style="display: none;" data-ice="size">470 byte</td>
+      <td style="display: none;" data-ice="lines">12</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 02:08:07 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/app/context.js.html">app/context.js</a></span></td>
@@ -133,23 +102,15 @@
       <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">6/6</span></td>
       <td style="display: none;" data-ice="size">2539 byte</td>
       <td style="display: none;" data-ice="lines">83</td>
-      <td style="display: none;" data-ice="updated">2019-08-04 23:05:59 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2019-08-05 10:06:35 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/domain/__tests__/token-domain_test.js.html#errorLines=4,5">app/domain/__tests__/token-domain_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
-      <td style="display: none;" data-ice="size">1065 byte</td>
-      <td style="display: none;" data-ice="lines">38</td>
-      <td style="display: none;" data-ice="updated">2019-07-04 22:49:44 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/domain/token-domain.js.html#errorLines=13,20,23,7,8,9">app/domain/token-domain.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/app/domain/token-domain.js.html#errorLines=10,11,16,29,34,9">app/domain/token-domain.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/app/domain/token-domain.js~Token.html">Token</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/6</span></td>
-      <td style="display: none;" data-ice="size">680 byte</td>
-      <td style="display: none;" data-ice="lines">32</td>
-      <td style="display: none;" data-ice="updated">2019-07-04 22:49:44 (UTC)</td>
+      <td style="display: none;" data-ice="size">1010 byte</td>
+      <td style="display: none;" data-ice="lines">43</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 02:10:12 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/app/error.js.html#errorLines=13,3,4,6,8">app/error.js</a></span></td>
@@ -157,23 +118,15 @@
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
       <td style="display: none;" data-ice="size">777 byte</td>
       <td style="display: none;" data-ice="lines">37</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 05:52:26 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 01:20:55 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js.html#errorLines=4">app/infrastructure/datastore/dynamodb/__tests__/user-repo-impl_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
-      <td style="display: none;" data-ice="size">2362 byte</td>
-      <td style="display: none;" data-ice="lines">73</td>
-      <td style="display: none;" data-ice="updated">2019-07-02 22:47:06 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/dynamodb/app-repo-impl.js.html#errorLines=10,11,12,14,18,22,42,58,7,8">app/infrastructure/datastore/dynamodb/app-repo-impl.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/dynamodb/app-repo-impl.js.html#errorLines=10,12,13,14,16,20,24,49,70,9">app/infrastructure/datastore/dynamodb/app-repo-impl.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/app/infrastructure/datastore/dynamodb/app-repo-impl.js~AppRepositoryImpl.html">AppRepositoryImpl</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
-      <td style="display: none;" data-ice="size">1781 byte</td>
-      <td style="display: none;" data-ice="lines">77</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 05:52:26 (UTC)</td>
+      <td style="display: none;" data-ice="size">2229 byte</td>
+      <td style="display: none;" data-ice="lines">94</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 01:39:27 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/dynamodb/dynamodb.js.html#errorLines=10,9">app/infrastructure/datastore/dynamodb/dynamodb.js</a></span></td>
@@ -182,23 +135,15 @@
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
       <td style="display: none;" data-ice="size">340 byte</td>
       <td style="display: none;" data-ice="lines">15</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 05:52:26 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 01:20:55 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/dynamodb/user-repo-impl.js.html#errorLines=10,11,12,14,18,22,42,58,7,8">app/infrastructure/datastore/dynamodb/user-repo-impl.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/dynamodb/user-repo-impl.js.html#errorLines=10,12,13,14,17,42,63,9">app/infrastructure/datastore/dynamodb/user-repo-impl.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/app/infrastructure/datastore/dynamodb/user-repo-impl.js~UserRepositoryImpl.html">UserRepositoryImpl</a></span></td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
-      <td style="display: none;" data-ice="size">1791 byte</td>
-      <td style="display: none;" data-ice="lines">77</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 05:52:26 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js.html#errorLines=5">app/infrastructure/datastore/mongodb/__tests__/user-repo-impl_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
-      <td style="display: none;" data-ice="size">974 byte</td>
-      <td style="display: none;" data-ice="lines">26</td>
-      <td style="display: none;" data-ice="updated">2019-07-07 09:21:47 (UTC)</td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/8</span></td>
+      <td style="display: none;" data-ice="size">1981 byte</td>
+      <td style="display: none;" data-ice="lines">87</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 01:39:27 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/mongodb/mongodb.js.html#errorLines=5">app/infrastructure/datastore/mongodb/mongodb.js</a></span></td>
@@ -206,85 +151,47 @@
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
       <td style="display: none;" data-ice="size">194 byte</td>
       <td style="display: none;" data-ice="lines">9</td>
-      <td style="display: none;" data-ice="updated">2019-07-03 08:28:42 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 01:20:55 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/mongodb/user-repo-impl.js.html#errorLines=13,15,16,21,32,6,8">app/infrastructure/datastore/mongodb/user-repo-impl.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/app/infrastructure/datastore/mongodb/user-repo-impl.js.html#errorLines=14,16,17,22,37,7,9">app/infrastructure/datastore/mongodb/user-repo-impl.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/app/infrastructure/datastore/mongodb/user-repo-impl.js~UserRepositoryImpl.html">UserRepositoryImpl</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/7</span></td>
-      <td style="display: none;" data-ice="size">956 byte</td>
-      <td style="display: none;" data-ice="lines">43</td>
-      <td style="display: none;" data-ice="updated">2019-07-05 22:59:10 (UTC)</td>
+      <td style="display: none;" data-ice="size">1178 byte</td>
+      <td style="display: none;" data-ice="lines">52</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 01:39:27 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/infrastructure/server/__tests__/echo_test.js.html">app/infrastructure/server/__tests__/echo_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">412 byte</td>
-      <td style="display: none;" data-ice="lines">17</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 05:52:26 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/infrastructure/server/__tests__/express_test.js.html#errorLines=5">app/infrastructure/server/__tests__/express_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
-      <td style="display: none;" data-ice="size">938 byte</td>
-      <td style="display: none;" data-ice="lines">36</td>
-      <td style="display: none;" data-ice="updated">2019-07-04 22:49:44 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/infrastructure/server/express.js.html#errorLines=9">app/infrastructure/server/express.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/app/infrastructure/server/express.js.html#errorLines=11">app/infrastructure/server/express.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-app">app</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
-      <td style="display: none;" data-ice="size">830 byte</td>
-      <td style="display: none;" data-ice="lines">37</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 04:38:49 (UTC)</td>
+      <td style="display: none;" data-ice="size">1147 byte</td>
+      <td style="display: none;" data-ice="lines">42</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 02:03:48 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/interface/__tests__/interceptor_test.js.html">app/interface/__tests__/interceptor_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">899 byte</td>
-      <td style="display: none;" data-ice="lines">31</td>
-      <td style="display: none;" data-ice="updated">2019-07-02 04:57:31 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/interface/interceptor.js.html#errorLines=10,12,13,34,8">app/interface/interceptor.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/app/interface/interceptor.js.html#errorLines=10,12,13,44,8">app/interface/interceptor.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="class/app/interface/interceptor.js~Interceptor.html">Interceptor</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
-      <td style="display: none;" data-ice="size">1176 byte</td>
-      <td style="display: none;" data-ice="lines">45</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 05:52:26 (UTC)</td>
+      <td style="display: none;" data-ice="size">1487 byte</td>
+      <td style="display: none;" data-ice="lines">56</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 02:10:12 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/interface/router.js.html#errorLines=4,71">app/interface/router.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/app/interface/router.js.html#errorLines=109,4">app/interface/router.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="variable/index.html#static-variable-router">router</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
-      <td style="display: none;" data-ice="size">1799 byte</td>
-      <td style="display: none;" data-ice="lines">75</td>
-      <td style="display: none;" data-ice="updated">2019-08-02 23:12:58 (UTC)</td>
+      <td style="display: none;" data-ice="size">2636 byte</td>
+      <td style="display: none;" data-ice="lines">113</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 03:08:59 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/logger.js.html#errorLines=22,45,49,53,57,6,61,65,69">app/logger.js</a></span></td>
-      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-debug">debug</a></span>
-<span><a href="function/index.html#static-function-error">error</a></span>
-<span><a href="function/index.html#static-function-fatal">fatal</a></span>
-<span><a href="function/index.html#static-function-info">info</a></span>
-<span><a href="function/index.html#static-function-log">log</a></span>
-<span><a href="function/index.html#static-function-trace">trace</a></span>
-<span><a href="function/index.html#static-function-warn">warn</a></span></td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/9</span></td>
-      <td style="display: none;" data-ice="size">1493 byte</td>
-      <td style="display: none;" data-ice="lines">72</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 05:52:26 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/usecase/__tests__/view-uc_test.js.html">app/usecase/__tests__/view-uc_test.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">373 byte</td>
-      <td style="display: none;" data-ice="lines">15</td>
-      <td style="display: none;" data-ice="updated">2019-08-02 23:14:10 (UTC)</td>
+      <td data-ice="filePath"><span><a href="file/app/logger.js.html#errorLines=22,23,27,31,35,39,43,47,56,6">app/logger.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/app/logger.js~Logger.html">Logger</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/10</span></td>
+      <td style="display: none;" data-ice="size">1486 byte</td>
+      <td style="display: none;" data-ice="lines">71</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 06:53:58 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/app/usecase/echo-uc.js.html#errorLines=6,7">app/usecase/echo-uc.js</a></span></td>
@@ -292,7 +199,7 @@
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
       <td style="display: none;" data-ice="size">290 byte</td>
       <td style="display: none;" data-ice="lines">16</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 05:52:26 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2019-08-04 09:31:31 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/app/usecase/repository/app-repo.js.html#errorLines=11,3,4,5,8">app/usecase/repository/app-repo.js</a></span></td>
@@ -300,7 +207,7 @@
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
       <td style="display: none;" data-ice="size">285 byte</td>
       <td style="display: none;" data-ice="lines">16</td>
-      <td style="display: none;" data-ice="updated">2019-07-02 23:02:43 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 01:20:55 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/app/usecase/repository/user-repo.js.html#errorLines=11,3,4,5,8">app/usecase/repository/user-repo.js</a></span></td>
@@ -308,34 +215,31 @@
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/5</span></td>
       <td style="display: none;" data-ice="size">290 byte</td>
       <td style="display: none;" data-ice="lines">16</td>
-      <td style="display: none;" data-ice="updated">2019-07-02 22:33:56 (UTC)</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 01:20:55 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/usecase/token-uc.js.html#errorLines=11,6">app/usecase/token-uc.js</a></span></td>
-      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-auth">auth</a></span>
-<span><a href="function/index.html#static-function-verifyJWT">verifyJWT</a></span></td>
-      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/2</span></td>
-      <td style="display: none;" data-ice="size">749 byte</td>
-      <td style="display: none;" data-ice="lines">34</td>
-      <td style="display: none;" data-ice="updated">2019-08-01 04:47:22 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/usecase/user-uc.js.html#errorLines=11,4,6">app/usecase/user-uc.js</a></span></td>
-      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-getUser">getUser</a></span>
-<span><a href="function/index.html#static-function-putUser">putUser</a></span></td>
+      <td data-ice="filePath"><span><a href="file/app/usecase/token-uc.js.html#errorLines=12,6,7">app/usecase/token-uc.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/app/usecase/token-uc.js~AuthUsecase.html">AuthUsecase</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/3</span></td>
-      <td style="display: none;" data-ice="size">430 byte</td>
-      <td style="display: none;" data-ice="lines">19</td>
-      <td style="display: none;" data-ice="updated">2019-07-05 23:07:35 (UTC)</td>
+      <td style="display: none;" data-ice="size">762 byte</td>
+      <td style="display: none;" data-ice="lines">31</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 07:05:13 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/app/usecase/view-uc.js.html">app/usecase/view-uc.js</a></span></td>
-      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-getHtml">getHtml</a></span>
-<span><a href="function/index.html#static-function-getPdf">getPdf</a></span></td>
-      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">2/2</span></td>
-      <td style="display: none;" data-ice="size">6599 byte</td>
-      <td style="display: none;" data-ice="lines">124</td>
-      <td style="display: none;" data-ice="updated">2019-08-02 23:13:36 (UTC)</td>
+      <td data-ice="filePath"><span><a href="file/app/usecase/user-uc.js.html#errorLines=12,4,6,7">app/usecase/user-uc.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/app/usecase/user-uc.js~UserUsecase.html">UserUsecase</a></span></td>
+      <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/4</span></td>
+      <td style="display: none;" data-ice="size">414 byte</td>
+      <td style="display: none;" data-ice="lines">16</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 07:05:13 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/app/usecase/view-uc.js.html#errorLines=7">app/usecase/view-uc.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/app/usecase/view-uc.js~ViewUsecase.html">ViewUsecase</a></span></td>
+      <td class="coverage"><span data-ice="coverage">66 %</span><span data-ice="coverageCount" class="coverage-count">2/3</span></td>
+      <td style="display: none;" data-ice="size">6804 byte</td>
+      <td style="display: none;" data-ice="lines">123</td>
+      <td style="display: none;" data-ice="updated">2019-08-06 07:05:13 (UTC)</td>
     </tr>
 </tbody>
 </table>

@@ -1156,10 +1156,10 @@
                             }
                           },
                           "extra": {
-                            "rawValue": "X-Request-Id",
-                            "raw": "'X-Request-Id'"
+                            "rawValue": "x-request-id",
+                            "raw": "'x-request-id'"
                           },
-                          "value": "X-Request-Id"
+                          "value": "x-request-id"
                         }
                       ]
                     },
@@ -1304,10 +1304,10 @@
                                     }
                                   },
                                   "extra": {
-                                    "rawValue": "X-Request-Id",
-                                    "raw": "'X-Request-Id'"
+                                    "rawValue": "x-request-id",
+                                    "raw": "'x-request-id'"
                                   },
-                                  "value": "X-Request-Id"
+                                  "value": "x-request-id"
                                 }
                               ]
                             }
@@ -1410,10 +1410,10 @@
                               }
                             },
                             "extra": {
-                              "rawValue": "X-Amzn-Trace-Id",
-                              "raw": "'X-Amzn-Trace-Id'"
+                              "rawValue": "x-amzn-trace-id",
+                              "raw": "'x-amzn-trace-id'"
                             },
-                            "value": "X-Amzn-Trace-Id"
+                            "value": "x-amzn-trace-id"
                           }
                         ]
                       },
@@ -1558,10 +1558,10 @@
                                       }
                                     },
                                     "extra": {
-                                      "rawValue": "X-Amzn-Trace-Id",
-                                      "raw": "'X-Amzn-Trace-Id'"
+                                      "rawValue": "x-amzn-trace-id",
+                                      "raw": "'x-amzn-trace-id'"
                                     },
-                                    "value": "X-Amzn-Trace-Id"
+                                    "value": "x-amzn-trace-id"
                                   }
                                 ]
                               }
@@ -3991,10 +3991,10 @@
                               }
                             },
                             "extra": {
-                              "rawValue": "X-Request-Id",
-                              "raw": "'X-Request-Id'"
+                              "rawValue": "x-request-id",
+                              "raw": "'x-request-id'"
                             },
-                            "value": "X-Request-Id"
+                            "value": "x-request-id"
                           }
                         ]
                       },
@@ -4139,10 +4139,10 @@
                                       }
                                     },
                                     "extra": {
-                                      "rawValue": "X-Request-Id",
-                                      "raw": "'X-Request-Id'"
+                                      "rawValue": "x-request-id",
+                                      "raw": "'x-request-id'"
                                     },
-                                    "value": "X-Request-Id"
+                                    "value": "x-request-id"
                                   }
                                 ]
                               }
@@ -4245,10 +4245,10 @@
                                 }
                               },
                               "extra": {
-                                "rawValue": "X-Amzn-Trace-Id",
-                                "raw": "'X-Amzn-Trace-Id'"
+                                "rawValue": "x-amzn-trace-id",
+                                "raw": "'x-amzn-trace-id'"
                               },
-                              "value": "X-Amzn-Trace-Id"
+                              "value": "x-amzn-trace-id"
                             }
                           ]
                         },
@@ -4393,10 +4393,10 @@
                                         }
                                       },
                                       "extra": {
-                                        "rawValue": "X-Amzn-Trace-Id",
-                                        "raw": "'X-Amzn-Trace-Id'"
+                                        "rawValue": "x-amzn-trace-id",
+                                        "raw": "'x-amzn-trace-id'"
                                       },
-                                      "value": "X-Amzn-Trace-Id"
+                                      "value": "x-amzn-trace-id"
                                     }
                                   ]
                                 }
@@ -8226,7 +8226,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "X-Request-Id",
+      "value": "x-request-id",
       "start": 1074,
       "end": 1088,
       "loc": {
@@ -8484,7 +8484,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "X-Request-Id",
+      "value": "x-request-id",
       "start": 1118,
       "end": 1132,
       "loc": {
@@ -8771,7 +8771,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "X-Amzn-Trace-Id",
+      "value": "x-amzn-trace-id",
       "start": 1161,
       "end": 1178,
       "loc": {
@@ -9029,7 +9029,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "X-Amzn-Trace-Id",
+      "value": "x-amzn-trace-id",
       "start": 1208,
       "end": 1225,
       "loc": {

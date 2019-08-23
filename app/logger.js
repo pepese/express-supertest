@@ -19,54 +19,53 @@ const winstonLogger = winston.createLogger({
   transports: [new winston.transports.Console()],
 });
 
-const getLogger = () => {
-  let logger = context.get('logger');
-  if (!logger) {
+module.exports = class Logger {
+  static log(...args) {
+    const logger = this._getLogger();
+    logger.log(args);
+  }
+  static fatal(...args) {
+    const logger = this._getLogger();
+    logger.fatal(args);
+  }
+  static error(...args) {
+    const logger = this._getLogger();
+    logger.error(args);
+  }
+  static warn(...args) {
+    const logger = this._getLogger();
+    logger.warn(args);
+  }
+  static info(...args) {
+    const logger = this._getLogger();
+    logger.info(args);
+  }
+  static debug(...args) {
+    const logger = this._getLogger();
+    logger.debug(args);
+  }
+  static trace(...args) {
+    const logger = this._getLogger();
+    logger.trace(args);
+  }
+
+  ////////////////////////
+  // private functions
+  ////////////////////////
+
+  static _getLogger() {
     const logKeys = context.get('log-keys');
+    const addLogs = {};
     if (logKeys) {
-      const additionalLog = {};
       for (let key of logKeys) {
         const value = context.get(key);
         if (value) {
-          additionalLog[key] = value;
+          addLogs[key] = value;
         }
       }
-      logger = winstonLogger.child(additionalLog);
-      context.set('logger');
-      return logger;
+      return winstonLogger.child(addLogs);
     } else {
       return winstonLogger;
     }
-  } else {
-    return logger;
   }
-};
-
-exports.log = (...args) => {
-  const logger = getLogger();
-  logger.log(args);
-};
-exports.fatal = (...args) => {
-  const logger = getLogger();
-  logger.fatal(args);
-};
-exports.error = (...args) => {
-  const logger = getLogger();
-  logger.error(args);
-};
-exports.warn = (...args) => {
-  const logger = getLogger();
-  logger.warn(args);
-};
-exports.info = (...args) => {
-  const logger = getLogger();
-  logger.info(args);
-};
-exports.debug = (...args) => {
-  const logger = getLogger();
-  logger.debug(args);
-};
-exports.trace = (...args) => {
-  const logger = getLogger();
-  logger.trace(args);
 };
