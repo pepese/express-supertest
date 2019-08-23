@@ -1,27 +1,33 @@
 'use strict';
 
 const TokenDomain = require('../../app/domain/token-domain');
-let jwtTmp = null;
-let totpTmp = null;
+let jwtTmp;
+let tmpToken, tmpTime;
 
 describe('token-domain.js', () => {
-  test('createJWT', () => {
+  test('createJWT()', () => {
     const payload = {id: '1', password: 'password'};
     jwtTmp = TokenDomain.createJWT(payload);
     expect(jwtTmp).not.toEqual(null);
   });
-  test('verifyJWT OK', () => {
+  test('verifyJWT() OK', () => {
     const payload = TokenDomain.verifyJWT(jwtTmp);
     expect(payload.id).toEqual('1');
     expect(payload.password).toEqual('password');
   });
-  test('createTOTP', () => {
-    expect(TokenDomain.createTOTP().length).toEqual(6);
+  test('createTOTP()', () => {
+    const {token, time} = TokenDomain.createTOTP();
+    tmpToken = token;
+    tmpTime = time;
+    expect(tmpToken.length).toEqual(6);
   });
-  test('verifyTOTP OK', () => {
-    expect(TokenDomain.verifyTOTP(totpTmp)).toEqual(null);
+  test('verifyTOTP() OK', () => {
+    expect(TokenDomain.verifyTOTP(tmpToken, tmpTime)).toEqual(true);
   });
-  test('verifyTOTP NG', () => {
+  test('verifyTOTP() NG', () => {
+    expect(TokenDomain.verifyTOTP('xxxxxx', tmpTime)).toEqual(false);
+  });
+  test('verifyTOTP() Timeout', () => {
     const sleep = (waitSeconds, someFunction) => {
       return new Promise(resolve => {
         setTimeout(() => {
@@ -30,8 +36,8 @@ describe('token-domain.js', () => {
       });
     };
     const verify = () => {
-      const check = TokenDomain.verifyTOTP(totpTmp);
-      expect(check).toEqual(null);
+      const check = TokenDomain.verifyTOTP(tmpToken);
+      expect(check).toEqual(false);
     };
     return sleep(3, verify);
   });

@@ -15,19 +15,28 @@ class Interceptor {
       context.set('startAt', process.hrtime());
     });
     onFinished(res, () => {
-      const startAt = context.get('startAt');
-      const diff = process.hrtime(startAt);
-      const responseTime = diff[0] * 1e9 + diff[1];
-      logger.info(`${req.method} ${req.originalUrl}`, {
-        req: {
-          headers: req.headers,
-          query: req.query,
-        },
-        res: {
-          status: res.statusCode,
-          responseTime: responseTime,
-        },
-      });
+      if (
+        // healthcheck 200 OK の場合はログ出力しない
+        !(
+          req.originalUrl.match(/healthcheck/) &&
+          Math.floor(res.statusCode / 200) == 1
+        )
+      ) {
+        const startAt = context.get('startAt');
+        const diff = process.hrtime(startAt);
+        const responseTime = diff[0] * 1e9 + diff[1]; // ns
+        // アクセスログ出力
+        logger.info(`${req.method} ${req.originalUrl}`, {
+          req: {
+            headers: req.headers,
+            query: req.query,
+          },
+          res: {
+            status: res.statusCode,
+            responseTime: responseTime,
+          },
+        });
+      }
     });
     next();
   }

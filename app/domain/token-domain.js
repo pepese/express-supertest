@@ -12,6 +12,7 @@ class Token {
     payload.exp = Math.floor(Date.now() / 1000) + 24 * 60 * 60;
     return jwt.sign(payload, config.SECRET);
   }
+
   static verifyJWT(token) {
     try {
       return jwt.verify(token, config.SECRET);
@@ -24,20 +25,18 @@ class Token {
       }
     }
   }
+
   static createTOTP() {
-    return notp.totp.gen(config.SECRET, {time: config.TOTP_TTL});
+    const time = Math.floor(new Date().getTime() / 1000) + config.TOTP_TTL;
+    return {token: notp.totp.gen(config.SECRET, {time: time}), time: time};
   }
-  static verifyTOTP(token) {
-    try {
-      return notp.totp.verify(token, config.SECRET);
-    } catch (e) {
-      if (boom.isBoom(e)) {
-        throw e;
-      } else {
-        logger.warn(e.stack);
-        throw boom.forbidden(e);
-      }
-    }
+
+  static verifyTOTP(token, time) {
+    const result = notp.totp.verify(token, config.SECRET, {
+      time: time,
+      window: 0,
+    });
+    return result != null && result.delta >= 0;
   }
 }
 

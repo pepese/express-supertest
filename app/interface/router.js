@@ -58,8 +58,7 @@ router.post(
   }
 );
 
-router.get('/user', tokenUC.verifyJWT);
-router.get('/user', async (req, res) => {
+router.get('/user', tokenUC.verifyJWT, async (req, res) => {
   const id = req.query.id;
   const result = await userUC.getUser(id);
   res.format({
@@ -71,9 +70,10 @@ router.get('/user', async (req, res) => {
     },
   });
 });
-router.post('/user', tokenUC.verifyJWT);
+
 router.post(
   '/user',
+  tokenUC.verifyJWT,
   [
     body().custom(async value => {
       return await Interceptor.validateUserJson(value);

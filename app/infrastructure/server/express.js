@@ -6,6 +6,7 @@ const router = require('../../interface/router');
 const helmet = require('helmet');
 const boom = require('boom');
 const logger = require('../../logger');
+const config = require('../../config');
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.use((req, res, next) => {
   const result = boom.notFound('missing');
   res.status(result.output.statusCode).json(result.output.payload);
 });
-app.set('port', '3000');
+// Server Port
+app.set('port', config.SERVER_PORT);
 
 module.exports = app;
