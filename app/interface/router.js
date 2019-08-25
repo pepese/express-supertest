@@ -43,15 +43,16 @@ router.post(
       logger.warn(errors.array());
       next(boom.badRequest(errors.array()));
     } else {
-      const id = req.body.id;
-      const password = req.body.password;
-      // コンテンツネゴシエーション（アクセプトヘッダを見て分岐）
+      // コンテンツネゴシエーション（Accept header で分岐）
       res.format({
-        'application/json': () => {
+        'application/json': async () => {
+          const id = req.body.id;
+          const password = req.body.password;
           res.json({token: tokenUC.auth(id, password)});
         },
         default: () => {
-          res.status(406).send(body406);
+          const result = boom.notAcceptable('cannot accept');
+          res.status(result.output.statusCode).send(result.output.payload);
         },
       });
     }
@@ -59,14 +60,15 @@ router.post(
 );
 
 router.get('/user', tokenUC.verifyJWT, async (req, res) => {
-  const id = req.query.id;
-  const result = await userUC.getUser(id);
   res.format({
-    'application/json': () => {
+    'application/json': async () => {
+      const id = req.query.id;
+      const result = await userUC.getUser(id);
       res.json(result);
     },
     default: () => {
-      res.status(406).send(body406);
+      const result = boom.notAcceptable('cannot accept');
+      res.status(result.output.statusCode).send(result.output.payload);
     },
   });
 });
@@ -86,15 +88,16 @@ router.post(
       logger.warn(errors.array());
       next(boom.badRequest(errors.array()));
     } else {
-      const id = req.body.id;
-      const name = req.body.name;
-      const result = await userUC.postUser(id, name);
       res.format({
-        'application/json': () => {
+        'application/json': async () => {
+          const id = req.body.id;
+          const name = req.body.name;
+          const result = await userUC.postUser(id, name);
           res.json(result);
         },
         default: () => {
-          res.status(406).send(body406);
+          const result = boom.notAcceptable('cannot accept');
+          res.status(result.output.statusCode).send(result.output.payload);
         },
       });
     }
@@ -105,9 +108,5 @@ router.get('/pdf', async (req, res) => {
   const result = await pdfUC.getPdf();
   res.send(result);
 });
-
-const body406 = {
-  message: 'Not Acceptable',
-};
 
 module.exports = router;

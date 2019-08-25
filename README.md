@@ -456,7 +456,7 @@ console.log(copy_new); // { a: 10, b: 20 } // コピーであり参照でない�
 
 ### 参考
 
-- [Node.js v12.8.0 Documentation](https://nodejs.org/api/all.html)
+- [Node.js v12.9.0 Documentation](https://nodejs.org/api/all.html)
     - 公式、低レイヤの知識も身につき暇なときに読むべし
 - [ノンブロッキングI/Oと非同期I/Oの違いを理解する](https://blog.takanabe.tokyo/2015/03/26/240/)
 - [JSのデバッグにはconsole.log()ではなくNodeのデバッガーを使いなさい](https://www.webprofessional.jp/debugging-javascript-node-debugger/)
