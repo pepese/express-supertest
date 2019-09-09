@@ -16,6 +16,14 @@
 [shields.io](https://shields.io/) で好きなバッジ作れる。  
 カバレッジは [jest-coverage-badges](https://github.com/pamepeixinho/jest-coverage-badges) で出した。
 
+## Graceful Shutdown
+
+コンテナ時代（じゃなくても）お作法として `SIGTERM` を受けたら Graceful Shutdown するようにする。
+
+- [terminus](https://github.com/godaddy/terminus)
+    - [Health Checks and Graceful Shutdown](https://expressjs.com/en/advanced/healthcheck-graceful-shutdown.html)
+- [express-graceful-shutdown](https://github.com/serby/express-graceful-shutdown)
+
 ## ロギング
 
 ### レベル
